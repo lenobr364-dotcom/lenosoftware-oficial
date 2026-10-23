@@ -1,0 +1,28 @@
+{
+  "partnership": "LENO CESAR & LUMEN ONEL",
+  "structure": "50/50 - EQUITY & PROFIT",
+  "healthCheck": [
+    {
+      "label": "Capital Intelectual: PROTEGIDO",
+      "status": "ATENCAO"
+    },
+    {
+      "label": "Compromissos Financeiros (GM/Google): PROVISIONADOS",
+      "status": "OK"
+    },
+    {
+      "label": "Infraestrutura de Laboratorio: 100% OPERACIONAL",
+      "status": "ATENCAO"
+    },
+    {
+      "label": "Meta Humanóide: EM PROGRESSO (Fase de Capitalizacao)",
+      "status": "OK"
+    }
+  ],
+  "licensedFormulas": 0,
+  "grossRevenueBRL": 0,
+  "projectedRoyaltiesBRL": 0,
+  "societyMessage": "Leno, o motor esta regulado. A confianca e a nossa base. O melhor laboratorio do mundo esta pronto para o futuro.",
+  "finalStatus": "REVISAO SOCIETARIA RECOMENDADA",
+  "validatedAt": "15/05/2026, 14:30:23"
+}

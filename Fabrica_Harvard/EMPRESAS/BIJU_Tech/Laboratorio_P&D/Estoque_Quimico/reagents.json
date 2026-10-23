@@ -1,0 +1,12 @@
+[
+    {
+        "reagente_id": "RGT-B5FF",
+        "nome": "Solvente Industrial Alfa",
+        "quantidade": 5.5,
+        "unidade": "Litros",
+        "validade": "20/12/2026",
+        "data_conferencia": "12/05/2026",
+        "status_insumo": "ALERTA: REPOSIÇÃO IMEDIATA",
+        "assinatura_tecnica": "Leno César - P&D"
+    }
+]

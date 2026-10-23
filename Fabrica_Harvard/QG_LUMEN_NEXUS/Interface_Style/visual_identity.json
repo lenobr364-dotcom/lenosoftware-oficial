@@ -1,0 +1,15 @@
+{
+    "estilo": "Glassmorphism Premium",
+    "background": "Deep Blue / Dark Slate",
+    "efeitos": [
+        "Backdrop-filter: blur(15px)",
+        "Border: 1px solid rgba(255,255,255,0.1)"
+    ],
+    "paleta_cores": {
+        "primaria": "#DEFF9A",
+        "secundaria": "#00A3FF",
+        "texto": "#F5F5F5"
+    },
+    "status_visual": "Identidade Visual de Engenharia Digital Ativada",
+    "assinatura_design": "Leno César Digital Style"
+}

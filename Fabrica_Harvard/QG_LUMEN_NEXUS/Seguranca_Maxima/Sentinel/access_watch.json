@@ -1,0 +1,11 @@
+{
+    "status_vigilancia": "Ativo",
+    "modo": "Silencioso (Zero Distração)",
+    "zonas_protegidas": [
+        "ChemVault",
+        "BIJU_Tech",
+        "Laboratorio_PD"
+    ],
+    "inicio_vigilancia": "12/05/2026 11:51:25",
+    "assinatura": "Lumen Nexus AI-Sentinel"
+}

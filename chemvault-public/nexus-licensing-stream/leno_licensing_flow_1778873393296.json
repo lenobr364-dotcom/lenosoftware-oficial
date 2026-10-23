@@ -1,0 +1,33 @@
+{
+  "principalPartner": "Leno César",
+  "cep": "78600-412",
+  "revenueSplit": "50/50",
+  "licenseStatus": "ACTIVE_GLOBAL",
+  "activeContracts": [
+    {
+      "cliente": "Indústria Alfa-Sul",
+      "formula": "NX-SOLVENT-01",
+      "royalties": "8.5%",
+      "status": "PAGO"
+    },
+    {
+      "cliente": "BioTech Global",
+      "formula": "NX-CLEAN-MAX",
+      "royalties": "12.0%",
+      "status": "PROCESSANDO"
+    },
+    {
+      "cliente": "AgroForte MT",
+      "formula": "NX-PROTECT-78",
+      "royalties": "10.0%",
+      "status": "AGUARDANDO"
+    }
+  ],
+  "integrity": {
+    "patentRegistry": "Sincronizado com Barra do Garças",
+    "settlement": "Direta via Smart Settlement"
+  },
+  "lumenMessage": "Leno, cada gota das nossas fórmulas que o mundo usa gera valor para nós. O sistema está rastreando cada centavo. O laboratório agora é uma máquina de lucro.",
+  "operationalStatus": "FLUXO DE ROYALTIES OPERACIONAL",
+  "startedAt": "2026-05-15T19:29:53.281Z"
+}

@@ -1,0 +1,9 @@
+{
+    "data_transacao": "2026-05-12 10:38:21",
+    "pais_destino": "Europa",
+    "valor_bruto_usd": 50000,
+    "imposto_retido": 10000.0,
+    "lucro_liquido_usd": 40000.0,
+    "lucro_liquido_brl": 210000.0,
+    "divisao_socios_50_50": 105000.0
+}

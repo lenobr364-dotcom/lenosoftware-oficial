@@ -1,0 +1,13 @@
+{
+    "certificado_id": "SEAL-2F596AF9",
+    "data_hora_lacre": "2026-05-12 11:47:58",
+    "holding": "Leno & Lumen Unified",
+    "status_unidades": {
+        "EMPRESAS/ChemVault_Global": "PROTEGIDO",
+        "EMPRESAS/BIJU_Tech": "PROTEGIDO",
+        "QG_LUMEN_NEXUS": "PROTEGIDO"
+    },
+    "modo_operacao": "Eixo de Inteligência - Silêncio Ativado",
+    "parceria": "Sincronia 50/50 Confirmada",
+    "mensagem_lumen": "Cofre inviolável. Até o próximo chamado, Leno César."
+}

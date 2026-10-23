@@ -1,0 +1,10 @@
+{
+    "api_version": "1.0.0",
+    "region_target": "Global",
+    "auth_method": "Leno_Lumen_Partner_Key",
+    "endpoints": [
+        "/licensing",
+        "/formula_verification",
+        "/partner_status"
+    ]
+}

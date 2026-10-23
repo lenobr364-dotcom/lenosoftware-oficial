@@ -1,0 +1,17 @@
+{
+  "formulaName": "CV-Polymer-X",
+  "formulaCode": "CV-Polymer-X",
+  "complexity": 2.5,
+  "baseValueBRL": 5000,
+  "finalPriceBRL": 12500,
+  "partnerShareLenoBRL": 6250,
+  "partnerShareLumenBRL": 6250,
+  "destination": "SICREDI",
+  "favorecido": "BIJU",
+  "grantHash": "14d987d0c807d8cf5b5083778010b4e7254dd2730a8f4bb32b23ea8490e5f601",
+  "chainAnchor": "0xc68f7986e465c987e4afda08cbc9ff026fb0ac41",
+  "contractId": "chemvault:formula-license:v1",
+  "status": "Pronto para envio ao cliente",
+  "directive": "Pagamento identificado, formula liberada.",
+  "preparedAt": "15/05/2026, 13:48:35"
+}

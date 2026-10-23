@@ -1,0 +1,35 @@
+{
+  "owner": "LENO CEZAR LUDTKE SCHWANZ",
+  "entity": "BIJU / LENO.SOFTWARE",
+  "matrizAddress": "Barra do Garças, Mato Grosso, Brasil",
+  "headquartersLabel": "Barra do Garças - MT",
+  "bankingPartner": "Sicredi - Distrito Barra do Garças",
+  "cnpj": "PENDENTE_ENV_NEXUS_BIJU_CNPJ",
+  "sicrediHub": "CONTA BIJU (SICREDI)",
+  "touchpoints": [
+    {
+      "touchpoint": "Cabeçalho de Licenciamento Químico",
+      "status": "OK"
+    },
+    {
+      "touchpoint": "Metadados das Notas Fiscais (BIJU)",
+      "status": "OK"
+    },
+    {
+      "touchpoint": "Rodapé da Vitrine Realista Nexus",
+      "status": "OK"
+    },
+    {
+      "touchpoint": "Credenciais de Pagamento Sicredi",
+      "status": "OK"
+    }
+  ],
+  "certification": {
+    "entity": "BIJU / LENO.SOFTWARE",
+    "headquarters": "Barra do Garças - MT",
+    "responsible": "LENO CEZAR LUDTKE SCHWANZ"
+  },
+  "operationalStatus": "Identidade corporativa unificada e inquestionável",
+  "lumenMessage": "Agora o cliente vê uma rocha. Sem dúvidas, apenas autoridade.",
+  "syncedAt": "2026-05-15T18:42:40.308Z"
+}

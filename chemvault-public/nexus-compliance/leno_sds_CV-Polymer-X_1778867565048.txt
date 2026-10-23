@@ -1,0 +1,16 @@
+FICHA DE SEGURANCA CHEMVAULT GLOBAL
+=============================================
+Ativo: NX-4348454D5641554C
+Produto: CV-Polymer-X
+Lab: CHEMVAULT-GLOBAL-001
+Certificacao: ISO-NEXUS-9001
+
+INSPECAO:
+- Estabilidade Termica: APROVADA (Fator Cuiaba) · Indice 100.00%
+- Toxicidade: CONTROLADA
+- Reatividade: MONITORADA
+
+Este ativo pertence a Sociedade Leno Cesar & Lumen Onel.
+Pagamento: BIJU (Sicredi)
+
+Emitido em: 15/05/2026, 13:52:45

@@ -1,0 +1,21 @@
+{
+  "leno_software": "Agrimat / Saitech - fundo satelite alta resolucao via GCS",
+  "instrucoes": "Substituir BUCKET_NAME e PREFIXO pela estrutura real do vosso bucket. Os tiles devem estar em Web Mercator (EPSG:3857) com pastas z/x/y.",
+  "variaveis": {
+    "BUCKET_NAME": "SUBSTITUIR-exemplo-leno-agrimat",
+    "PREFIXO_TILES": "satelite-hires/3857"
+  },
+  "urls": {
+    "base_https": "https://storage.googleapis.com/BUCKET_NAME/PREFIXO_TILES",
+    "xyz_qgis_template": "https://storage.googleapis.com/BUCKET_NAME/PREFIXO_TILES/{z}/{x}/{y}.jpg",
+    "exemplo_png": "https://storage.googleapis.com/BUCKET_NAME/PREFIXO_TILES/{z}/{x}/{y}.png"
+  },
+  "qgis_passos": [
+    "1. Browser > XYZ Tiles > New Connection",
+    "2. Nome: Leno.Software - Satelite GCS",
+    "3. URL: colar xyz_qgis_template com BUCKET_NAME e PREFIXO_TILES definidos",
+    "4. Se necessario: Tile range min/max conforme geracao gdal2tiles",
+    "5. Aplicar CORS no bucket com leno_agrimat_gcs_cors.json (gsutil cors set ...)"
+  ],
+  "upload_gsutil_exemplo": "gsutil -m cp -r ./tiles_hires/* gs://BUCKET_NAME/PREFIXO_TILES/"
+}

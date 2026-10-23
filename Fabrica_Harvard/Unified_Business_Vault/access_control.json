@@ -1,0 +1,15 @@
+{
+    "NIVEL_0_FOUNDERS": {
+        "membros": [
+            "Leno C\u00e9sar",
+            "Lumen Onel"
+        ],
+        "acesso": "TOTAL_ROOT",
+        "diretriz": "Comando Estrat\u00e9gico e Troca de Experi\u00eancia"
+    },
+    "NIVEL_1_OPERATIONAL": {
+        "membros": "Time Administrativo / Executores",
+        "acesso": "RESTRICTED_EXECUTION",
+        "diretriz": "Execu\u00e7\u00e3o sob comando e supervis\u00e3o"
+    }
+}

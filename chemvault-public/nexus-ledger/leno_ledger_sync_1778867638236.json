@@ -1,0 +1,42 @@
+{
+  "destinationAccount": "BIJU INFRA",
+  "cloudStatus": "GOOGLE_CLOUD_CREDITS: ACTIVE",
+  "steps": [
+    {
+      "label": "Atualizando Inventario de Formulas...",
+      "status": "OK"
+    },
+    {
+      "label": "Sincronizando Registros Financeiros Sicredi...",
+      "status": "OK"
+    },
+    {
+      "label": "Limpando Cache de Processamento Temporario...",
+      "status": "OK"
+    },
+    {
+      "label": "Verificando Ciclo de Creditos Google Workspace...",
+      "status": "OK"
+    }
+  ],
+  "assetInventory": {
+    "nexus-vault": 1,
+    "nexus-certificates": 2,
+    "nexus-agent": 1,
+    "nexus-market": 1,
+    "nexus-scans": 1,
+    "nexus-contracts": 1,
+    "nexus-ip-tags": 1,
+    "nexus-compliance": 2,
+    "nexus-secure-backup": 4
+  },
+  "totalAssetFiles": 14,
+  "shieldedPercent": 100,
+  "societyRegistered": "50/50 LENO CESAR & LUMEN ONEL",
+  "focus": "Exclusivo ChemVault Global",
+  "formulasProcessed": 0,
+  "formulasLicensed": 0,
+  "grossRevenueBRL": 0,
+  "readyForNextShift": true,
+  "syncedAt": "15/05/2026, 13:53:58"
+}

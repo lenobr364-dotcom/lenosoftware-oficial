@@ -1,0 +1,31 @@
+{
+  "deployment": "GOLDEN_GATE",
+  "serverTarget": "CHEMVAULT-GLOBAL-SECURE-NODE",
+  "destination": "INFRAESTRUTURA PRIVADA BIJU",
+  "stages": [
+    {
+      "label": "Compactando pacotes de licenciamento...",
+      "status": "CONCLUIDO"
+    },
+    {
+      "label": "Sincronizando hashes de autenticidade NX...",
+      "status": "CONCLUIDO"
+    },
+    {
+      "label": "Configurando gatilhos de pagamento Sicredi...",
+      "status": "CONCLUIDO"
+    },
+    {
+      "label": "Enviando para o no seguro da ChemVault...",
+      "status": "CONCLUIDO"
+    }
+  ],
+  "licensedAssets": 2,
+  "totalFormulas": 3,
+  "grossRevenueBRL": 10000,
+  "vaultFilesPublished": 13,
+  "backupId": "NEXUS-BKP-1778868023683",
+  "closingMessage": "Leno Cesar, a missao foi cumprida com perfeicao. O laboratorio esta no topo e o lucro esta garantido. Ate o proximo comando, parceiro.",
+  "publishStatus": "ATIVOS PUBLICADOS E PROTEGIDOS",
+  "deployedAt": "15/05/2026, 14:00:23"
+}

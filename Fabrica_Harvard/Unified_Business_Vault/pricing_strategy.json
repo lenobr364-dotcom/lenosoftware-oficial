@@ -1,0 +1,11 @@
+[
+    {
+        "produto": "Detergente Industrial Premium V1",
+        "custo_base_insumos": 35.0,
+        "margem_alvo": "60.0%",
+        "preco_sugerido_venda": 87.5,
+        "lucro_estimado_unidade": 52.5,
+        "divisao_socios_50_50": 26.25,
+        "data_analise": "12/05/2026 11:15"
+    }
+]

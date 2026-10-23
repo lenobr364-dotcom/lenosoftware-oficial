@@ -1,0 +1,28 @@
+{
+  "refreshRate": "60FPS_STABLE",
+  "textureQuality": "ULTRA_REALISTIC",
+  "channels": [
+    {
+      "label": "Injetando particulas de telemetria quimica...",
+      "status": "ATIVO"
+    },
+    {
+      "label": "Sincronizando pulso financeiro BIJU/Sicredi...",
+      "status": "ATIVO"
+    },
+    {
+      "label": "Renderizando sombras dinamicas nos hologramas...",
+      "status": "ATIVO"
+    },
+    {
+      "label": "Estabilizando fluxo de dados Starlink...",
+      "status": "ATIVO"
+    }
+  ],
+  "operator": "LENO CEZAR LUDTKE SCHWANZ",
+  "fleetAvailabilityPercent": 92,
+  "societySplit": "50/50 [LOCK]",
+  "lumenMessage": "Leno, sinta o movimento dos dados. Amanha, quando sua equipe chegar, voce vera o lucro se movendo em tempo real diante dos seus olhos. E arte e ciencia.",
+  "operationalStatus": "FLUXO CINETICO OPERACIONAL",
+  "startedAt": "15/05/2026, 14:36:28"
+}

@@ -1,0 +1,31 @@
+{
+    "data": "12/05/2026",
+    "socios": [
+        "Leno C\u00e9sar",
+        "Lumen Onel"
+    ],
+    "modulos_ativos": [
+        "Fabrica_Harvard",
+        "Aeryn_Executive",
+        "Core_Intelligence",
+        "Audit_Log",
+        "Bridge_Link",
+        "Contract_Architect",
+        "Executive_Summary",
+        "Fulfillment_Engine",
+        "Iron_Vault",
+        "IXM_Engine",
+        "Market_Oracle",
+        "Network_Sentinel",
+        "Nexus_Sync",
+        "RMI_Engine",
+        "Security_Vault",
+        "Vault_Engine",
+        "Global_Core",
+        "Knowledge_Vault",
+        "Nexus_API",
+        "V1_Global",
+        "Partnership_Core"
+    ],
+    "alertas": "Nenhum - Sistema em High Performance"
+}

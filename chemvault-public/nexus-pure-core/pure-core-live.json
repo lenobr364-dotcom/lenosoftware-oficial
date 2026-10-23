@@ -1,0 +1,41 @@
+{
+  "domain": "CHEMVAULT_GLOBAL_INTELLIGENCE",
+  "purgeTargets": [
+    {
+      "target": "Métricas de Disponibilidade Mecânica",
+      "status": "CONCLUIDO",
+      "detail": "Metricas desativadas no dominio quimico"
+    },
+    {
+      "target": "Status de Maquinário Caterpillar",
+      "status": "CONCLUIDO",
+      "detail": "Modulo maquinario removido do nucleo"
+    },
+    {
+      "target": "Telemetria de Campo Externa",
+      "status": "CONCLUIDO",
+      "detail": "Quarentena: chemvault-public/agrimat-ramo200-qgis"
+    }
+  ],
+  "quarantinedPaths": [
+    "chemvault-public/agrimat-ramo200-qgis"
+  ],
+  "coreFocus": [
+    {
+      "id": "01",
+      "label": "Pureza da Fórmula Química"
+    },
+    {
+      "id": "02",
+      "label": "Licenciamento e Royalties"
+    },
+    {
+      "id": "03",
+      "label": "Segurança Jurídica (78600-412)"
+    }
+  ],
+  "lumenMessage": "Leno, ordem restaurada. O laboratório volta a ser um ambiente estéril e focado apenas na ciência. Mistura zero. Autoridade total.",
+  "operationalStatus": "DOMINIO QUIMICO PURO E BLINDADO",
+  "privateMode": true,
+  "purgedAt": "2026-05-15T18:47:25.090Z"
+}

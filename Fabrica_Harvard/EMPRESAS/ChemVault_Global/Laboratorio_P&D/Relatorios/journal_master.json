@@ -1,0 +1,12 @@
+[
+    {
+        "entry_id": "RES-259A",
+        "data": "12/05/2026 11:36",
+        "assunto": "Estabilidade térmica de tensoativos em detergente premium",
+        "hipotese": "Redução de 2°C no pico exotérmico melhora shelf-life sem perda de poder de limpeza.",
+        "descobertas_principais": "Curvas DSC mostraram janela estável ampliada em 18%; espuma residual dentro da norma BIJU.",
+        "proximos_passos": "Rodada de ensaios em escala piloto com agitação 1200 RPM e ciclo térmico 15–45°C.",
+        "autor": "Leno César",
+        "sigilo_holding": "Nível 5 - Máximo"
+    }
+]

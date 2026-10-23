@@ -1,0 +1,17 @@
+﻿Leno.Software - GCS e fundos de mapa no QGIS
+===========================================
+
+1) O bucket Google Cloud Storage (GCS) NAO e um servidor WMS OGC.
+   Para "WMS" padrao (GetCapabilities/GetMap), e necessario GeoServer,
+   MapServer ou produto semelhante (VM, Cloud Run, GKE) com URL publica.
+
+2) Fundo exclusivo Leno a partir do GCS (recomendado para raster):
+   - Gerar tiles XYZ (WebMercator EPSG:3857), ex.: gdal2tiles.py
+   - Publicar em gs://SEU_BUCKET/leno-agrimat-tiles/{z}/{x}/{y}.png
+   - Aplicar CORS: gsutil cors set leno_agrimat_gcs_cors.json gs://SEU_BUCKET
+   - No QGIS: Browser > XYZ Tiles > New Connection > URL do modelo em
+     leno_agrimat_qgis_xyz_connections.xml
+
+3) GeoJSON vetorial pode ser servido por HTTPS publico no bucket (object
+   public read ou signed URL); o QGIS abre diretamente o URL como camada.
+

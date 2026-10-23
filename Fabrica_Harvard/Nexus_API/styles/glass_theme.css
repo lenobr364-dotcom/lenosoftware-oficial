@@ -1,0 +1,29 @@
+/* Tema de Luxo: Glassmorphism para Lumen OS & ChemVault */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --accent-glow: rgba(0, 220, 255, 0.4);
+    --text-primary: #ffffff;
+}
+
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: var(--text-primary);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+    border: 1px solid var(--accent-glow);
+    box-shadow: 0 8px 32px 0 var(--accent-glow);
+}
+
+body {
+    background: #0a0a0a; /* Fundo escuro profundo para destacar o vidro */
+    font-family: 'Inter', sans-serif;
+}

@@ -1,0 +1,77 @@
+================================================================================
+  LENO.SOFTWARE - RELATORIO EXECUTIVO TECNICO (APRESENTACAO)
+  Destinatarios: Gerencia Agrimat / Saitech-MOBA
+  Assunto: RAMO 200 - Projeto digital vs validacao Leno.Software
+  Data: 2026-05-13
+================================================================================
+
+1. CONTEXTO
+-----------
+O projeto geometrico foi exportado do Autodesk Civil 3D 2024 para LandXML
+(RAMO 200.xml), contendo alinhamentos horizontais, sobreelevacao em varios
+trechos, e superficie TIN "PTV03-RAMO 200 - TOP" para cotas.
+
+2. PROJETO ORIGINAL (BASELINE)
+------------------------------
+- Formato: LandXML 1.2
+- Sistema horizontal declarado no XML: SIRGAS, UTM 21S (SA-SIR-21S)
+- Unidades: metro (linear)
+- Eixos principais: inclui PTV03-RAMO 200 (staStart 4000 m), EIXO PRINCIPAL,
+  EIXO DUPLICACAO, ramos PTV03-RAMO 100 a 1000, auxiliares PTV03 e linhas
+  locais.
+- Perfis verticais LandXML: nao presentes no ficheiro analisado; referencia
+  altimetrica concentrada na superficie TIN do ramo.
+
+3. VALIDACAO LENO.SOFTWARE (ENTREGAVEIS)
+----------------------------------------
+a) Camadas vetoriais GeoJSON (EPSG:31981 = SIRGAS 2000 / UTM 21S), prefixo
+   leno_agrimat_:
+   - Eixos completos e eixo PTV03-RAMO 200 (polilinha com arcos discretizados)
+   - Vertices TIN com Z para conferencia 3D no QGIS
+
+b) Conferencia de curvas (PC, PT, PI) extraida do XML:
+   - 372 pontos (GeoJSON + CSV) para estaqueamento e verificacao fisica com
+     equipa Saitech/MOBA
+   - Nota: no arco 2 do PTV03-RAMO 200 o LandXML nao inclui tag PI; PC e PT
+     mantem-se conforme geometria Civil 3D
+
+c) Google Cloud SDK (conta lenobr364@gmail.com):
+   - Projeto GCP ativo configurado para pipeline de armazenamento (ex.: tiles)
+   - O GCP nao substitui validacao geodesica dos pontos: os valores N/E
+     permanecem os do LandXML; o papel do cloud e distribuir ficheiros e
+     imagens com CORS e HTTPS
+
+d) Fundo de satelite alta resolucao:
+   - Modelo de URLs XYZ para bucket GCS: ver leno_agrimat_gcs_basemap_qgis.json
+   - CORS modelo: leno_agrimat_gcs_cors.json
+   - Nota: WMS OGC classico requer GeoServer/MapServer; raster Leno no QGIS
+     via XYZ a partir do GCS e o caminho suportado
+
+4. COMPARATIVO RESUMIDO
+-----------------------
+| Aspeto              | Projeto original (Civil 3D)     | Leno.Software        |
+|---------------------|----------------------------------|----------------------|
+| Planta / eixos      | LandXML CoordGeom               | GeoJSON EPSG:31981   |
+| Cotas execucao 3D   | TIN TOP (vertices P N E Z)      | GeoJSON pontos + Z   |
+| Pontos de curva     | Start/End/PI nos arcos          | CSV + GeoJSON PC/PT/PI|
+| Sistema coordenadas | SA-SIR-21S no XML               | CRS explicito 31981  |
+| Satelite / nuvem    | N/A                             | URLs GCS + CORS      |
+
+5. RECOMENDACOES PARA ABERTURA NO QGIS
+--------------------------------------
+- Carregar leno_agrimat_eixos_todos.geojson e/ou leno_agrimat_ptv03_ramo200_eixo.geojson
+- Definir CRS da camada EPSG:31981 se o QGIS nao ler do GeoJSON legado
+- Sobrepor XYZ do bucket (URL do JSON de basemap) ou QuickMapServices para
+  contexto mundial ate os tiles Leno estarem publicados
+- Carregar leno_agrimat_ramo200_conferencia_pc_pt_pi.geojson para marcos de
+  campo
+
+6. PROXIMA ACAO (CAMPO + MOBA)
+------------------------------
+Medir um subconjunto de pontos PC/PT/PI com GNSS na mesma rede/calibracao do
+obra e comparar com o CSV (tolerancias contratuais). Anexar print do QGIS com
+camadas Leno visiveis como registo de apresentacao.
+
+================================================================================
+Leno.Software - Autoridade tecnica em dados geoespaciais e integracao GCP/QGIS
+================================================================================

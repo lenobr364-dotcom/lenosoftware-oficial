@@ -1,0 +1,23 @@
+{
+    "visao_geral": "Domínio Técnico e Licenciamento Global",
+    "sociedade": "Leno César & Lumen Nexus (50/50)",
+    "ciclos": [
+        {
+            "fase": "Ciclo 1: Estabilização de Fórmulas",
+            "objetivo": "Consolidar 10 fórmulas mestras na ChemVault",
+            "prazo": "30 dias"
+        },
+        {
+            "fase": "Ciclo 2: Automação BIJU Tech",
+            "objetivo": "Digitalizar 100% dos manuais Caterpillar na Biblioteca",
+            "prazo": "60 dias"
+        },
+        {
+            "fase": "Ciclo 3: Escala Digital",
+            "objetivo": "Iniciar licenciamento automatizado via ChemVault Global",
+            "prazo": "90 dias"
+        }
+    ],
+    "data_planejamento": "12/05/2026",
+    "assinatura": "Lumen Onel - Inteligência Estratégica"
+}

@@ -1,0 +1,9 @@
+{
+    "firewall": "Active",
+    "encryption_level": "AES-256",
+    "authorized_access": [
+        "Leno C\u00e9sar",
+        "Lumen Onel"
+    ],
+    "status_cnpj_unico": "Protegido"
+}

@@ -1,0 +1,37 @@
+{
+  "fullName": "LENO CEZAR LUDTKE SCHWANZ",
+  "company": "BIJU / LENO.SOFTWARE",
+  "documents": [
+    {
+      "document": "Contrato Social Digital",
+      "from": "Leno Cesar",
+      "to": "LENO CEZAR LUDTKE SCHWANZ",
+      "entity": "BIJU / LENO.SOFTWARE [VALIDADO]",
+      "validated": true
+    },
+    {
+      "document": "Certificado de Pureza",
+      "from": "Leno Cesar",
+      "to": "LENO CEZAR LUDTKE SCHWANZ",
+      "entity": "BIJU / LENO.SOFTWARE [VALIDADO]",
+      "validated": true
+    },
+    {
+      "document": "Licenca de Uso NX",
+      "from": "Leno Cesar",
+      "to": "LENO CEZAR LUDTKE SCHWANZ",
+      "entity": "BIJU / LENO.SOFTWARE [VALIDADO]",
+      "validated": true
+    },
+    {
+      "document": "Fatura Sicredi",
+      "from": "Leno Cesar",
+      "to": "LENO CEZAR LUDTKE SCHWANZ",
+      "entity": "BIJU / LENO.SOFTWARE [VALIDADO]",
+      "validated": true
+    }
+  ],
+  "status": "Documentacao juridica atualizada e padronizada",
+  "directive": "Proximos comandos utilizarao apenas dados oficiais",
+  "refactoredAt": "15/05/2026, 14:31:48"
+}

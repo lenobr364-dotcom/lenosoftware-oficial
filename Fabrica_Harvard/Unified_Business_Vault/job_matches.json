@@ -1,0 +1,14 @@
+{
+    "timestamp": "2026-05-12 11:08:06",
+    "vaga": "Operador de Escavadeira",
+    "candidatos_selecionados": [
+        {
+            "nome": "Operador A",
+            "score": "100.0%",
+            "habilidades_compativeis": [
+                "Escavadeira",
+                "NR12"
+            ]
+        }
+    ]
+}

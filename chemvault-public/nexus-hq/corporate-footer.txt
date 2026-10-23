@@ -1,0 +1,5 @@
+SEDE: Barra do Garças - MT, Brasil
+MATRIZ: Barra do Garças, Mato Grosso, Brasil
+BANCO: Sicredi - Distrito Barra do Garças
+CNPJ: PENDENTE_ENV_NEXUS_BIJU_CNPJ
+RESPONSÁVEL: LENO CEZAR LUDTKE SCHWANZ

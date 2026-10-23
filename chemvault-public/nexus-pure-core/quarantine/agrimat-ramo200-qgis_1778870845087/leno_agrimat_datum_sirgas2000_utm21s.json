@@ -1,0 +1,13 @@
+{
+  "titulo": "Leno.Software - Alinhamento geodesico / projetado",
+  "fonte_xml": "RAMO 200.xml (LandXML 1.2, Autodesk Civil 3D 2024)",
+  "datum_horizontal": "SIRGAS (SIRGAS 2000)",
+  "projecao": "Transverse Mercator UTM fuso 21 Sul",
+  "nome_sistema_xml": "SA-SIR-21S",
+  "epsg_qgis_camadas": "31981",
+  "epsg_definicao": "EPSG:31981 - SIRGAS 2000 / UTM zone 21S",
+  "nota_tecnica": "As coordenadas N/E nos GeoJSON e CSV sao as mesmas strings numericas do LandXML, expressas em metros no plano UTM indicado no XML. O gcloud autentica e serve armazenamento/APIs no projeto GCP; nao reprojeta pontos. A coerencia com SIRGAS 2000 UTM 21S e garantida ao atribuir EPSG:31981 as camadas no QGIS e ao manter o mesmo ficheiro de calibracao em campo que no Civil 3D.",
+  "conta_gcloud_ativa": "lenobr364@gmail.com",
+  "projeto_gcp_configurado": "gen-lang-client-0276610091",
+  "data_consolidacao": "2026-05-13"
+}

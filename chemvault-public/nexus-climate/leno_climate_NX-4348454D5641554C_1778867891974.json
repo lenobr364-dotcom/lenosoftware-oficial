@@ -1,0 +1,43 @@
+{
+  "formulaId": "NX-4348454D5641554C",
+  "owners": "LENO CESAR & LUMEN ONEL",
+  "zones": [
+    {
+      "zone": {
+        "city": "Cuiaba",
+        "temp": 40,
+        "humidity": 30
+      },
+      "estimatedStabilityPercent": 90.5,
+      "adjustedSafetyIndex": 83,
+      "thermalStatus": "ESTÁVEL",
+      "approved": true
+    },
+    {
+      "zone": {
+        "city": "Belo Horizonte",
+        "temp": 24,
+        "humidity": 65
+      },
+      "estimatedStabilityPercent": 99.4,
+      "adjustedSafetyIndex": 100,
+      "thermalStatus": "ESTÁVEL",
+      "approved": true
+    },
+    {
+      "zone": {
+        "city": "Europa (Portugal)",
+        "temp": 18,
+        "humidity": 55
+      },
+      "estimatedStabilityPercent": 99.55,
+      "adjustedSafetyIndex": 100,
+      "thermalStatus": "ESTÁVEL",
+      "approved": true
+    }
+  ],
+  "globallyResilient": true,
+  "conclusion": "Formula resiliente para distribuicao global.",
+  "registry": "Laudo anexado ao ativo na BIJU",
+  "testedAt": "15/05/2026, 13:58:11"
+}

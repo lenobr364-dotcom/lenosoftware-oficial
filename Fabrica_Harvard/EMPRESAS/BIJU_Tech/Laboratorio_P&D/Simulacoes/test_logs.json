@@ -1,0 +1,14 @@
+[
+    {
+        "timestamp": "12/05/2026 11:33",
+        "formula_ref": "CHEM-V1-DGR",
+        "parametros": {
+            "temperatura": "40°C",
+            "agitacao": "1200 RPM",
+            "tempo": "45 min"
+        },
+        "resultado_estabilidade": "92.5%",
+        "status": "Aprovado para Escala Industrial",
+        "assinatura": "Leno César - P&D Master"
+    }
+]

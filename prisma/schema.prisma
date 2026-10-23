@@ -1,0 +1,210 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+/// Moedas suportadas para precificação e pedidos (armazenamento canônico).
+enum CurrencyCode {
+  USD
+  EUR
+  BRL
+}
+
+enum SecuritySeverity {
+  INFO
+  WARNING
+  CRITICAL
+}
+
+/** Eventos de segurança (acesso negado, anomalias) para painel admin e alertas. */
+model SecurityEvent {
+  id          String           @id @default(cuid())
+  type        String
+  severity    SecuritySeverity @default(WARNING)
+  title       String
+  detail      String?
+  requestPath String?
+  requestId   String?
+  ip          String?
+  userAgent   String?
+  region      String?
+  createdAt   DateTime         @default(now())
+
+  @@index([createdAt])
+  @@index([severity, createdAt])
+}
+
+/** Sessões / ativações de licença observadas (agregação por região no admin). */
+model LicenseActivity {
+  id        String   @id @default(cuid())
+  subject   String
+  channel   String
+  region    String   @default("unknown")
+  ip        String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([region, createdAt])
+}
+
+/** Contagens diárias de impressões de fórmulas (dashboard / cofre). */
+model FormulaUsageDaily {
+  id         String   @id @default(cuid())
+  formulaKey String
+  day        String
+  count      Int      @default(0)
+
+  @@unique([formulaKey, day])
+  @@index([day])
+}
+
+/// Política de geofencing por `subject` de licença (ex.: tenant sob contrato EUA).
+model LicenseGeoPolicy {
+  id                      String   @id @default(cuid())
+  subject                 String   @unique
+  /// Códigos ISO2 (ex.: "US,CA"). Região `unknown` nunca cumpre; ver código (acesso leniente sem CDN).
+  allowedRegionCodes      String
+  anomalyWindowMinutes    Int      @default(15)
+  /// Nº mínimo de atividades fora da região permitida na janela → suspensão + alerta.
+  massOffRegionThreshold  Int      @default(6)
+  suspendMinutes          Int      @default(45)
+  enabled                 Boolean  @default(true)
+  createdAt               DateTime @default(now())
+  updatedAt               DateTime @updatedAt
+}
+
+/// Suspensão temporária do `subject` (portal) após anomalia ou ação admin.
+model LicenseSuspension {
+  id        String   @id @default(cuid())
+  subject   String   @unique
+  reason    String
+  until     DateTime
+  createdAt DateTime @default(now())
+}
+
+model LicenseRequest {
+  id             String       @id @default(uuid())
+  company        String
+  country        String
+  corporateEmail String
+  status         String       @default("Pendente")
+  currencyCode   CurrencyCode @default(BRL)
+  /// Sempre UTC (Prisma DateTime com SQLite ISO-8601).
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @default(now()) @updatedAt
+}
+
+/** Registo de aceite dos termos de licenciamento internacional (desbloqueia Solupan / ARLA 32 no cofre). */
+model InternationalLicenseAcceptance {
+  id              String       @id @default(uuid())
+  transactionCode String       @unique
+  termsVersion    String
+  locale          String
+  signerEmail     String?
+  currencyCode    CurrencyCode @default(BRL)
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @default(now()) @updatedAt
+}
+
+model Formula {
+  id               String       @id @default(cuid())
+  nome             String
+  /// Industrial ou Limpeza (texto livre; UI deriva `ProductLine` em `lib/product-line.ts`).
+  categoria        String
+  descricao        String?
+  ativo_principal  String?
+  instrucoes       String
+  licenciada       Boolean      @default(false)
+  currencyCode     CurrencyCode @default(BRL)
+  createdAt        DateTime     @default(now())
+  updatedAt        DateTime     @default(now()) @updatedAt
+
+  @@index([nome])
+  @@index([categoria])
+  @@index([licenciada, nome])
+}
+
+/// Fórmula industrial estruturada para licenciamento (BOM tipado, pH, margem, EPI).
+model IndustrialFormula {
+  id                            String       @id @default(cuid())
+  /// Código de negócio único (ex.: CHM-IND-001).
+  idFormula                     String       @unique
+  nomeComercial                 String
+  aplicacao                     String
+  phIdeal                       Float
+  margemLucroEstimadaPercentual Float
+  instrucoesSeguranca           String
+  licenciada                    Boolean      @default(false)
+  ingredientes                  Ingredient[]
+  createdAt                     DateTime     @default(now())
+  updatedAt                     DateTime     @updatedAt
+
+  @@index([licenciada, nomeComercial])
+}
+
+/// Componente da BOM de uma fórmula industrial.
+model Ingredient {
+  id                     String            @id @default(cuid())
+  industrialFormulaId    String
+  industrialFormula      IndustrialFormula @relation(fields: [industrialFormulaId], references: [id], onDelete: Cascade)
+  nomeTecnico            String
+  concentracaoPercentual Float
+  custoPorKgDolar        Float
+  funcaoQuimica          String
+  /// Ordem de exibição / adição na receita.
+  ordem                  Int               @default(0)
+
+  @@index([industrialFormulaId])
+}
+
+/// Licença por cliente para uso industrial de uma fórmula (contrato inteligente simulado on-chain).
+model FormulaIndustrialLicense {
+  id             String   @id @default(cuid())
+  clientSubject  String
+  formulaCode    String
+  validFrom      DateTime
+  validUntil     DateTime
+  status         String   @default("ACTIVE")
+  /// SHA-256 hex do payload canónico do grant (imutável).
+  grantHash      String   @unique
+  /// Âncora simulada estilo tx (hex); substituível por hash de rede real.
+  chainAnchor    String?
+  createdAt      DateTime @default(now())
+
+  @@index([clientSubject, formulaCode, status])
+  @@index([validUntil])
+}
+
+/// Registo imutável de alterações a fórmulas (append-only; não atualizar nem apagar via aplicação).
+model FormulaAuditLog {
+  id               String   @id @default(cuid())
+  formulaId        String
+  /// CREATE | UPDATE | DELETE
+  action           String
+  /// Subject da sessão core (ex.: ceo:..., portal:...).
+  actorSubject     String?
+  requestId        String?
+  snapshotBefore   String?
+  snapshotAfter    String?
+  /// SHA-256 hex do par action+snapshots+timestamp para integridade.
+  rowIntegrity     String?
+  createdAt        DateTime @default(now())
+
+  @@index([formulaId, createdAt])
+  @@index([createdAt])
+}
+
+/// Preferências da conta executiva (senha em BD opcional; MFA pode sobrepor env).
+model ExecutiveSettings {
+  id                   String   @id
+  passwordHash         String?
+  /// Valores: off | totp | email | totp|email — sobrepõe CHEMVAULT_ADMIN_MFA quando não nulo.
+  adminMfaModeOverride String?
+  /// Secret Base32 TOTP guardado na BD (opcional); se vazio usa CHEMVAULT_ADMIN_TOTP_SECRET.
+  totpSecretBase32     String?
+  updatedAt            DateTime @updatedAt
+}

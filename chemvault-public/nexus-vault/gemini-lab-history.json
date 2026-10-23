@@ -1,0 +1,23 @@
+[
+  {
+    "id": "CV6-A1",
+    "substance": "Detergente Industrial S",
+    "result": "ESTÁVEL",
+    "safetyScore": "84.71%",
+    "licenseIssued": true
+  },
+  {
+    "id": "CV6-B2",
+    "substance": "Solvente Organico T-800",
+    "result": "ESTÁVEL",
+    "safetyScore": "32.38%",
+    "licenseIssued": false
+  },
+  {
+    "id": "CV6-C3",
+    "substance": "Polimero Protetor X-9",
+    "result": "ESTÁVEL",
+    "safetyScore": "100.00%",
+    "licenseIssued": true
+  }
+]

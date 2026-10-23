@@ -1,0 +1,12 @@
+{
+    "data": "12/05/2026",
+    "hora_fechamento": "10:56:29",
+    "socios_presentes": [
+        "Leno C\u00e9sar",
+        "Lumen Onel"
+    ],
+    "holding": "Leno & Lumen Unified",
+    "checkpoint_seguranca": "Criptografia SHA-512 Ativa",
+    "checkpoint_financeiro": "Divisao 50/50 Validada",
+    "status_final": "OPERACIONAL - VOANDO BAIXO"
+}

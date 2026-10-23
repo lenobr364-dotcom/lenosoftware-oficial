@@ -1,0 +1,13 @@
+{
+    "cert_id": "CERT-B173651A",
+    "timestamp": "2026-05-12 10:30:07",
+    "ativo": "F\u00f3rmula Detergente Industrial V1",
+    "destino": "Alemanha",
+    "holding_origem": "Leno & Lumen Unified",
+    "normas_atingidas": [
+        "ISO-9001",
+        "GHS-Chemical-Standard",
+        "Nexus-V1"
+    ],
+    "assinatura_digital": "VERIFIED_PARTNERSHIP_50_50"
+}

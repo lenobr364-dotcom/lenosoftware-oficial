@@ -1,0 +1,37 @@
+{
+  "backupId": "NEXUS-BKP-1778866622598",
+  "createdAt": "15/05/2026, 13:37:02",
+  "algorithm": "AES-256-GCM",
+  "assets": [
+    {
+      "id": "formulas_v6",
+      "label": "Formulas_V6",
+      "filesBackedUp": 1,
+      "protected": true
+    },
+    {
+      "id": "licencas_emitidas",
+      "label": "Licencas_Emitidas",
+      "filesBackedUp": 2,
+      "protected": true
+    },
+    {
+      "id": "log_sicredi_biju",
+      "label": "Log_Sicredi_BIJU",
+      "filesBackedUp": 1,
+      "protected": true
+    },
+    {
+      "id": "mercado_global",
+      "label": "Mercado_Global",
+      "filesBackedUp": 1,
+      "protected": true
+    }
+  ],
+  "encryptedFilePath": "C:\\Users\\Leno\\Documents\\ChemVault-Global\\chemvault-public\\nexus-secure-backup\\NEXUS-BKP-1778866622598.enc.json",
+  "manifestPath": "",
+  "payloadSha256": "162773f1d87a3d641242075f4aac98feb4f02ea556dd7eb1271b006cbac05e7c",
+  "accessNote": "Exclusivo via Credenciais Leno Cesar",
+  "location": "Criptografia em repouso (AES-256-GCM)",
+  "cloudSync": "Gemini Cloud Sincronizado (simulado)"
+}

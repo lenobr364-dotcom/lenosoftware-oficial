@@ -1,0 +1,29 @@
+{
+  "startedAt": "15/05/2026, 13:35:14",
+  "isWatching": true,
+  "focus": "MONITORAMENTO DE LICENCIAMENTOS",
+  "commander": "LENO CESAR",
+  "connection": "STARLINK ILIMITADA (TARGET)",
+  "financialDestination": "CONTA BIJU",
+  "logs": [
+    {
+      "formulaId": "CV6-A1",
+      "status": "APROVADO",
+      "profitBRL": 5000
+    },
+    {
+      "formulaId": "CV6-B2",
+      "status": "REJEITADO",
+      "profitBRL": 0
+    },
+    {
+      "formulaId": "CV6-C3",
+      "status": "APROVADO",
+      "profitBRL": 5000
+    }
+  ],
+  "totalProfitBRL": 10000,
+  "approvedCount": 2,
+  "rejectedCount": 1,
+  "closingMessage": "Pode cuidar da mineracao, Leno. Eu cuido do nosso imperio."
+}

@@ -1,0 +1,11 @@
+[
+    {
+        "insumo": "Tensoativo Ani\u00f4nico Premium",
+        "quantidade_atual": 50.0,
+        "unidade": "Litros",
+        "limite_minimo": 100.0,
+        "status_estoque": "ALERTA: REPOSI\u00c7\u00c3O NECESS\u00c1RIA",
+        "ultima_conferencia": "12/05/2026 11:14",
+        "responsavel_tecnico": "Leno C\u00e9sar - T\u00e9cnico em Qu\u00edmica"
+    }
+]

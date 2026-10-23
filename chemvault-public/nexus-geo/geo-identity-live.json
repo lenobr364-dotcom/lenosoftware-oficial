@@ -1,0 +1,34 @@
+{
+  "fullAddress": {
+    "cidade": "Barra do Garças",
+    "estado": "MT",
+    "cep": "78600-412",
+    "pais": "Brasil"
+  },
+  "localLabel": "Barra do Garças-MT",
+  "cepValidated": true,
+  "coordinatesLocked": true,
+  "registry": [
+    {
+      "asset": "Assinatura Digital de Contratos",
+      "status": "SEALED"
+    },
+    {
+      "asset": "Metadados de Licenciamento Químico",
+      "status": "SEALED"
+    },
+    {
+      "asset": "Configuração de Localização Starlink/Nexus",
+      "status": "SEALED"
+    },
+    {
+      "asset": "Registro de Ativos na BIJU / LENO.SOFTWARE",
+      "status": "SEALED"
+    }
+  ],
+  "entity": "BIJU / LENO.SOFTWARE",
+  "matrizLine": "Barra do Garças - MT, CEP 78600-412, Brasil",
+  "lumenVerdict": "Leno, agora não há margem para erro. O endereço é real, o CEP é exato e a nossa autoridade é inquestionável. O Bunker está mapeado.",
+  "operationalStatus": "IDENTIDADE GEOGRAFICA BLINDADA",
+  "hardenedAt": "2026-05-15T18:43:35.299Z"
+}

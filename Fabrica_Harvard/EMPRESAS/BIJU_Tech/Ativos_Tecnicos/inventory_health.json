@@ -1,0 +1,12 @@
+[
+    {
+        "ativo_id": "EQUIP-EDFF",
+        "nome": "Misturador Homogeneizador V3",
+        "modelo": "Industrial-Lab-2026",
+        "ultima_calibracao": "10/04/2026",
+        "saude_tecnica": "92/100",
+        "status": "OPERACIONAL",
+        "data_registro": "12/05/2026",
+        "responsavel": "Leno César - Engenheiro Chefe"
+    }
+]

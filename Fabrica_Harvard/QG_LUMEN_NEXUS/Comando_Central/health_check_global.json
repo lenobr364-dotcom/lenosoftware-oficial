@@ -1,0 +1,21 @@
+{
+    "timestamp": "12/05/2026 11:29",
+    "holding_status": "Sincronizado",
+    "unidades": {
+        "ChemVault_Global": {
+            "integridade_dados": "100%",
+            "status_operacional": "Ativo",
+            "conexao_qg": "Segura (Nexus-Link)"
+        },
+        "BIJU_Industrial": {
+            "integridade_dados": "100%",
+            "status_operacional": "Ativo",
+            "conexao_qg": "Segura (Nexus-Link)"
+        },
+        "Radio_Piao": {
+            "integridade_dados": "100%",
+            "status_operacional": "Ativo",
+            "conexao_qg": "Segura (Nexus-Link)"
+        }
+    }
+}

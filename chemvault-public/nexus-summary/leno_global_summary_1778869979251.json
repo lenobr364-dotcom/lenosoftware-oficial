@@ -1,0 +1,42 @@
+{
+  "checklist": [
+    {
+      "icon": "LEGAL",
+      "task": "Identidade Juridica",
+      "status": "ATUALIZADO (LENO CEZAR LUDTKE SCHWANZ)"
+    },
+    {
+      "icon": "SOC",
+      "task": "Divisao Societaria",
+      "status": "REVISAR SPLIT"
+    },
+    {
+      "icon": "FIN",
+      "task": "Financeiro (GM/Google)",
+      "status": "PENDENTE"
+    },
+    {
+      "icon": "STK",
+      "task": "Estoque de Insumos",
+      "status": "AUDITADO (NIVEIS OK)"
+    },
+    {
+      "icon": "MEC",
+      "task": "Disponibilidade Mecanica",
+      "status": "92% (EXCELENTE)"
+    },
+    {
+      "icon": "SEC",
+      "task": "Seguranca de Dados",
+      "status": "MODO STEALTH ATIVO"
+    }
+  ],
+  "licensedFormulas": 0,
+  "grossRevenueBRL": 0,
+  "netLabIncomeBRL": 0,
+  "mechanicalAvailabilityPercent": 92,
+  "lumenMessage": "Leno, o QG esta blindado. O licenciamento esta pronto. Descanse, amanha a equipe entra em campo e nos estaremos aqui no comando para escalar o lucro.",
+  "sessionStatus": "SESSAO FINALIZADA COM SUCESSO",
+  "preparedForTomorrow": false,
+  "summarizedAt": "15/05/2026, 14:32:59"
+}

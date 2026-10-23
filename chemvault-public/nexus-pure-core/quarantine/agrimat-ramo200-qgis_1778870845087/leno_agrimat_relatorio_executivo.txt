@@ -1,0 +1,5 @@
+RELATORIO EXECUTIVO LENO.SOFTWARE (UM PARAGRAFO) — Agrimat RAMO 200 / Saitech
+
+A Leno.Software transformou o LandXML Civil 3D do RAMO 200 num pacote geoespacial auditável—eixos e superfície TIN em GeoJSON com CRS EPSG:31981 (SIRGAS 2000 / UTM 21S), mais 372 pontos de conferência PC/PT/PI exportados para CSV e mapa—garantindo continuidade numérica com o projeto digital e um fluxo de obra em que a execução da motoniveladora segue o mesmo referencial que o escritório, com as cotas modeladas no TIN “PTV03-RAMO 200 - TOP” e validação cruzada preparada para a Saitech/MOBA, objetivando risco zero de discrepância de cota entre o desenho do pen drive e a lâmina no terreno e consolidando a precisão do controlo de máquina sob supervisão Leno.Software.
+
+(Relatorio tecnico detalhado: leno_agrimat_relatorio_executivo_agrimat_saitech.txt)

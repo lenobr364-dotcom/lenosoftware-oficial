@@ -1,0 +1,21 @@
+{
+    "data_reestruturacao": "12/05/2026 11:26",
+    "status_holding": "Organizado por Módulos Independentes",
+    "unidades_negocio": [
+        {
+            "nome": "ChemVault_Global",
+            "foco": "Império Digital de Fórmulas Químicas",
+            "diretorio_raiz": "Fabrica_Harvard/EMPRESAS/ChemVault_Global"
+        },
+        {
+            "nome": "BIJU_Industrial",
+            "foco": "Linha de Produção e Manutenção",
+            "diretorio_raiz": "Fabrica_Harvard/EMPRESAS/BIJU_Industrial"
+        },
+        {
+            "nome": "Radio_Piao",
+            "foco": "Ecossistema Social de Vagas e Obras",
+            "diretorio_raiz": "Fabrica_Harvard/EMPRESAS/Radio_Piao"
+        }
+    ]
+}

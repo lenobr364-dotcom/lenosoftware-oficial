@@ -1,0 +1,7452 @@
+{
+  "type": "FeatureCollection",
+  "name": "leno_agrimat_conferencia_pc_pt_pi",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::31981"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R200 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "179.500002540555",
+        "Rotacao": "cw",
+        "Delta_graus": "0.797997796615",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593137.6648443236,
+          8263488.583252796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R200 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "179.500002540555",
+        "Rotacao": "cw",
+        "Delta_graus": "0.797997796615",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593137.1015828459,
+          8263486.147531854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R200 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "179.500002540555",
+        "Rotacao": "cw",
+        "Delta_graus": "0.797997796615",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593137.3916947129,
+          8263487.363431061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R200 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "2.039999999983",
+        "Rotacao": "ccw",
+        "Delta_graus": "158.481068632196",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593137.1015828459,
+          8263486.147531854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R200 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "2.039999999983",
+        "Rotacao": "ccw",
+        "Delta_graus": "158.481068632196",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593140.7582029093,
+          8263484.505772775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R200 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "2.039999999983",
+        "Rotacao": "ccw",
+        "Delta_graus": "158.481068632196",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593134.6100903881,
+          8263475.705340238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R200 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "131.500005778944",
+        "Rotacao": "cw",
+        "Delta_graus": "1.089136280749",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593140.7582029093,
+          8263484.505772775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R200 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "131.500005778944",
+        "Rotacao": "cw",
+        "Delta_graus": "1.089136280749",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593142.2091621733,
+          8263486.541198157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R200 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "131.500005778944",
+        "Rotacao": "cw",
+        "Delta_graus": "1.089136280749",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593141.4740093923,
+          8263485.530381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R300 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "144.500002375497",
+        "Rotacao": "cw",
+        "Delta_graus": "0.991116322768",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592996.5004864511,
+          8263291.366375644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R300 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "144.500002375497",
+        "Rotacao": "cw",
+        "Delta_graus": "0.991116322768",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592994.1369234147,
+          8263290.553113702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R300 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "144.500002375497",
+        "Rotacao": "cw",
+        "Delta_graus": "0.991116322768",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592995.3222220212,
+          8263290.949523046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R300 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "2.039999999867",
+        "Rotacao": "ccw",
+        "Delta_graus": "160.036530329984",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592994.1369234147,
+          8263290.553113702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R300 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "2.039999999867",
+        "Rotacao": "ccw",
+        "Delta_graus": "160.036530329984",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592994.7315632408,
+          8263286.579114898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R300 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "2.039999999867",
+        "Rotacao": "ccw",
+        "Delta_graus": "160.036530329984",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592983.1443649775,
+          8263286.876780299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R300 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "406.499956165839",
+        "Rotacao": "cw",
+        "Delta_graus": "0.352373161065",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592994.7315632408,
+          8263286.579114898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R300 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "406.499956165839",
+        "Rotacao": "cw",
+        "Delta_graus": "0.352373161065",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592997.2305294944,
+          8263286.507228435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R300 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "406.499956165839",
+        "Rotacao": "cw",
+        "Delta_graus": "0.352373161065",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592995.9811568946,
+          8263286.547013884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R500 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "51.50000067662",
+        "Rotacao": "cw",
+        "Delta_graus": "2.78215910702",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593113.4595357709,
+          8263456.328556147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R500 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "51.50000067662",
+        "Rotacao": "cw",
+        "Delta_graus": "2.78215910702",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593113.5208977885,
+          8263453.828826225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R500 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "51.50000067662",
+        "Rotacao": "cw",
+        "Delta_graus": "2.78215910702",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593113.520568113,
+          8263455.079436235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R500 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "2.039999307738",
+        "Rotacao": "ccw",
+        "Delta_graus": "155.753146094203",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593113.5208977885,
+          8263453.828826225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R500 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "2.039999307738",
+        "Rotacao": "ccw",
+        "Delta_graus": "155.753146094203",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593117.4211577469,
+          8263452.992090308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R500 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "2.039999307738",
+        "Rotacao": "ccw",
+        "Delta_graus": "155.753146094203",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593113.5234012532,
+          8263444.332026766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R500 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "170.500008210209",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.840121554734",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593117.4211577469,
+          8263452.992090308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R500 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "170.500008210209",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.840121554734",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593118.4304876633,
+          8263455.2792835925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R500 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "170.500008210209",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.840121554734",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593117.9342070697,
+          8263454.131986962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R600 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "193.300007831686",
+        "Rotacao": "cw",
+        "Delta_graus": "0.741026597122",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593139.5346316441,
+          8263569.5515014175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R600 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "193.300007831686",
+        "Rotacao": "cw",
+        "Delta_graus": "0.741026597122",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593140.0265550284,
+          8263572.00262593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R600 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "193.300007831686",
+        "Rotacao": "cw",
+        "Delta_graus": "0.741026597122",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593139.7726679106,
+          8263570.77865425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R600 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "2.04000000017",
+        "Rotacao": "ccw",
+        "Delta_graus": "168.994755602416",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593140.0265550284,
+          8263572.00262593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R600 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "2.04000000017",
+        "Rotacao": "ccw",
+        "Delta_graus": "168.994755602416",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593136.1474253208,
+          8263573.204993049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R600 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "2.04000000017",
+        "Rotacao": "ccw",
+        "Delta_graus": "168.994755602416",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593144.3275265185,
+          8263592.737302453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R600 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "56.500000181405",
+        "Rotacao": "cw",
+        "Delta_graus": "2.5354183375",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593136.1474253208,
+          8263573.204993049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R600 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "56.500000181405",
+        "Rotacao": "cw",
+        "Delta_graus": "2.5354183375",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593135.1309197573,
+          8263570.920979817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R600 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "56.500000181405",
+        "Rotacao": "cw",
+        "Delta_graus": "2.5354183375",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593135.6644443576,
+          8263572.05173915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R700 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "159.500000096566",
+        "Rotacao": "cw",
+        "Delta_graus": "1.796179490493",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592860.0282510956,
+          8263266.138789813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R700 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "159.500000096566",
+        "Rotacao": "cw",
+        "Delta_graus": "1.796179490493",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592864.3480580009,
+          8263268.656580173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R700 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "159.500000096566",
+        "Rotacao": "cw",
+        "Delta_graus": "1.796179490493",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592862.1684202246,
+          8263267.431543439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R700 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "2.03999999937",
+        "Rotacao": "ccw",
+        "Delta_graus": "153.494349187198",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592864.3480580009,
+          8263268.656580173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R700 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "2.03999999937",
+        "Rotacao": "ccw",
+        "Delta_graus": "153.494349187198",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592863.247761442,
+          8263272.472454757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R700 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "2.03999999937",
+        "Rotacao": "ccw",
+        "Delta_graus": "153.494349187198",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592871.898839091,
+          8263272.900397357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R700 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "54.499998946864",
+        "Rotacao": "cw",
+        "Delta_graus": "5.258338838781",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592863.247761442,
+          8263272.472454757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R700 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "54.499998946864",
+        "Rotacao": "cw",
+        "Delta_graus": "5.258338838781",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592858.24779275,
+          8263272.454759691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Aux - R700 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "54.499998946864",
+        "Rotacao": "cw",
+        "Delta_graus": "5.258338838781",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592860.7481833738,
+          8263272.348808197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Auxi - R800 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "131.50000039799",
+        "Rotacao": "cw",
+        "Delta_graus": "2.178677997505",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592778.0056684766,
+          8263192.547575375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Auxi - R800 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "131.50000039799",
+        "Rotacao": "cw",
+        "Delta_graus": "2.178677997505",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592776.0134687684,
+          8263187.961603251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Auxi - R800 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "131.50000039799",
+        "Rotacao": "cw",
+        "Delta_graus": "2.178677997505",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592777.0531693933,
+          8263190.23564863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Auxi - R800 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "2.04000000047",
+        "Rotacao": "ccw",
+        "Delta_graus": "162.788581215014",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592776.0134687684,
+          8263187.961603251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Auxi - R800 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "2.04000000047",
+        "Rotacao": "ccw",
+        "Delta_graus": "162.788581215014",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592779.3899657123,
+          8263185.754127184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "Auxi - R800 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "2.04000000047",
+        "Rotacao": "ccw",
+        "Delta_graus": "162.788581215014",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592770.4085050087,
+          8263175.702360895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→450.",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          594125.1963344105,
+          8263517.812730455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→450.",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          594051.876842192,
+          8263472.9323191885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→450.",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          594077.2518589154,
+          8263486.323268315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 3,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "450.000000000156",
+        "Rotacao": "cw",
+        "Delta_graus": "20.516378464444",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          594051.8768421923,
+          8263472.9323191885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 3,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "450.000000000156",
+        "Rotacao": "cw",
+        "Delta_graus": "20.516378464444",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593899.0725435332,
+          8263424.567357039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 3,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "450.000000000156",
+        "Rotacao": "cw",
+        "Delta_graus": "20.516378464444",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593979.8511672887,
+          8263434.922801444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "450.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593899.072543533,
+          8263424.56735704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "450.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593813.2823031258,
+          8263419.087037205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "450.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593870.6138177888,
+          8263420.919080571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 6,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "1500.",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.243341230293",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592739.5085955778,
+          8263384.774320905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 6,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "1500.",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.243341230293",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592733.1416384652,
+          8263384.55732783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 6,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "1500.",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.243341230293",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592736.3248866198,
+          8263384.672584662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 8,
+        "id_curva": 3,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→680.",
+        "Rotacao": "cw",
+        "Delta_graus": "3.62311546921",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592081.3457818147,
+          8263360.957557355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 8,
+        "id_curva": 3,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→680.",
+        "Rotacao": "cw",
+        "Delta_graus": "3.62311546921",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591995.3708851691,
+          8263359.658053072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 8,
+        "id_curva": 3,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→680.",
+        "Rotacao": "cw",
+        "Delta_graus": "3.62311546921",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592024.0379871504,
+          8263358.882596634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 9,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "680.000000000123",
+        "Rotacao": "cw",
+        "Delta_graus": "14.879786913574",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591995.3708851691,
+          8263359.658053072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 9,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "680.000000000123",
+        "Rotacao": "cw",
+        "Delta_graus": "14.879786913574",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591821.4328698812,
+          8263387.174108621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 9,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "680.000000000123",
+        "Rotacao": "cw",
+        "Delta_graus": "14.879786913574",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591906.6052798983,
+          8263362.059197775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 10,
+        "id_curva": 4,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "680.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "3.62311546921",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591821.4328698813,
+          8263387.174108621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 10,
+        "id_curva": 4,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "680.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "3.62311546921",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591740.0571604684,
+          8263414.947575853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 10,
+        "id_curva": 4,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "680.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "3.62311546921",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591793.9262004124,
+          8263395.285039745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 12,
+        "id_curva": 5,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→800.",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.079648148828",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590909.9929405857,
+          8263717.926201652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 12,
+        "id_curva": 5,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→800.",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.079648148828",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590828.7014340658,
+          8263745.958180585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 12,
+        "id_curva": 5,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→800.",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.079648148828",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590856.1270331149,
+          8263737.587594387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 13,
+        "id_curva": 4,
+        "tipo_ponto": "PC",
+        "Raio_m": "799.99999999112",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.502344121953",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590828.7014340659,
+          8263745.958180585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 13,
+        "id_curva": 4,
+        "tipo_ponto": "PT",
+        "Raio_m": "799.99999999112",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.502344121953",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590795.071879658,
+          8263755.424689128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 13,
+        "id_curva": 4,
+        "tipo_ponto": "PI",
+        "Raio_m": "799.99999999112",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.502344121953",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590811.990033709,
+          8263751.058678732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 14,
+        "id_curva": 6,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "800.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.079648148828",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590795.0718796579,
+          8263755.424689128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 14,
+        "id_curva": 6,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "800.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.079648148828",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590711.0944215569,
+          8263773.914886694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 14,
+        "id_curva": 6,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "800.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.079648148828",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590767.3069706735,
+          8263762.589884628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 16,
+        "id_curva": 7,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→430.",
+        "Rotacao": "cw",
+        "Delta_graus": "5.729577951308",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589823.1101738442,
+          8263952.81485829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 16,
+        "id_curva": 7,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→430.",
+        "Rotacao": "cw",
+        "Delta_graus": "5.729577951308",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589739.4541390466,
+          8263972.591008666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 16,
+        "id_curva": 7,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→430.",
+        "Rotacao": "cw",
+        "Delta_graus": "5.729577951308",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589766.8766641065,
+          8263964.144083241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 17,
+        "id_curva": 5,
+        "tipo_ponto": "PC",
+        "Raio_m": "430.000000000564",
+        "Rotacao": "cw",
+        "Delta_graus": "42.059504523561",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589739.4541390468,
+          8263972.591008667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 17,
+        "id_curva": 5,
+        "tipo_ponto": "PT",
+        "Raio_m": "430.000000000564",
+        "Rotacao": "cw",
+        "Delta_graus": "42.059504523561",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589496.7620792692,
+          8264163.228725992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 17,
+        "id_curva": 5,
+        "tipo_ponto": "PI",
+        "Raio_m": "430.000000000564",
+        "Rotacao": "cw",
+        "Delta_graus": "42.059504523561",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589581.4618260191,
+          8264021.2571793785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 18,
+        "id_curva": 8,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "430.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "5.729577951308",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589496.7620792688,
+          8264163.228725992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 18,
+        "id_curva": 8,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "430.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "5.729577951308",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589457.7358723113,
+          8264239.821045792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 18,
+        "id_curva": 8,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "430.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "5.729577951308",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589482.0608518252,
+          8264187.870546982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 20,
+        "id_curva": 9,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→600.",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.106197531771",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588316.077996128,
+          8266678.042878777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 20,
+        "id_curva": 9,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→600.",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.106197531771",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588277.7684721833,
+          8266755.016929223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 20,
+        "id_curva": 9,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→600.",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.106197531771",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588291.7592197527,
+          8266729.980129635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 21,
+        "id_curva": 6,
+        "tipo_ponto": "PC",
+        "Raio_m": "600.00000000734",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.842183335232",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588277.768472183,
+          8266755.016929223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 21,
+        "id_curva": 6,
+        "tipo_ponto": "PT",
+        "Raio_m": "600.00000000734",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.842183335232",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588273.4098867924,
+          8266762.683857931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 21,
+        "id_curva": 6,
+        "tipo_ponto": "PI",
+        "Raio_m": "600.00000000734",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.842183335232",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588275.6173537959,
+          8266758.866410438
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 22,
+        "id_curva": 10,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "600.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.106197531771",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588273.4098867927,
+          8266762.683857931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 22,
+        "id_curva": 10,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "600.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.106197531771",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588226.8632767488,
+          8266834.975193238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 22,
+        "id_curva": 10,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "600.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.106197531771",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588259.0526511307,
+          8266787.512312079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 25,
+        "id_curva": 7,
+        "tipo_ponto": "PC",
+        "Raio_m": "5000.",
+        "Rotacao": "cw",
+        "Delta_graus": "0.265721528741",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586872.1348755402,
+          8268832.977890646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 25,
+        "id_curva": 7,
+        "tipo_ponto": "PT",
+        "Raio_m": "5000.",
+        "Rotacao": "cw",
+        "Delta_graus": "0.265721528741",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586859.167404541,
+          8268852.201674738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 25,
+        "id_curva": 7,
+        "tipo_ponto": "PI",
+        "Raio_m": "5000.",
+        "Rotacao": "cw",
+        "Delta_graus": "0.265721528741",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586865.6288513934,
+          8268842.5747478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 27,
+        "id_curva": 11,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→750.",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.284958025417",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586664.5908280077,
+          8269142.101836272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 27,
+        "id_curva": 11,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→750.",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.284958025417",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586615.3148912532,
+          8269212.569710567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 27,
+        "id_curva": 11,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→750.",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.284958025417",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586632.6337644671,
+          8269189.714750671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 28,
+        "id_curva": 8,
+        "tipo_ponto": "PC",
+        "Raio_m": "750.000000004506",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.18604733639",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586615.314891253,
+          8269212.569710567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 28,
+        "id_curva": 8,
+        "tipo_ponto": "PT",
+        "Raio_m": "750.000000004506",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.18604733639",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586597.6016298792,
+          8269235.041382105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 28,
+        "id_curva": 8,
+        "tipo_ponto": "PI",
+        "Raio_m": "750.000000004506",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.18604733639",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586606.6726310579,
+          8269223.974523555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 29,
+        "id_curva": 12,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "750.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.284958025417",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586597.6016298794,
+          8269235.041382105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 29,
+        "id_curva": 12,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "750.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.284958025417",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586540.5910093826,
+          8269299.412403545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO DUPLICAÇÃO",
+        "seq_geom": 29,
+        "id_curva": 12,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "750.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.284958025417",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586579.4235704602,
+          8269257.219089764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→450.",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          594125.1963344105,
+          8263517.812730455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→450.",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          594051.876842192,
+          8263472.9323191885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→450.",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          594077.2518589154,
+          8263486.323268315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 3,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "449.999999999941",
+        "Rotacao": "cw",
+        "Delta_graus": "20.51637846446",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          594051.8768421921,
+          8263472.9323191885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 3,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "449.999999999941",
+        "Rotacao": "cw",
+        "Delta_graus": "20.51637846446",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593899.0725435329,
+          8263424.56735704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 3,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "449.999999999941",
+        "Rotacao": "cw",
+        "Delta_graus": "20.51637846446",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593979.8511672884,
+          8263434.922801443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "450.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593899.0725435329,
+          8263424.56735704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "450.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593813.2823031257,
+          8263419.087037205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "450.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "5.474930042361",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593870.6138177883,
+          8263420.919080571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 7,
+        "id_curva": 3,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→720.",
+        "Rotacao": "cw",
+        "Delta_graus": "2.210485320721",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592075.0180779748,
+          8263360.72572423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 7,
+        "id_curva": 3,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→720.",
+        "Rotacao": "cw",
+        "Delta_graus": "2.210485320721",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592019.4812959164,
+          8263359.4306315975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 7,
+        "id_curva": 3,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→720.",
+        "Rotacao": "cw",
+        "Delta_graus": "2.210485320721",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592038.0023863657,
+          8263359.386088201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 8,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "719.999999999584",
+        "Rotacao": "cw",
+        "Delta_graus": "17.539277747273",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592019.4812959164,
+          8263359.4306315975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 8,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "719.999999999584",
+        "Rotacao": "cw",
+        "Delta_graus": "17.539277747273",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591802.5835654441,
+          8263393.424748269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 8,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "719.999999999584",
+        "Rotacao": "cw",
+        "Delta_graus": "17.539277747273",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591908.4103688945,
+          8263359.697758222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 9,
+        "id_curva": 4,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "720.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "2.210485320721",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591802.5835654441,
+          8263393.424748269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 9,
+        "id_curva": 4,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "720.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "2.210485320721",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591750.1059948493,
+          8263411.648798609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 9,
+        "id_curva": 4,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "720.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "2.210485320721",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591784.9369332172,
+          8263399.048727923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 12,
+        "id_curva": 5,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→1100.",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.947037677902",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590931.2948006617,
+          8263714.566294033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 12,
+        "id_curva": 5,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→1100.",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.947037677902",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590897.1959518726,
+          8263727.1976221055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 12,
+        "id_curva": 5,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→1100.",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.947037677902",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590908.6083754522,
+          8263723.112525043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 13,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "1100.000000001738",
+        "Rotacao": "ccw",
+        "Delta_graus": "7.322411042297",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590897.1959518729,
+          8263727.197622106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 13,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "1100.000000001738",
+        "Rotacao": "ccw",
+        "Delta_graus": "7.322411042297",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590762.1763425848,
+          8263765.999861423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 13,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "1100.000000001738",
+        "Rotacao": "ccw",
+        "Delta_graus": "7.322411042297",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590830.9275706689,
+          8263750.918505539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 14,
+        "id_curva": 6,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "1100.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.947037677902",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590762.1763425847,
+          8263765.999861422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 14,
+        "id_curva": 6,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "1100.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.947037677902",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590726.5739775662,
+          8263773.399425106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 14,
+        "id_curva": 6,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "1100.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.947037677902",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590750.33633504,
+          8263768.597100372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 19,
+        "id_curva": 7,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→435.",
+        "Rotacao": "cw",
+        "Delta_graus": "6.055836122403",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589827.9197001356,
+          8263954.196587871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 19,
+        "id_curva": 7,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→435.",
+        "Rotacao": "cw",
+        "Delta_graus": "6.055836122403",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589738.4894306686,
+          8263975.395088825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 19,
+        "id_curva": 7,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→435.",
+        "Rotacao": "cw",
+        "Delta_graus": "6.055836122403",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589767.7737073145,
+          8263966.233301153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 20,
+        "id_curva": 4,
+        "tipo_ponto": "PC",
+        "Raio_m": "434.999999999122",
+        "Rotacao": "cw",
+        "Delta_graus": "41.508115409056",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589738.4894306685,
+          8263975.395088825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 20,
+        "id_curva": 4,
+        "tipo_ponto": "PT",
+        "Raio_m": "434.999999999122",
+        "Rotacao": "cw",
+        "Delta_graus": "41.508115409056",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589495.9732916522,
+          8264165.734658116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 20,
+        "id_curva": 4,
+        "tipo_ponto": "PI",
+        "Raio_m": "434.999999999122",
+        "Rotacao": "cw",
+        "Delta_graus": "41.508115409056",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589581.167047577,
+          8264024.614480081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 21,
+        "id_curva": 8,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "435.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "6.055836122403",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589495.9732916523,
+          8264165.734658116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 21,
+        "id_curva": 8,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "435.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "6.055836122403",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589454.1308652418,
+          8264247.565953423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 21,
+        "id_curva": 8,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "435.→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "6.055836122403",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589480.1151698293,
+          8264192.0030266205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 23,
+        "id_curva": 5,
+        "tipo_ponto": "PC",
+        "Raio_m": "1200.00000027456",
+        "Rotacao": "cw",
+        "Delta_graus": "3.269994817062",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589391.2800065121,
+          8264381.961609513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 23,
+        "id_curva": 5,
+        "tipo_ponto": "PT",
+        "Raio_m": "1200.00000027456",
+        "Rotacao": "cw",
+        "Delta_graus": "3.269994817062",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589364.053237847,
+          8264444.793496219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 23,
+        "id_curva": 5,
+        "tipo_ponto": "PI",
+        "Raio_m": "1200.00000027456",
+        "Rotacao": "cw",
+        "Delta_graus": "3.269994817062",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589376.7698906353,
+          8264412.988974653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 24,
+        "id_curva": 6,
+        "tipo_ponto": "PC",
+        "Raio_m": "1200.000000184979",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.318527210772",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589364.053237847,
+          8264444.793496219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 24,
+        "id_curva": 6,
+        "tipo_ponto": "PT",
+        "Raio_m": "1200.000000184979",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.318527210772",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589336.3954856275,
+          8264508.545950247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 24,
+        "id_curva": 6,
+        "tipo_ponto": "PI",
+        "Raio_m": "1200.000000184979",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.318527210772",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589351.1477430866,
+          8264477.070314127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 26,
+        "id_curva": 7,
+        "tipo_ponto": "PC",
+        "Raio_m": "1200.000000011618",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.323052245454",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589055.7958261668,
+          8265107.237560745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 26,
+        "id_curva": 7,
+        "tipo_ponto": "PT",
+        "Raio_m": "1200.000000011618",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.323052245454",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589024.4488996811,
+          8265169.365431769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 26,
+        "id_curva": 7,
+        "tipo_ponto": "PI",
+        "Raio_m": "1200.000000011618",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.323052245454",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589041.0234417423,
+          8265138.756140059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 27,
+        "id_curva": 8,
+        "tipo_ponto": "PC",
+        "Raio_m": "1199.999999533508",
+        "Rotacao": "cw",
+        "Delta_graus": "3.252475052874",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589024.4488996812,
+          8265169.365431769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 27,
+        "id_curva": 8,
+        "tipo_ponto": "PT",
+        "Raio_m": "1199.999999533508",
+        "Rotacao": "cw",
+        "Delta_graus": "3.252475052874",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588993.7301129382,
+          8265230.155239708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 27,
+        "id_curva": 8,
+        "tipo_ponto": "PI",
+        "Raio_m": "1199.999999533508",
+        "Rotacao": "cw",
+        "Delta_graus": "3.252475052874",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          589008.2265699527,
+          8265199.32426991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 30,
+        "id_curva": 9,
+        "tipo_ponto": "PC",
+        "Raio_m": "1199.99999966521",
+        "Rotacao": "cw",
+        "Delta_graus": "3.335082926448",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588765.6306710761,
+          8265717.469717018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 30,
+        "id_curva": 9,
+        "tipo_ponto": "PT",
+        "Raio_m": "1199.99999966521",
+        "Rotacao": "cw",
+        "Delta_graus": "3.335082926448",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588737.9117900028,
+          8265781.573403696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 30,
+        "id_curva": 9,
+        "tipo_ponto": "PI",
+        "Raio_m": "1199.99999966521",
+        "Rotacao": "cw",
+        "Delta_graus": "3.335082926448",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588750.8381273639,
+          8265749.118080039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 31,
+        "id_curva": 10,
+        "tipo_ponto": "PC",
+        "Raio_m": "1199.999999925149",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.386596294032",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588737.9117900027,
+          8265781.573403696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 31,
+        "id_curva": 10,
+        "tipo_ponto": "PT",
+        "Raio_m": "1199.999999925149",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.386596294032",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588709.7356302456,
+          8265846.654283921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 31,
+        "id_curva": 10,
+        "tipo_ponto": "PI",
+        "Raio_m": "1199.999999925149",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.386596294032",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588724.785678265,
+          8265814.530318938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 33,
+        "id_curva": 9,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→835.000000020798",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.643537724844",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588319.5244524035,
+          8266679.550643907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 33,
+        "id_curva": 9,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→835.000000020798",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.643537724844",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588298.7881296206,
+          8266722.732221599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 33,
+        "id_curva": 9,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→835.000000020798",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.643537724844",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588305.9750434997,
+          8266708.4715308435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 34,
+        "id_curva": 11,
+        "tipo_ponto": "PC",
+        "Raio_m": "835.00000001969",
+        "Rotacao": "ccw",
+        "Delta_graus": "5.687478174548",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588298.7881296206,
+          8266722.732221599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 34,
+        "id_curva": 11,
+        "tipo_ponto": "PT",
+        "Raio_m": "835.00000001969",
+        "Rotacao": "ccw",
+        "Delta_graus": "5.687478174548",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588257.8760111707,
+          8266794.778902155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 34,
+        "id_curva": 11,
+        "tipo_ponto": "PI",
+        "Raio_m": "835.00000001969",
+        "Rotacao": "ccw",
+        "Delta_graus": "5.687478174548",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588280.1214723763,
+          8266759.771683997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 35,
+        "id_curva": 10,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "835.000000020798→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.643537724844",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588257.8760111707,
+          8266794.778902155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 35,
+        "id_curva": 10,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "835.000000020798→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.643537724844",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588231.416139703,
+          8266834.710330085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 35,
+        "id_curva": 10,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "835.000000020798→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.643537724844",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          588249.311209668,
+          8266808.2571515795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 49,
+        "id_curva": 11,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→960.",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.243397992905",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586653.7446951255,
+          8269156.431686569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 49,
+        "id_curva": 11,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→960.",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.243397992905",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586630.1760544437,
+          8269190.790930031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 49,
+        "id_curva": 11,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→960.",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.243397992905",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586638.1976665705,
+          8269179.451958331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 50,
+        "id_curva": 12,
+        "tipo_ponto": "PC",
+        "Raio_m": "960.000000002672",
+        "Rotacao": "ccw",
+        "Delta_graus": "6.1581285765",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586630.1760544436,
+          8269190.790930031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 50,
+        "id_curva": 12,
+        "tipo_ponto": "PT",
+        "Raio_m": "960.000000002672",
+        "Rotacao": "ccw",
+        "Delta_graus": "6.1581285765",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586566.1785755178,
+          8269271.6629282925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 50,
+        "id_curva": 12,
+        "tipo_ponto": "PI",
+        "Raio_m": "960.000000002672",
+        "Rotacao": "ccw",
+        "Delta_graus": "6.1581285765",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586600.3524321715,
+          8269232.948192635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 51,
+        "id_curva": 12,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "960.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.243397992905",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586566.178575518,
+          8269271.6629282925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 51,
+        "id_curva": 12,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "960.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.243397992905",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586538.1563016678,
+          8269302.4978209175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "EIXO PRINCIPAL",
+        "seq_geom": 51,
+        "id_curva": 12,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "960.→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.243397992905",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          586556.9868877903,
+          8269282.075969005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "LINHA-22",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "4.000148865772",
+        "Rotacao": "cw",
+        "Delta_graus": "89.505693355075",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591844.3394318264,
+          8263406.817799695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "LINHA-22",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "4.000148865772",
+        "Rotacao": "cw",
+        "Delta_graus": "89.505693355075",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591839.4787254079,
+          8263403.97178055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "LINHA-22",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "4.000148865772",
+        "Rotacao": "cw",
+        "Delta_graus": "89.505693355075",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591843.3198641441,
+          8263402.985314319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "LINHA-23",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "4.000148864386",
+        "Rotacao": "cw",
+        "Delta_graus": "89.505693392476",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591854.975832996,
+          8263399.991873968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "LINHA-23",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "4.000148864386",
+        "Rotacao": "cw",
+        "Delta_graus": "89.505693392476",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591852.0879856211,
+          8263404.827846404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "LINHA-23",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "4.000148864386",
+        "Rotacao": "cw",
+        "Delta_graus": "89.505693392476",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591851.134694259,
+          8263400.978340201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Aux - R400 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "51.500000131956",
+        "Rotacao": "cw",
+        "Delta_graus": "2.781621677752",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593069.1427460007,
+          8263339.319876154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Aux - R400 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "51.500000131956",
+        "Rotacao": "cw",
+        "Delta_graus": "2.781621677752",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593069.2568744612,
+          8263341.817269734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Aux - R400 x R000",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "51.500000131956",
+        "Rotacao": "cw",
+        "Delta_graus": "2.781621677752",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593069.1694931249,
+          8263340.5699584065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Aux - R400 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "2.040000000162",
+        "Rotacao": "ccw",
+        "Delta_graus": "148.249367535398",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593069.2568744612,
+          8263341.817269734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Aux - R400 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "2.040000000162",
+        "Rotacao": "ccw",
+        "Delta_graus": "148.249367535398",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593065.5664172573,
+          8263343.151934082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Aux - R400 x R000",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "2.040000000162",
+        "Rotacao": "ccw",
+        "Delta_graus": "148.249367535398",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593069.7581699892,
+          8263348.97293502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Aux - R400 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "144.499983953702",
+        "Rotacao": "cw",
+        "Delta_graus": "0.991288935886",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593065.5664172573,
+          8263343.151934082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Aux - R400 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "144.499983953702",
+        "Rotacao": "cw",
+        "Delta_graus": "0.991288935886",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593064.0880154525,
+          8263341.135916199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Aux - R400 x R000",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "144.499983953702",
+        "Rotacao": "cw",
+        "Delta_graus": "0.991288935886",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593064.8359364826,
+          8263342.137530428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R200 x R500 x R600 - EntradaMarginal",
+        "seq_geom": 4,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "225.00000321849",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.213168169064",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592922.1435280457,
+          8263406.970979317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R200 x R500 x R600 - EntradaMarginal",
+        "seq_geom": 4,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "225.00000321849",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.213168169064",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592913.4536703787,
+          8263406.86121317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R200 x R500 x R600 - EntradaMarginal",
+        "seq_geom": 4,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "225.00000321849",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.213168169064",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592917.7975390961,
+          8263407.000022617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "48.000000012578",
+        "Rotacao": "cw",
+        "Delta_graus": "28.648824054401",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592827.473722653,
+          8263361.685520149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "48.000000012578",
+        "Rotacao": "cw",
+        "Delta_graus": "28.648824054401",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592848.1984566682,
+          8263373.2881483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "48.000000012578",
+        "Rotacao": "cw",
+        "Delta_graus": "28.648824054401",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592836.3547205952,
+          8263370.132870921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "125.000000179767",
+        "Rotacao": "cw",
+        "Delta_graus": "5.835105781487",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592848.1984566682,
+          8263373.2881483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "125.000000179767",
+        "Rotacao": "cw",
+        "Delta_graus": "5.835105781487",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592860.6451125644,
+          8263375.933784481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "125.000000179767",
+        "Rotacao": "cw",
+        "Delta_graus": "5.835105781487",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592854.3543672435,
+          8263374.928138059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "50.000000301825",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252246827328",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592860.6451125644,
+          8263375.933784481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "50.000000301825",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252246827328",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592866.9410103299,
+          8263376.535175697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "50.000000301825",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252246827328",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592863.7740056373,
+          8263376.4339732425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 5,
+        "id_curva": 4,
+        "tipo_ponto": "PC",
+        "Raio_m": "50.000000212056",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252246827361",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593110.8446844266,
+          8263384.329180632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 5,
+        "id_curva": 4,
+        "tipo_ponto": "PT",
+        "Raio_m": "50.000000212056",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252246827361",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593117.1661333451,
+          8263384.130979991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 5,
+        "id_curva": 4,
+        "tipo_ponto": "PI",
+        "Raio_m": "50.000000212056",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252246827361",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593114.0116891135,
+          8263384.430383084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 6,
+        "id_curva": 5,
+        "tipo_ponto": "PC",
+        "Raio_m": "124.999999844715",
+        "Rotacao": "cw",
+        "Delta_graus": "5.586321293461",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593117.1661333451,
+          8263384.130979991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 6,
+        "id_curva": 5,
+        "tipo_ponto": "PT",
+        "Raio_m": "124.999999844715",
+        "Rotacao": "cw",
+        "Delta_graus": "5.586321293461",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593129.2237573266,
+          8263382.3901997935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 6,
+        "id_curva": 5,
+        "tipo_ponto": "PI",
+        "Raio_m": "124.999999844715",
+        "Rotacao": "cw",
+        "Delta_graus": "5.586321293461",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593123.2374103679,
+          8263383.554726618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 7,
+        "id_curva": 6,
+        "tipo_ponto": "PC",
+        "Raio_m": "44.999999999651",
+        "Rotacao": "cw",
+        "Delta_graus": "46.73933737946",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593129.2237573266,
+          8263382.3901997935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 7,
+        "id_curva": 6,
+        "tipo_ponto": "PT",
+        "Raio_m": "44.999999999651",
+        "Rotacao": "cw",
+        "Delta_graus": "46.73933737946",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593158.6877190446,
+          8263362.232448762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-Auxi - R700 x R400 - Entrelaçamento",
+        "seq_geom": 7,
+        "id_curva": 6,
+        "tipo_ponto": "PI",
+        "Raio_m": "44.999999999651",
+        "Rotacao": "cw",
+        "Delta_graus": "46.73933737946",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593148.3109238214,
+          8263378.677164527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "250.000000176416",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252247387751",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593392.701606327,
+          8263417.358247044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "250.000000176416",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252247387751",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593361.0943594115,
+          8263418.349250469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "250.000000176416",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252247387751",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593376.8665817218,
+          8263416.852234741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "125.000000006084",
+        "Rotacao": "cw",
+        "Delta_graus": "35.440549033014",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593361.0943594115,
+          8263418.349250469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "125.000000006084",
+        "Rotacao": "cw",
+        "Delta_graus": "35.440549033014",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593291.1248379755,
+          8263448.254772588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "125.000000006084",
+        "Rotacao": "cw",
+        "Delta_graus": "35.440549033014",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593321.3317332162,
+          8263422.123308157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 4,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "84.999999999835",
+        "Rotacao": "cw",
+        "Delta_graus": "69.201117618989",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593199.0806566533,
+          8263527.880607391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 4,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "84.999999999835",
+        "Rotacao": "cw",
+        "Delta_graus": "69.201117618989",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593174.8500488828,
+          8263621.324951974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 4,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "84.999999999835",
+        "Rotacao": "cw",
+        "Delta_graus": "69.201117618989",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593154.7332125005,
+          8263566.244816963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 5,
+        "id_curva": 4,
+        "tipo_ponto": "PC",
+        "Raio_m": "170.000208091329",
+        "Rotacao": "cw",
+        "Delta_graus": "10.654570987869",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593174.8500488828,
+          8263621.324951974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 5,
+        "id_curva": 4,
+        "tipo_ponto": "PT",
+        "Raio_m": "170.000208091329",
+        "Rotacao": "cw",
+        "Delta_graus": "10.654570987869",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593188.3854703724,
+          8263649.843089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 5,
+        "id_curva": 4,
+        "tipo_ponto": "PI",
+        "Raio_m": "170.000208091329",
+        "Rotacao": "cw",
+        "Delta_graus": "10.654570987869",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593180.2881366173,
+          8263636.215092842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 7,
+        "id_curva": 5,
+        "tipo_ponto": "PC",
+        "Raio_m": "903.600000180773",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.607435747854",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593192.4026788602,
+          8263656.570392896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 7,
+        "id_curva": 5,
+        "tipo_ponto": "PT",
+        "Raio_m": "903.600000180773",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.607435747854",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593227.1094409332,
+          8263720.386509585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 100",
+        "seq_geom": 7,
+        "id_curva": 5,
+        "tipo_ponto": "PI",
+        "Raio_m": "903.600000180773",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.607435747854",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593211.0396937376,
+          8263687.780339595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 200",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "125.000000071625",
+        "Rotacao": "cw",
+        "Delta_graus": "9.068721191409",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593138.4912120946,
+          8263468.444817453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 200",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "125.000000071625",
+        "Rotacao": "cw",
+        "Delta_graus": "9.068721191409",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593149.205820935,
+          8263485.052710978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 200",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "125.000000071625",
+        "Rotacao": "cw",
+        "Delta_graus": "9.068721191409",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593143.189970726,
+          8263477.1736260755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 200",
+        "seq_geom": 3,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "44.999999999736",
+        "Rotacao": "cw",
+        "Delta_graus": "217.968644113838",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593149.205820935,
+          8263485.052710978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 200",
+        "seq_geom": 3,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "44.999999999736",
+        "Rotacao": "cw",
+        "Delta_graus": "217.968644113838",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593196.3677945441,
+          8263414.210944471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 200",
+        "seq_geom": 4,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "124.999999933045",
+        "Rotacao": "cw",
+        "Delta_graus": "12.838568139469",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593196.3677945441,
+          8263414.210944471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 200",
+        "seq_geom": 4,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "124.999999933045",
+        "Rotacao": "cw",
+        "Delta_graus": "12.838568139469",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593168.7061667638,
+          8263410.2004148895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 200",
+        "seq_geom": 4,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "124.999999933045",
+        "Rotacao": "cw",
+        "Delta_graus": "12.838568139469",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593182.7625905693,
+          8263410.649591544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "150.500000646256",
+        "Rotacao": "cw",
+        "Delta_graus": "6.929736570034",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592923.9762059324,
+          8263278.968973357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "150.500000646256",
+        "Rotacao": "cw",
+        "Delta_graus": "6.929736570034",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592942.1316282635,
+          8263280.112332289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "150.500000646256",
+        "Rotacao": "cw",
+        "Delta_graus": "6.929736570034",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592933.0193035154,
+          8263280.090282683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 3,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "399.999999466015",
+        "Rotacao": "cw",
+        "Delta_graus": "6.754370765893",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592983.3244631491,
+          8263280.212008904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 3,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "399.999999466015",
+        "Rotacao": "cw",
+        "Delta_graus": "6.754370765893",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593030.3763041174,
+          8263277.549649886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 3,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "399.999999466015",
+        "Rotacao": "cw",
+        "Delta_graus": "6.754370765893",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593006.9289383509,
+          8263280.2691259775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 5,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "142.000000003575",
+        "Rotacao": "ccw",
+        "Delta_graus": "51.696909639689",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593098.1736711545,
+          8263269.686364919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 5,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "142.000000003575",
+        "Rotacao": "ccw",
+        "Delta_graus": "51.696909639689",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593215.0847987391,
+          8263310.474015843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 5,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "142.000000003575",
+        "Rotacao": "ccw",
+        "Delta_graus": "51.696909639689",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593166.5092815744,
+          8263261.7606533235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 7,
+        "id_curva": 4,
+        "tipo_ponto": "PC",
+        "Raio_m": "135.000000022604",
+        "Rotacao": "cw",
+        "Delta_graus": "36.939653829292",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593256.3831918435,
+          8263351.889603618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 7,
+        "id_curva": 4,
+        "tipo_ponto": "PT",
+        "Raio_m": "135.000000022604",
+        "Rotacao": "cw",
+        "Delta_graus": "36.939653829292",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593332.8592347265,
+          8263390.20490933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 7,
+        "id_curva": 4,
+        "tipo_ponto": "PI",
+        "Raio_m": "135.000000022604",
+        "Rotacao": "cw",
+        "Delta_graus": "36.939653829292",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593288.22236861,
+          8263383.819132117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 8,
+        "id_curva": 5,
+        "tipo_ponto": "PC",
+        "Raio_m": "299.999998689088",
+        "Rotacao": "cw",
+        "Delta_graus": "6.311247982527",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593332.8592347265,
+          8263390.20490933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 8,
+        "id_curva": 5,
+        "tipo_ponto": "PT",
+        "Raio_m": "299.999998689088",
+        "Rotacao": "cw",
+        "Delta_graus": "6.311247982527",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593365.7631699874,
+          8263393.075472974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 300",
+        "seq_geom": 8,
+        "id_curva": 5,
+        "tipo_ponto": "PI",
+        "Raio_m": "299.999998689088",
+        "Rotacao": "cw",
+        "Delta_graus": "6.311247982527",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593349.2320727083,
+          8263392.547217493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 400",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "124.999999907636",
+        "Rotacao": "cw",
+        "Delta_graus": "12.838568156247",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593101.3625110443,
+          8263384.626481594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 400",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "124.999999907636",
+        "Rotacao": "cw",
+        "Delta_graus": "12.838568156247",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593129.2237573266,
+          8263382.3901997935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 400",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "124.999999907636",
+        "Rotacao": "cw",
+        "Delta_graus": "12.838568156247",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593115.4189348653,
+          8263385.075658251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 400",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "45.000000000075",
+        "Rotacao": "cw",
+        "Delta_graus": "278.216777493696",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593129.2237573266,
+          8263382.3901997935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 400",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "45.000000000075",
+        "Rotacao": "cw",
+        "Delta_graus": "278.216777493696",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593078.1405036618,
+          8263353.03580946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 400",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "124.999999941974",
+        "Rotacao": "cw",
+        "Delta_graus": "9.0688546422",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593078.1405036618,
+          8263353.03580946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 400",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "124.999999941974",
+        "Rotacao": "cw",
+        "Delta_graus": "9.0688546422",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593086.1035982675,
+          8263371.125186619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 400",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "124.999999941974",
+        "Rotacao": "cw",
+        "Delta_graus": "9.0688546422",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593081.4047499312,
+          8263362.396259934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "124.999999916723",
+        "Rotacao": "cw",
+        "Delta_graus": "12.838568148053",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593081.2893494947,
+          8263407.406987905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "124.999999916723",
+        "Rotacao": "cw",
+        "Delta_graus": "12.838568148053",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593053.4281032279,
+          8263409.643269701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "124.999999916723",
+        "Rotacao": "cw",
+        "Delta_graus": "12.838568148053",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593067.2329256815,
+          8263406.957811248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 3,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "44.99999999995",
+        "Rotacao": "cw",
+        "Delta_graus": "245.405266909056",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593053.4281032279,
+          8263409.643269701
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 3,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "44.99999999995",
+        "Rotacao": "cw",
+        "Delta_graus": "245.405266909056",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593105.7616462917,
+          8263464.386296353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 4,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "44.999999997015",
+        "Rotacao": "cw",
+        "Delta_graus": "32.811510604292",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593105.7616462917,
+          8263464.386296353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 4,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "44.999999997015",
+        "Rotacao": "cw",
+        "Delta_graus": "32.811510604292",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593104.511356884,
+          8263438.997660027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 4,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "44.999999997015",
+        "Rotacao": "cw",
+        "Delta_graus": "32.811510604292",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593108.8740282265,
+          8263451.507919862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 5,
+        "id_curva": 4,
+        "tipo_ponto": "PC",
+        "Raio_m": "124.999999940031",
+        "Rotacao": "cw",
+        "Delta_graus": "9.068721540294",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593104.511356884,
+          8263438.997660027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 5,
+        "id_curva": 4,
+        "tipo_ponto": "PT",
+        "Raio_m": "124.999999940031",
+        "Rotacao": "cw",
+        "Delta_graus": "9.068721540294",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593096.5483999143,
+          8263420.90853856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 500",
+        "seq_geom": 5,
+        "id_curva": 4,
+        "tipo_ponto": "PI",
+        "Raio_m": "124.999999940031",
+        "Rotacao": "cw",
+        "Delta_graus": "9.068721540294",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593101.2471587218,
+          8263429.637347511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "888.020000303219",
+        "Rotacao": "cw",
+        "Delta_graus": "4.607435758338",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593213.1344917113,
+          8263727.273976045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "888.020000303219",
+        "Rotacao": "cw",
+        "Delta_graus": "4.607435758338",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593179.02614849,
+          8263664.558185787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "888.020000303219",
+        "Rotacao": "cw",
+        "Delta_graus": "4.607435758338",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593197.3418213495,
+          8263695.230006207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "124.999999989745",
+        "Rotacao": "ccw",
+        "Delta_graus": "10.00000002424",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593143.1885629147,
+          8263604.543792787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "124.999999989745",
+        "Rotacao": "ccw",
+        "Delta_graus": "10.00000002424",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593133.6904391125,
+          8263584.934015511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "124.999999989745",
+        "Rotacao": "ccw",
+        "Delta_graus": "10.00000002424",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593137.5816844084,
+          8263595.154393229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 6,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "50.00000002056",
+        "Rotacao": "cw",
+        "Delta_graus": "19.626951119805",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593130.7608885196,
+          8263577.239534355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 6,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "50.00000002056",
+        "Rotacao": "cw",
+        "Delta_graus": "19.626951119805",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593122.0701305581,
+          8263562.577578767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 6,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "50.00000002056",
+        "Rotacao": "cw",
+        "Delta_graus": "19.626951119805",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593127.6835649889,
+          8263569.156926745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 8,
+        "id_curva": 4,
+        "tipo_ponto": "PC",
+        "Raio_m": "58.500067462936",
+        "Rotacao": "cw",
+        "Delta_graus": "31.167875613391",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593103.7089422228,
+          8263541.056948423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 8,
+        "id_curva": 4,
+        "tipo_ponto": "PT",
+        "Raio_m": "58.500067462936",
+        "Rotacao": "cw",
+        "Delta_graus": "31.167875613391",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593077.6338931024,
+          8263523.505128585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 8,
+        "id_curva": 4,
+        "tipo_ponto": "PI",
+        "Raio_m": "58.500067462936",
+        "Rotacao": "cw",
+        "Delta_graus": "31.167875613391",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593093.1190439363,
+          8263528.644835768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 10,
+        "id_curva": 5,
+        "tipo_ponto": "PC",
+        "Raio_m": "71.499999996376",
+        "Rotacao": "ccw",
+        "Delta_graus": "43.364539276676",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593044.8908077745,
+          8263512.637083905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 10,
+        "id_curva": 5,
+        "tipo_ponto": "PT",
+        "Raio_m": "71.499999996376",
+        "Rotacao": "ccw",
+        "Delta_graus": "43.364539276676",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593004.4448722963,
+          8263478.645656937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 10,
+        "id_curva": 5,
+        "tipo_ponto": "PI",
+        "Raio_m": "71.499999996376",
+        "Rotacao": "ccw",
+        "Delta_graus": "43.364539276676",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593017.9105157171,
+          8263503.681818492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 12,
+        "id_curva": 6,
+        "tipo_ponto": "PC",
+        "Raio_m": "50.000000028426",
+        "Rotacao": "cw",
+        "Delta_graus": "58.739602691004",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592982.8997306784,
+          8263438.587589944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 12,
+        "id_curva": 6,
+        "tipo_ponto": "PT",
+        "Raio_m": "50.000000028426",
+        "Rotacao": "cw",
+        "Delta_graus": "58.739602691004",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592941.4702895015,
+          8263412.339552574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 600",
+        "seq_geom": 12,
+        "id_curva": 6,
+        "tipo_ponto": "PI",
+        "Raio_m": "50.000000028426",
+        "Rotacao": "cw",
+        "Delta_graus": "58.739602691004",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592969.5709038342,
+          8263413.805806295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 700",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "163.099999952972",
+        "Rotacao": "ccw",
+        "Delta_graus": "7.104462970668",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592920.4131246501,
+          8263291.223658288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 700",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "163.099999952972",
+        "Rotacao": "ccw",
+        "Delta_graus": "7.104462970668",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592900.5485158918,
+          8263287.498701636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 700",
+        "seq_geom": 2,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "163.099999952972",
+        "Rotacao": "ccw",
+        "Delta_graus": "7.104462970668",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592910.3652019132,
+          8263289.977754504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 700",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "47.999999998234",
+        "Rotacao": "cw",
+        "Delta_graus": "179.2552105258",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592872.3078000651,
+          8263280.366943788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 700",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "47.999999998234",
+        "Rotacao": "cw",
+        "Delta_graus": "179.2552105258",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592848.1984566682,
+          8263373.2881483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 700",
+        "seq_geom": 4,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "47.999999998234",
+        "Rotacao": "cw",
+        "Delta_graus": "179.2552105258",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          585712.0346577554,
+          8261472.150191285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 700",
+        "seq_geom": 5,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "125.000000037594",
+        "Rotacao": "cw",
+        "Delta_graus": "13.087352659723",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592848.1984566682,
+          8263373.2881483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 700",
+        "seq_geom": 5,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "125.000000037594",
+        "Rotacao": "cw",
+        "Delta_graus": "13.087352659723",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592876.3848569839,
+          8263377.437262521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 700",
+        "seq_geom": 5,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "125.000000037594",
+        "Rotacao": "cw",
+        "Delta_graus": "13.087352659723",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592862.0536888051,
+          8263376.979306338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 800",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "250.000000041327",
+        "Rotacao": "cw",
+        "Delta_graus": "11.123668589391",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592627.7122560132,
+          8263369.032347516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 800",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "250.000000041327",
+        "Rotacao": "cw",
+        "Delta_graus": "11.123668589391",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592676.0824459462,
+          8263366.083886648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 800",
+        "seq_geom": 1,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "250.000000041327",
+        "Rotacao": "cw",
+        "Delta_graus": "11.123668589391",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592652.040909151,
+          8263369.913222446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 800",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "124.999999998961",
+        "Rotacao": "cw",
+        "Delta_graus": "115.479150044529",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592676.0824459462,
+          8263366.083886648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 800",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "124.999999998961",
+        "Rotacao": "cw",
+        "Delta_graus": "115.479150044529",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592759.3999792485,
+          8263171.786703367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 800",
+        "seq_geom": 2,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "124.999999998961",
+        "Rotacao": "cw",
+        "Delta_graus": "115.479150044529",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592871.6503520054,
+          8263334.93383205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 800",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "249.999999926306",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252246867196",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592759.3999792485,
+          8263171.786703367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 800",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "249.999999926306",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252246867196",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592739.8635728132,
+          8263146.920484845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 800",
+        "seq_geom": 3,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "249.999999926306",
+        "Rotacao": "cw",
+        "Delta_graus": "7.252246867196",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592750.4196923161,
+          8263158.7345593795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 3,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "155.000000006821",
+        "Rotacao": "cw",
+        "Delta_graus": "41.631566464251",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592826.0499586673,
+          8263231.913143959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 3,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "155.000000006821",
+        "Rotacao": "cw",
+        "Delta_graus": "41.631566464251",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592923.4224638502,
+          8263283.434773364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 3,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "155.000000006821",
+        "Rotacao": "cw",
+        "Delta_graus": "41.631566464251",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592864.9424745857,
+          8263276.183479536
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 5,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "139.999999997258",
+        "Rotacao": "ccw",
+        "Delta_graus": "54.637833266876",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592966.6284889177,
+          8263288.792154355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 5,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "139.999999997258",
+        "Rotacao": "ccw",
+        "Delta_graus": "54.637833266876",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593072.6749832269,
+          8263361.36916925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 5,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "139.999999997258",
+        "Rotacao": "ccw",
+        "Delta_graus": "54.637833266876",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593038.3968066385,
+          8263297.691149821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 7,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "174.999999997802",
+        "Rotacao": "ccw",
+        "Delta_graus": "21.697746285924",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593116.3155917359,
+          8263442.439628451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 7,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "174.999999997802",
+        "Rotacao": "ccw",
+        "Delta_graus": "21.697746285924",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593136.064684444,
+          8263505.28636712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 7,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "174.999999997802",
+        "Rotacao": "ccw",
+        "Delta_graus": "21.697746285924",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593132.2122503389,
+          8263471.9705964355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 9,
+        "id_curva": 4,
+        "tipo_ponto": "PC",
+        "Raio_m": "179.999999989913",
+        "Rotacao": "cw",
+        "Delta_graus": "24.247488415566",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593141.7183061051,
+          8263554.178770641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 9,
+        "id_curva": 4,
+        "tipo_ponto": "PT",
+        "Raio_m": "179.999999989913",
+        "Rotacao": "cw",
+        "Delta_graus": "24.247488415566",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593165.9841205212,
+          8263625.787591479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 9,
+        "id_curva": 4,
+        "tipo_ponto": "PI",
+        "Raio_m": "179.999999989913",
+        "Rotacao": "cw",
+        "Delta_graus": "24.247488415566",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593146.1598916232,
+          8263592.589510595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 11,
+        "id_curva": 5,
+        "tipo_ponto": "PC",
+        "Raio_m": "896.699999695879",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.607435744948",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593186.4785415999,
+          8263660.107990629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 11,
+        "id_curva": 5,
+        "tipo_ponto": "PT",
+        "Raio_m": "896.699999695879",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.607435744948",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593220.9202785554,
+          8263723.436799581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "PTV03-RAMO 1000",
+        "seq_geom": 11,
+        "id_curva": 5,
+        "tipo_ponto": "PI",
+        "Raio_m": "896.699999695879",
+        "Rotacao": "ccw",
+        "Delta_graus": "4.607435744948",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          593204.9732419308,
+          8263691.079614325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 7,
+        "id_curva": 1,
+        "tipo_ponto": "PC",
+        "Raio_m": "353.999999932314",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.867679772164",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592199.9606361721,
+          8263387.366762814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 7,
+        "id_curva": 1,
+        "tipo_ponto": "PT",
+        "Raio_m": "353.999999932314",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.867679772164",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592182.2778096632,
+          8263386.28292393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 7,
+        "id_curva": 1,
+        "tipo_ponto": "PI",
+        "Raio_m": "353.999999932314",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.867679772164",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592191.1056584289,
+          8263387.046147945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 9,
+        "id_curva": 2,
+        "tipo_ponto": "PC",
+        "Raio_m": "345.999998762268",
+        "Rotacao": "cw",
+        "Delta_graus": "2.867679792911",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592168.2700527997,
+          8263385.071863714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 9,
+        "id_curva": 2,
+        "tipo_ponto": "PT",
+        "Raio_m": "345.999998762268",
+        "Rotacao": "cw",
+        "Delta_graus": "2.867679792911",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592150.9868381228,
+          8263384.01251836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 9,
+        "id_curva": 2,
+        "tipo_ponto": "PI",
+        "Raio_m": "345.999998762268",
+        "Rotacao": "cw",
+        "Delta_graus": "2.867679792911",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592159.6417034081,
+          8263384.325887694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 11,
+        "id_curva": 1,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "INF→699.48",
+        "Rotacao": "cw",
+        "Delta_graus": "2.252578968105",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592074.0042325155,
+          8263381.225185786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 11,
+        "id_curva": 1,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "INF→699.48",
+        "Rotacao": "cw",
+        "Delta_graus": "2.252578968105",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592019.0226664242,
+          8263379.955617733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 11,
+        "id_curva": 1,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "INF→699.48",
+        "Rotacao": "cw",
+        "Delta_graus": "2.252578968105",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592037.3586095328,
+          8263379.898346589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 12,
+        "id_curva": 3,
+        "tipo_ponto": "PC",
+        "Raio_m": "699.479999999486",
+        "Rotacao": "cw",
+        "Delta_graus": "17.456021605995",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          592019.0226664242,
+          8263379.955617733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 12,
+        "id_curva": 3,
+        "tipo_ponto": "PT",
+        "Raio_m": "699.479999999486",
+        "Rotacao": "cw",
+        "Delta_graus": "17.456021605995",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591809.2987223966,
+          8263412.823649565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 12,
+        "id_curva": 3,
+        "tipo_ponto": "PI",
+        "Raio_m": "699.479999999486",
+        "Rotacao": "cw",
+        "Delta_graus": "17.456021605995",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591911.6377135782,
+          8263380.291027758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 13,
+        "id_curva": 2,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "699.48→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "2.252578968105",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591809.2987223966,
+          8263412.823649565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 13,
+        "id_curva": 2,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "699.48→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "2.252578968105",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591757.3416431132,
+          8263430.8526907265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 13,
+        "id_curva": 2,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "699.48→INF",
+        "Rotacao": "cw",
+        "Delta_graus": "2.252578968105",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591791.8243754735,
+          8263418.378583351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 16,
+        "id_curva": 4,
+        "tipo_ponto": "PC",
+        "Raio_m": "341.999998938609",
+        "Rotacao": "cw",
+        "Delta_graus": "2.425195319463",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591155.5724461608,
+          8263652.006106917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 16,
+        "id_curva": 4,
+        "tipo_ponto": "PT",
+        "Raio_m": "341.999998938609",
+        "Rotacao": "cw",
+        "Delta_graus": "2.425195319463",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591142.1377629205,
+          8263657.394440564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 16,
+        "id_curva": 4,
+        "tipo_ponto": "PI",
+        "Raio_m": "341.999998938609",
+        "Rotacao": "cw",
+        "Delta_graus": "2.425195319463",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591148.7980771599,
+          8263654.558087891
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 18,
+        "id_curva": 5,
+        "tipo_ponto": "PC",
+        "Raio_m": "358.000001280458",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.425195326606",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591121.4163790254,
+          8263666.218821899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 18,
+        "id_curva": 5,
+        "tipo_ponto": "PT",
+        "Raio_m": "358.000001280458",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.425195326606",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591107.3531724585,
+          8263671.859241389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 18,
+        "id_curva": 5,
+        "tipo_ponto": "PI",
+        "Raio_m": "358.000001280458",
+        "Rotacao": "ccw",
+        "Delta_graus": "2.425195326606",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591114.4444710714,
+          8263669.187869465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 20,
+        "id_curva": 6,
+        "tipo_ponto": "PC",
+        "Raio_m": "689.599998215449",
+        "Rotacao": "cw",
+        "Delta_graus": "2.816892018515",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591058.0903683236,
+          8263690.417093626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 20,
+        "id_curva": 6,
+        "tipo_ponto": "PT",
+        "Raio_m": "689.599998215449",
+        "Rotacao": "cw",
+        "Delta_graus": "2.816892018515",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591026.669919125,
+          8263703.143942345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 20,
+        "id_curva": 6,
+        "tipo_ponto": "PI",
+        "Raio_m": "689.599998215449",
+        "Rotacao": "cw",
+        "Delta_graus": "2.816892018515",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          591042.2236863825,
+          8263696.39425112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 22,
+        "id_curva": 7,
+        "tipo_ponto": "PC",
+        "Raio_m": "703.999999876688",
+        "Rotacao": "ccw",
+        "Delta_graus": "6.542020261708",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590999.5613001526,
+          8263714.907960962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 22,
+        "id_curva": 7,
+        "tipo_ponto": "PT",
+        "Raio_m": "703.999999876688",
+        "Rotacao": "ccw",
+        "Delta_graus": "6.542020261708",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590924.1579001968,
+          8263742.632839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 22,
+        "id_curva": 7,
+        "tipo_ponto": "PI",
+        "Raio_m": "703.999999876688",
+        "Rotacao": "ccw",
+        "Delta_graus": "6.542020261708",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590962.6518663055,
+          8263730.925127582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 24,
+        "id_curva": 8,
+        "tipo_ponto": "PC",
+        "Raio_m": "1121.320000000267",
+        "Rotacao": "ccw",
+        "Delta_graus": "5.381187558276",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590852.7683165706,
+          8263764.345557325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 24,
+        "id_curva": 8,
+        "tipo_ponto": "PT",
+        "Raio_m": "1121.320000000267",
+        "Rotacao": "ccw",
+        "Delta_graus": "5.381187558276",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590750.7521751351,
+          8263790.336746963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 24,
+        "id_curva": 8,
+        "tipo_ponto": "PI",
+        "Raio_m": "1121.320000000267",
+        "Rotacao": "ccw",
+        "Delta_graus": "5.381187558276",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590802.3709643343,
+          8263779.738239167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 25,
+        "id_curva": 3,
+        "tipo_ponto": "PC_Espiral",
+        "Raio_m": "1121.32→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.941365181327",
+        "notas": "Início clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590750.7521751352,
+          8263790.336746963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 25,
+        "id_curva": 3,
+        "tipo_ponto": "PT_Espiral",
+        "Raio_m": "1121.32→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.941365181327",
+        "notas": "Fim clothóide"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590714.5801524937,
+          8263797.351687768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 25,
+        "id_curva": 3,
+        "tipo_ponto": "PI_Espiral",
+        "Raio_m": "1121.32→INF",
+        "Rotacao": "ccw",
+        "Delta_graus": "0.941365181327",
+        "notas": "PI da espiral"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590738.7207156434,
+          8263792.80707839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 27,
+        "id_curva": 9,
+        "tipo_ponto": "PC",
+        "Raio_m": "346.000024423496",
+        "Rotacao": "cw",
+        "Delta_graus": "2.573267345258",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590701.5479861863,
+          8263799.805073169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 27,
+        "id_curva": 9,
+        "tipo_ponto": "PT",
+        "Raio_m": "346.000024423496",
+        "Rotacao": "cw",
+        "Delta_graus": "2.573267345258",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590686.3463731293,
+          8263803.021896349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 27,
+        "id_curva": 9,
+        "tipo_ponto": "PI",
+        "Raio_m": "346.000024423496",
+        "Rotacao": "cw",
+        "Delta_graus": "2.573267345258",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590693.9110551047,
+          8263801.2427723985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 29,
+        "id_curva": 10,
+        "tipo_ponto": "PC",
+        "Raio_m": "354.000001437736",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.540534053048",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590660.3622746977,
+          8263809.133049748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 29,
+        "id_curva": 10,
+        "tipo_ponto": "PT",
+        "Raio_m": "354.000001437736",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.540534053048",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590651.0687613239,
+          8263811.1873321375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 29,
+        "id_curva": 10,
+        "tipo_ponto": "PI",
+        "Raio_m": "354.000001437736",
+        "Rotacao": "ccw",
+        "Delta_graus": "1.540534053048",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590655.7293274164,
+          8263810.222664289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 32,
+        "id_curva": 11,
+        "tipo_ponto": "PC",
+        "Raio_m": "353.999998938397",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.762434359475",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590345.5064273721,
+          8263873.325994093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 32,
+        "id_curva": 11,
+        "tipo_ponto": "PT",
+        "Raio_m": "353.999998938397",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.762434359475",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590322.5855506279,
+          8263877.175548875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 32,
+        "id_curva": 11,
+        "tipo_ponto": "PI",
+        "Raio_m": "353.999998938397",
+        "Rotacao": "ccw",
+        "Delta_graus": "3.762434359475",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590334.1092087702,
+          8263875.627192303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 34,
+        "id_curva": 12,
+        "tipo_ponto": "PC",
+        "Raio_m": "345.999999835624",
+        "Rotacao": "cw",
+        "Delta_graus": "3.610475592286",
+        "notas": "Início do arco (Start)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590316.5274284763,
+          8263877.989538069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 34,
+        "id_curva": 12,
+        "tipo_ponto": "PT",
+        "Raio_m": "345.999999835624",
+        "Rotacao": "cw",
+        "Delta_graus": "3.610475592286",
+        "notas": "Fim do arco (End)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590295.0242800132,
+          8263881.571672845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "alinhamento": "STA02-MAR01-ID3",
+        "seq_geom": 34,
+        "id_curva": 12,
+        "tipo_ponto": "PI",
+        "Raio_m": "345.999999835624",
+        "Rotacao": "cw",
+        "Delta_graus": "3.610475592286",
+        "notas": "Ponto de interseção das tangentes (PI)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          590305.7194037887,
+          8263879.441739777
+        ]
+      }
+    }
+  ]
+}

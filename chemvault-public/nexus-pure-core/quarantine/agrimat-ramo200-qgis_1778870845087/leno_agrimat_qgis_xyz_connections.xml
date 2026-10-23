@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Leno.Software — Modelo de ligação XYZ (tiles raster) no Google Cloud Storage.
+     QGIS 3: Browser → XYZ Tiles → New Connection → colar a URL abaixo (substituir LENO_BUCKET).
+
+     Exemplo URL (tiles WebMercator, ex. gdal2tiles):
+     https://storage.googleapis.com/LENO_BUCKET/leno-agrimat-tiles/{z}/{x}/{y}.png
+
+     Comandos (ajustar bucket e região):
+       gsutil mb -l southamerica-east1 gs://LENO_BUCKET
+       gsutil cors set leno_agrimat_gcs_cors.json gs://LENO_BUCKET
+
+     GCS não é servidor WMS OGC. WMS clássico: GeoServer/MapServer atrás de URL dedicada. -->
+<qgsXYZTilesConnections version="1.0">
+  <xyztiles>
+    <service name="Leno.Software — GCS XYZ (substituir bucket)"
+             url="https://storage.googleapis.com/LENO_BUCKET/leno-agrimat-tiles/{z}/{x}/{y}.png"
+             zmin="0"
+             zmax="22"
+             tilePixelRatio="0"
+             referer=""/>
+  </xyztiles>
+</qgsXYZTilesConnections>

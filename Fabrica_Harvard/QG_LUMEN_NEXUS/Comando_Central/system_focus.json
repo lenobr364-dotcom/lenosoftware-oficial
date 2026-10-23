@@ -1,0 +1,11 @@
+{
+    "ultima_atualizacao": "12/05/2026 11:32",
+    "modo_operacao": "Eixo Técnico Prioritário",
+    "unidades_em_primeiro_plano": [
+        "ChemVault_Global",
+        "BIJU_Tech",
+        "Laboratorio"
+    ],
+    "status_radio_piao": "Operação em Segundo Plano (Automático)",
+    "alerta_socio": "Ambiente de Desenvolvimento Silenciado para Alta Performance"
+}

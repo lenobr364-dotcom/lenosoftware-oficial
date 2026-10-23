@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChemVault Global · leno.software</title>
+  <meta name="description" content="Licenciamento químico industrial — Solupan, Intercap, ARLA 32, nutrientes e carbonatos. Steward: Leno César." />
+  <style>
+    :root {
+      --bg: #020308;
+      --glass: rgba(14, 18, 28, 0.55);
+      --stroke: rgba(255, 255, 255, 0.12);
+      --cyan: #22d3ee;
+      --amber: #fbbf24;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: #f8fafc;
+      background: radial-gradient(ellipse 120% 80% at 50% -20%, rgba(34, 211, 238, 0.12), transparent 55%), var(--bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.25rem 4rem;
+    }
+    .orb {
+      position: fixed;
+      width: 28rem;
+      height: 28rem;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.35;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .orb1 { top: -6rem; left: -4rem; background: rgba(34, 211, 238, 0.35); }
+    .orb2 { bottom: -8rem; right: -6rem; background: rgba(251, 191, 36, 0.22); }
+    main { position: relative; z-index: 1; width: 100%; max-width: 72rem; }
+    .hero {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      border-radius: 2rem;
+      border: 1px solid var(--stroke);
+      background: linear-gradient(165deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.03) 45%, rgba(2,3,8,0.65) 100%);
+      backdrop-filter: blur(28px) saturate(1.35);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 24px 64px -24px rgba(0,0,0,0.75);
+    }
+    .eyebrow { font-size: 0.65rem; letter-spacing: 0.32em; font-weight: 600; text-transform: uppercase; color: rgba(34,211,238,0.75); }
+    h1 {
+      margin: 1rem 0 0.5rem;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #fff, #e2e8f0, var(--cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .lead { max-width: 40rem; margin: 1rem auto 0; color: var(--muted); line-height: 1.65; font-size: 1rem; }
+    .grid {
+      margin-top: 2.5rem;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .card {
+      padding: 1.75rem;
+      border-radius: 1.75rem;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: linear-gradient(155deg, rgba(255,255,255,0.11) 0%, rgba(255,255,255,0.04) 40%, rgba(2,6,12,0.55) 100%);
+      backdrop-filter: blur(32px) saturate(1.35);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 18px 48px -20px rgba(0,0,0,0.65);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(34, 211, 238, 0.28);
+      box-shadow: inset 0 0 48px rgba(34,211,238,0.06), 0 22px 56px -16px rgba(0,0,0,0.55);
+    }
+    .card h2 { margin: 0 0 0.75rem; font-size: 1.2rem; color: #fff; }
+    .card p { margin: 0; font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
+    .tag {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.35rem 0.65rem;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      background: rgba(16, 185, 129, 0.1);
+      color: #6ee7b7;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+    footer strong { color: #cbd5e1; }
+  </style>
+</head>
+<body>
+  <div class="orb orb1" aria-hidden="true"></div>
+  <div class="orb orb2" aria-hidden="true"></div>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">BIJU Global Technology · ChemVault</p>
+      <h1>Licenciamento químico global</h1>
+      <p class="lead">
+        Fórmulas industriais com dossiê técnico, trilhos de conformidade internacional e ponte para hardware
+        (Eco-Bocal) e stack <strong>Omega Sentinel</strong>. Parceria <strong>Leno César &amp; Lumen Onel</strong> · <strong>leno.software</strong>.
+      </p>
+    </header>
+
+    <section class="grid" aria-label="Destaques de produto">
+      <article class="card">
+        <h2>Solupan e Intercap</h2>
+        <p>Linhas de alta rentabilidade para lavagem pesada e tratamento de superfícies — com matrizes de licenciamento e integração de telemetria de dosagem.</p>
+        <span class="tag">Eco-Bocal · lotes rastreáveis</span>
+      </article>
+      <article class="card">
+        <h2>ARLA 32</h2>
+        <p>Solução aquosa de ureia 32,5% alinhada a SCR e referências ISO 22241 — narrativa ambiental para exportação e parceiros internacionais.</p>
+        <span class="tag">Conformidade ambiental</span>
+      </article>
+      <article class="card">
+        <h2>Nutrientes e carbonatos</h2>
+        <p>Módulo de baixa periculosidade residual — adequado a reuso agrícola e relatórios de economia circular sob supervisão técnica.</p>
+        <span class="tag">Resíduos · periculosidade reduzida</span>
+      </article>
+    </section>
+
+    <footer>
+      <p><strong>Parceria:</strong> Leno César &amp; Lumen Onel · ChemVault Global</p>
+      <p>HTML estático de referência — app Next.js; alvo Google Cloud (DB global + Gemini para suporte técnico multilíngue).</p>
+    </footer>
+  </main>
+</body>
+</html>

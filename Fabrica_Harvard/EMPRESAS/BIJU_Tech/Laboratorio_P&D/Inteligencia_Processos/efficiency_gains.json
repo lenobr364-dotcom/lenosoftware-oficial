@@ -1,0 +1,11 @@
+[
+    {
+        "timestamp": "12/05/2026 11:45",
+        "formula": "Detergente Premium Ativo-X",
+        "rendimento_anterior": "88.0%",
+        "rendimento_otimizado": "95.0%",
+        "economia_estimada": "R$ 54.00 por lote",
+        "recomendacao": "Ajustar tempo de maturação para +15min para estabilidade total.",
+        "status": "Processo Otimizado - Aguardando Implementação"
+    }
+]

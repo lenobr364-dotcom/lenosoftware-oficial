@@ -1,0 +1,174 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+@import "./styles/nexus-glass.css";
+
+:root {
+  --background: #000000;
+  --foreground: #f5f5f5;
+  --accent-gold: #d7b81d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --animate-fade-in: fade-in 0.45s ease-out;
+  --animate-fade-in-fast: fade-in 0.15s ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+/* Glassmorphism product cards */
+.product-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-5px);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* BIJU commercial landing — ambient motion */
+@keyframes biju-orb-shift {
+  0%,
+  100% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 0.38;
+  }
+  35% {
+    transform: translate(5%, -7%) scale(1.1);
+    opacity: 0.62;
+  }
+  70% {
+    transform: translate(-4%, 5%) scale(0.94);
+    opacity: 0.48;
+  }
+}
+
+@keyframes biju-particle-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.14;
+  }
+  50% {
+    transform: translate3d(14px, -22px, 0) scale(1.35);
+    opacity: 0.42;
+  }
+}
+
+@keyframes biju-mesh-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes biju-line-pulse {
+  0%,
+  100% {
+    stroke-opacity: 0.06;
+  }
+  50% {
+    stroke-opacity: 0.14;
+  }
+}
+
+/** Formula catalog — staggered blur-to-clear reveal (“blindagem progressiva”). */
+@keyframes cv-blindagem-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(10px);
+  }
+  45% {
+    opacity: 0.65;
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.cv-formula-blindagem {
+  animation-name: cv-blindagem-reveal;
+  animation-duration: 0.85s;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  animation-fill-mode: both;
+}
+
+/** BIJU Tech — telemetria: micro-oscilação visual + glow neon discreto */
+@keyframes biju-telemetry-drift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5px);
+  }
+}
+
+@keyframes biju-neon-val-glow {
+  0%,
+  100% {
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.28);
+    filter: brightness(1);
+  }
+  50% {
+    text-shadow: 0 0 14px rgba(0, 212, 255, 0.5);
+    filter: brightness(1.06);
+  }
+}
+
+.biju-tm-val {
+  display: inline-block;
+  animation: biju-telemetry-drift 2.4s ease-in-out infinite, biju-neon-val-glow 3.1s ease-in-out infinite;
+}
+
+.biju-tm-val--slow {
+  animation-duration: 2.9s, 3.6s;
+}

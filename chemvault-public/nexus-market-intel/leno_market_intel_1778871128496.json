@@ -1,0 +1,40 @@
+{
+  "operator": "LENO CEZAR LUDTKE SCHWANZ",
+  "operatorDisplay": "LENO CÉZAR [BIJU]",
+  "encryption": "AES-256-NEXUS-QUANTUM-LOCK",
+  "regions": [
+    {
+      "local": "América Latina (Hub Principal)",
+      "demanda": "CRITICA",
+      "status": "PROTEGIDO"
+    },
+    {
+      "local": "Europa (Setor Químico)",
+      "demanda": "ALTA",
+      "status": "MONITORADO"
+    },
+    {
+      "local": "Ásia (Manufatura)",
+      "demanda": "CRESCENTE",
+      "status": "FIREWALL ATIVO"
+    }
+  ],
+  "protectedAssets": [
+    {
+      "formulaId": "CV6-GLOBAL-DEMO",
+      "seal": "#NX-49400F99D223041C",
+      "shield": "Propriedade Intelectual Blindada"
+    }
+  ],
+  "intrusionAttempts": 0,
+  "molecularShieldPercent": 100,
+  "invisibleMode": true,
+  "lumenDirective": "Leno, enquanto o mundo vê a nossa eficiência, o nosso código esconde o segredo do sucesso. O império está seguro e pronto para a expansão.",
+  "internationalSignal": {
+    "formulaId": "CV6-GLOBAL-DEMO",
+    "currency": "EUR",
+    "valueBRL": 6840
+  },
+  "operationalStatus": "INTELIGENCIA DE MERCADO E IP BLINDADO",
+  "analyzedAt": "2026-05-15T18:52:08.494Z"
+}

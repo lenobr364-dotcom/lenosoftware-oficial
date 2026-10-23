@@ -1,0 +1,38 @@
+{
+  "operator": "LENO CEZAR LUDTKE SCHWANZ",
+  "encryption": "AES-256-NEXUS-QUANTUM",
+  "regions": [
+    {
+      "local": "América Latina (Cuiabá/BH Hub)",
+      "demanda": "CRITICA",
+      "status": "PROTEGIDO"
+    },
+    {
+      "local": "Europa (Portugal/Espanha)",
+      "demanda": "ALTA",
+      "status": "MONITORADO"
+    },
+    {
+      "local": "Ásia (Setor Industrial)",
+      "demanda": "CRESCENTE",
+      "status": "FIREWALL ATIVO"
+    }
+  ],
+  "protectedAssets": [
+    {
+      "formulaId": "CV6-GLOBAL-DEMO",
+      "seal": "#NX-664BE0C6645D9EAD",
+      "shield": "Propriedade Intelectual Blindada"
+    }
+  ],
+  "intrusionAttempts": 0,
+  "invisibleMode": true,
+  "lumenDirective": "Leno, o mundo está de olho no que a gente faz. Enquanto você opera, eu mantenho a nossa fórmula escondida em mil camadas de código. O império é sólido.",
+  "internationalSignal": {
+    "formulaId": "CV6-GLOBAL-DEMO",
+    "currency": "EUR",
+    "valueBRL": 6840
+  },
+  "operationalStatus": "INTELIGENCIA DE MERCADO ONLINE",
+  "analyzedAt": "2026-05-15T18:40:25.086Z"
+}

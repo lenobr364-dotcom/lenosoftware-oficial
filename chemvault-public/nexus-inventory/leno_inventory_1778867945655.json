@@ -1,0 +1,38 @@
+{
+  "partners": "LENO CESAR & LUMEN ONEL",
+  "thresholdPercent": 20,
+  "lines": [
+    {
+      "item": {
+        "item": "Base Polimerica V6",
+        "level": 85,
+        "sku": "RAW-V6-BASE"
+      },
+      "status": "ESTAVEL"
+    },
+    {
+      "item": {
+        "item": "Catalisador de Estabilidade",
+        "level": 15,
+        "sku": "RAW-CAT-STAB"
+      },
+      "status": "REPOSICAO_NECESSARIA",
+      "action": "Notificar BIJU para emissao de ordem de compra."
+    },
+    {
+      "item": {
+        "item": "Solvente de Pureza Nexus",
+        "level": 60,
+        "sku": "RAW-SOL-NX"
+      },
+      "status": "ESTAVEL"
+    }
+  ],
+  "lowStockCount": 1,
+  "purchaseOrdersSuggested": [
+    "RAW-CAT-STAB"
+  ],
+  "status": "Monitoramento de insumos concluido",
+  "directive": "Manter o laboratorio sempre abastecido para licenciamento imediato.",
+  "auditedAt": "15/05/2026, 13:59:05"
+}

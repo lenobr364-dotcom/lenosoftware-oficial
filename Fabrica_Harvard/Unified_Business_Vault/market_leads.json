@@ -1,0 +1,26 @@
+[
+    {
+        "regiao": "Am\u00e9rica Latina",
+        "potencial_licenciamento": "79%",
+        "status": "Oportunidade Identificada",
+        "prioridade": "M\u00e9dia"
+    },
+    {
+        "regiao": "Europa",
+        "potencial_licenciamento": "84%",
+        "status": "Oportunidade Identificada",
+        "prioridade": "M\u00e9dia"
+    },
+    {
+        "regiao": "\u00c1sia",
+        "potencial_licenciamento": "97%",
+        "status": "Oportunidade Identificada",
+        "prioridade": "Alta"
+    },
+    {
+        "regiao": "Am\u00e9rica do Norte",
+        "potencial_licenciamento": "91%",
+        "status": "Oportunidade Identificada",
+        "prioridade": "Alta"
+    }
+]

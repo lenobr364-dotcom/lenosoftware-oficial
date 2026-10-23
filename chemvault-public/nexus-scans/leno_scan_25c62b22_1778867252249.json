@@ -1,0 +1,25 @@
+{
+  "formulaName": "CV-Polymer-X",
+  "partners": "LENO CESAR & LUMEN ONEL",
+  "components": [
+    {
+      "index": 1,
+      "name": "Polimero Sintetico",
+      "status": "ESTAVEL"
+    },
+    {
+      "index": 2,
+      "name": "Agente de Estabilidade",
+      "status": "ESTAVEL"
+    },
+    {
+      "index": 3,
+      "name": "Catalisador Nexus",
+      "status": "ESTAVEL"
+    }
+  ],
+  "purityPercent": 99.98,
+  "readyForBilling": true,
+  "billingTarget": "CONTA BIJU (SICREDI)",
+  "scannedAt": "15/05/2026, 13:47:32"
+}
