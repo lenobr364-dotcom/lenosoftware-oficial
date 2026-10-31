@@ -12,6 +12,7 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "leno_software_ecosystem/**",
   ]),
 ]);
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { formatAnalyticsMoney } from "@/lib/analytics/dashboard-metrics.builder";
+import { formatAnalyticsMoney } from "@/lib/analytics/format-analytics-money";
 import type { BusinessIntelligencePayload } from "@/lib/analytics/types";
 import { Wallet } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";

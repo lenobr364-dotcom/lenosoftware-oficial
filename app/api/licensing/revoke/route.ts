@@ -1,8 +1,8 @@
 import type { NextRequest } from "next/server";
 
-import { handleLicensingRevoke, licensingDynamic } from "@/lib/licensing/api-handlers";
+import { handleLicensingRevoke } from "@/lib/licensing/api-handlers";
 
-export const dynamic = licensingDynamic;
+export const dynamic = "force-dynamic";
 
 const PATH = "/api/licensing/revoke";
 

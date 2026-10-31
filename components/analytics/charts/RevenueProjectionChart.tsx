@@ -1,7 +1,7 @@
 "use client";
 
 import { GlassChartShell, glassTooltipStyle } from "@/components/analytics/GlassChartShell";
-import { formatAnalyticsMoney } from "@/lib/analytics/dashboard-metrics.builder";
+import { formatAnalyticsMoney } from "@/lib/analytics/format-analytics-money";
 import type { AnalyticsRevenuePoint } from "@/lib/analytics/types";
 import { useLocale, useTranslations } from "next-intl";
 import {

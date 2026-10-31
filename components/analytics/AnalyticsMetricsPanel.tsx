@@ -5,7 +5,7 @@ import { ActiveLicensesTrendChart } from "@/components/analytics/charts/ActiveLi
 import { RegionalDistributionChart } from "@/components/analytics/charts/RegionalDistributionChart";
 import { RevenueProjectionChart } from "@/components/analytics/charts/RevenueProjectionChart";
 import { GlassMetric, GlassPanel } from "@/components/lab/design-system";
-import { formatAnalyticsMoney } from "@/lib/analytics/dashboard-metrics.builder";
+import { formatAnalyticsMoney } from "@/lib/analytics/format-analytics-money";
 import type { AnalyticsMetricsPayload } from "@/lib/analytics/types";
 import { Activity, Globe2, RefreshCw, TrendingUp, Wallet } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";

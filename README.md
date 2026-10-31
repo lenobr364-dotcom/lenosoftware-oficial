@@ -1,3 +1,30 @@
+# Leno.Software
+
+**Ecossistema de software industrial e de inteligência operacional.**  
+Holding de produtos: **Fábrica de Agentes** e **ChemVault Global**.  
+Comando: Leno César · Lumen Onel.
+
+| Camada | Stack |
+|--------|--------|
+| Frontend | Next.js · React · TypeScript · Tailwind CSS |
+| Backend | Python · FastAPI · SQLAlchemy |
+
+```
+ChemVault-Global/
+├── frontend/          # Console Leno.Software (Next.js) — scaffold
+├── backend/           # API Leno.Software (FastAPI + SQLAlchemy)
+│   ├── main.py
+│   └── requirements.txt
+└── README.md
+```
+
+O produto ChemVault Global em produção permanece na raiz deste repositório (Next.js). `/frontend` e `/backend` são a arquitetura-alvo do ecossistema.
+
+- API: `GET /` em `http://localhost:8000` (módulos reservados: Fábrica de Agentes, ChemVault Global).
+- Console de produção atual: `http://localhost:3000`.
+
+---
+
 # ChemVault Global
 
 Plataforma Next.js para licenciamento químico industrial, cofre de fórmulas e painel executivo (BIJU / leno.software).

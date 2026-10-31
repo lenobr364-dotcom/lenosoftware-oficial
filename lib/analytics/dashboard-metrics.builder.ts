@@ -4,7 +4,6 @@ import { countryFromFreeText } from "@/lib/geo/region-centroids";
 import {
   convertBrlToDisplay,
   displayCurrencyForLocale,
-  localeTagForFormat,
 } from "@/lib/market-scalability-fx";
 import { buildBusinessIntelligenceFromLedger } from "@/lib/analytics/ledger-aggregations";
 import type { AnalyticsMetricsPayload } from "@/lib/analytics/types";
@@ -145,10 +144,3 @@ export async function buildAnalyticsMetricsPayload(
   };
 }
 
-export function formatAnalyticsMoney(amount: number, locale: string, currency: string): string {
-  return new Intl.NumberFormat(localeTagForFormat(locale), {
-    style: "currency",
-    currency,
-    maximumFractionDigits: 0,
-  }).format(amount);
-}
