@@ -13,6 +13,10 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
     "leno_software_ecosystem/**",
+    // Apps and trees outside this Next.js project (also excluded from tsconfig).
+    "frontend/**",
+    "backups/**",
+    "venv/**",
   ]),
 ]);
 

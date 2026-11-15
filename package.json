@@ -23,9 +23,6 @@
     "assets:optimize-glass": "tsx scripts/optimize-glass-assets.mts",
     "perf:first-load": "tsx scripts/measure-first-load.mts"
   },
-  "prisma": {
-    "seed": "tsx prisma/seed.ts"
-  },
   "dependencies": {
     "@google-cloud/storage": "^7.19.0",
     "@google/generative-ai": "^0.24.1",
@@ -52,6 +49,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^16.6.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.2",
     "prisma": "^6.19.0",
