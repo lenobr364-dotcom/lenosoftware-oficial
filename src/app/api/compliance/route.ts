@@ -3,8 +3,6 @@ import { NextResponse } from "next/server";
 // Simulação de banco de dados de auditoria interno do ChemVault
 const auditLogs = [
   { id: "LIC-2026-001", company: "BIJU TECH", chemicalFormula: "Fórmula de Limpeza Concentrada v2", status: "Finalizado", timestamp: "2026-05-16T13:35:00Z" },
-  { id: "LIC-2026-002", company: "Agrimat Equipamentos", chemicalFormula: "Desengraxante Industrial H-200", status: "Finalizado", timestamp: "2026-05-15T10:14:00Z" },
-  { id: "LIC-2026-003", company: "Caterpillar Op. Ind.", chemicalFormula: "Aditivo de Arrefecimento Premium", status: "Finalizado", timestamp: "2026-05-12T17:22:00Z" }
 ];
 
 export async function GET(request: Request) {
