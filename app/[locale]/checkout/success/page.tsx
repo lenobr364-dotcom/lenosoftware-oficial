@@ -18,6 +18,12 @@ export default async function CheckoutSuccessPage({
 }) {
   const { locale } = await params;
   const sp = await searchParams;
+  const provider = typeof sp.provider === "string" ? sp.provider : "";
+  const orderId = typeof sp.order_id === "string" ? sp.order_id.trim() : "";
+  if (provider === "paypal" && orderId) {
+    return <CheckoutSuccessClient locale={locale} sessionId={orderId} provider="paypal" />;
+  }
+
   const sessionId = typeof sp.session_id === "string" ? sp.session_id.trim() : "";
   if (!sessionId) {
     redirect(`/${locale}/pricing`);

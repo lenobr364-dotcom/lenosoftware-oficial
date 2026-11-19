@@ -2,6 +2,7 @@ import { PricingPageClient } from "@/app/components/pricing/PricingPageClient";
 import { inferCountryIso2FromHeaders } from "@/lib/request-meta";
 import { convertUsdTo } from "@/lib/pricing/fx-usd";
 import { resolvePricingHighlightCurrency } from "@/lib/pricing/geo-currency";
+import { isPayPalCheckoutEnabled } from "@/lib/pricing/paypal";
 import { PLAN_USD_MONTHLY, planIds, type PlanTierId } from "@/lib/pricing/plans";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
@@ -40,6 +41,12 @@ export default async function PricingPage({ params }: { params: Promise<{ locale
   });
 
   return (
-    <PricingPageClient locale={locale} countryIso2={country} highlightCurrency={highlight} plans={plans} />
+    <PricingPageClient
+      locale={locale}
+      countryIso2={country}
+      highlightCurrency={highlight}
+      plans={plans}
+      paypalEnabled={isPayPalCheckoutEnabled()}
+    />
   );
 }

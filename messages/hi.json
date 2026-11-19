@@ -100,6 +100,7 @@
       "connection_failed": "कनेक्शन विफल। नेटवर्क जाँचें और पुनः प्रयास करें।",
       "stripe_not_configured": "इस सर्वर पर Stripe कॉन्फ़िगर नहीं है।",
       "paypal_not_configured": "इस सर्वर पर PayPal कॉन्फ़िगर नहीं है।",
+      "paypal_checkout_failed": "PayPal भुगतान शुरू नहीं कर सका। कार्ड का उपयोग करें या पुनः प्रयास करें।",
       "invalid_json": "अनुरोध पढ़ा नहीं जा सका। पृष्ठ रीफ़्रेश करें।",
       "stripe_checkout_failed": "भुगतान प्रदाता पर चेकआउट विफल।",
       "stripe_invalid_request": "अमान्य भुगतान अनुरोध। पुनः प्रयास करें या दूसरा तरीका चुनें।",

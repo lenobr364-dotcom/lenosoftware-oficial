@@ -100,6 +100,7 @@
       "connection_failed": "Verbindung fehlgeschlagen. Netzwerk prüfen und erneut versuchen.",
       "stripe_not_configured": "Stripe ist auf diesem Server nicht konfiguriert.",
       "paypal_not_configured": "PayPal ist auf diesem Server nicht konfiguriert.",
+      "paypal_checkout_failed": "PayPal konnte die Zahlung nicht starten. Karte verwenden oder erneut versuchen.",
       "invalid_json": "Anfrage konnte nicht gelesen werden. Seite neu laden.",
       "stripe_checkout_failed": "Checkout beim Zahlungsanbieter fehlgeschlagen.",
       "stripe_invalid_request": "Ungültige Zahlungsanfrage. Erneut versuchen oder andere Methode.",

@@ -100,6 +100,7 @@
       "connection_failed": "فشل الاتصال. تحقق من الشبكة وحاول مرة أخرى.",
       "stripe_not_configured": "Stripe غير مهيأ على هذا الخادم.",
       "paypal_not_configured": "PayPal غير مهيأ على هذا الخادم.",
+      "paypal_checkout_failed": "تعذر على PayPal بدء الدفع. استخدم البطاقة أو أعد المحاولة.",
       "invalid_json": "تعذّر قراءة الطلب. حدّث الصفحة.",
       "stripe_checkout_failed": "فشل الدفع لدى مزوّد الخدمة.",
       "stripe_invalid_request": "طلب دفع غير صالح. أعد المحاولة أو استخدم وسيلة أخرى.",

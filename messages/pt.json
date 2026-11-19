@@ -100,6 +100,7 @@
       "connection_failed": "Ligação falhou. Verifique a rede e tente novamente.",
       "stripe_not_configured": "O Stripe não está configurado neste servidor.",
       "paypal_not_configured": "O PayPal não está configurado neste servidor.",
+      "paypal_checkout_failed": "O PayPal não conseguiu iniciar o pagamento. Use o cartão ou tente de novo.",
       "invalid_json": "O pedido não pôde ser lido. Atualize a página.",
       "stripe_checkout_failed": "O checkout falhou junto do fornecedor de pagamentos.",
       "stripe_invalid_request": "Pedido de pagamento inválido. Tente outra vez ou outro método.",

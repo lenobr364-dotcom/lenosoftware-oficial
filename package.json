@@ -12,6 +12,7 @@
     "db:migrate": "prisma migrate dev",
     "db:push": "prisma db push",
     "db:seed": "prisma db seed",
+    "db:deploy": "prisma migrate deploy",
     "db:index:formulas": "prisma migrate deploy",
     "db:backfill-formula-encryption": "tsx scripts/backfill-formula-encryption.mts",
     "backup": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/backup-chemvault.ps1",

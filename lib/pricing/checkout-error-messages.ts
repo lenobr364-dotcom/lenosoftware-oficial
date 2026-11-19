@@ -3,6 +3,7 @@ const PRICING_CHECKOUT_ERROR_CODES = new Set([
   "connection_failed",
   "stripe_not_configured",
   "paypal_not_configured",
+  "paypal_checkout_failed",
   "invalid_json",
   "stripe_checkout_failed",
   "stripe_invalid_request",

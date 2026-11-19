@@ -79,11 +79,13 @@ export function PricingPageClient({
   countryIso2,
   highlightCurrency,
   plans,
+  paypalEnabled = false,
 }: {
   locale: string;
   countryIso2: string;
   highlightCurrency: PricingCurrency;
   plans: PlanPriceRow[];
+  paypalEnabled?: boolean;
 }) {
   const t = useTranslations("Pricing");
   const [pending, setPending] = useState<null | { plan: PlanTierId; channel: "stripe" | "paypal" }>(null);
@@ -118,8 +120,32 @@ export function PricingPageClient({
     [highlightCurrency, locale, t],
   );
 
-  // PayPal checkout intentionally hidden in current UX.
-  // (We keep the API integration in the codebase; only the UI is simplified.)
+  const checkoutPayPal = useCallback(
+    async (plan: PlanTierId) => {
+      if (!paypalEnabled || checkoutLockRef.current) return;
+      checkoutLockRef.current = true;
+      setPending({ plan, channel: "paypal" });
+      try {
+        const r = await fetch("/api/checkout/paypal", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ plan, currency: highlightCurrency, locale }),
+        });
+        const j = (await r.json()) as { ok?: boolean; error?: string; url?: string };
+        if (!r.ok || !j.url) {
+          toast.error(pricingCheckoutErrorMessage(t, j.error));
+          return;
+        }
+        window.location.href = j.url;
+      } catch {
+        toast.error(pricingCheckoutErrorMessage(t, "connection_failed"));
+      } finally {
+        checkoutLockRef.current = false;
+        setPending(null);
+      }
+    },
+    [highlightCurrency, locale, paypalEnabled, t],
+  );
 
   const amountFor = (p: PlanPriceRow, cur: PricingCurrency) => {
     if (cur === "USD") return p.usd;
@@ -254,7 +280,19 @@ export function PricingPageClient({
                       >
                         {pending?.plan === c.id && pending?.channel === "stripe" ? "Processando…" : c.cta.label}
                       </button>
-                    ) : (
+                    ) : null}
+                    {c.cta.kind === "stripe" && paypalEnabled ? (
+                      <button
+                        type="button"
+                        disabled={checkoutBusy}
+                        aria-busy={pending?.plan === c.id && pending?.channel === "paypal"}
+                        onClick={() => void checkoutPayPal(c.id)}
+                        className="mt-3 w-full rounded-2xl border border-white/15 bg-white/[0.04] px-4 py-3 text-xs font-semibold uppercase tracking-[0.24em] text-gray-200 transition hover:border-[#D4AF37]/35 disabled:cursor-not-allowed disabled:opacity-55"
+                      >
+                        {pending?.plan === c.id && pending?.channel === "paypal" ? t("checkoutProcessing") : t("ctaPayPal")}
+                      </button>
+                    ) : null}
+                    {c.cta.kind === "consultant" ? (
                       <button
                         type="button"
                         onClick={() => {
@@ -266,7 +304,7 @@ export function PricingPageClient({
                       >
                         {c.cta.label}
                       </button>
-                    )}
+                    ) : null}
                   </div>
                 </article>
               </PlanCardPulse>

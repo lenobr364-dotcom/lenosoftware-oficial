@@ -1,15 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { PLAN_USD_MONTHLY } from "@/lib/pricing/plans";
-import { convertUsdTo } from "@/lib/pricing/fx-usd";
+import { createPayPalCheckoutOrder, isPayPalCheckoutEnabled, type PayPalCurrency } from "@/lib/pricing/paypal";
 import { checkoutPlanBodySchema } from "@/lib/validation/api-schemas";
 import { zodErrorResponse } from "@/lib/validation/zod-response";
 
-/**
- * Stub de ordem PayPal — substituir por OAuth + Orders v2 quando
- * `PAYPAL_CLIENT_ID` / `PAYPAL_CLIENT_SECRET` e URL de API estiverem definidos.
- */
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 export async function POST(request: NextRequest) {
+  if (!isPayPalCheckoutEnabled()) {
+    return NextResponse.json({ ok: false, configured: false, error: "paypal_not_configured" }, { status: 503 });
+  }
+
   let raw: unknown;
   try {
     raw = await request.json();
@@ -19,26 +21,20 @@ export async function POST(request: NextRequest) {
   const parsed = checkoutPlanBodySchema.safeParse(raw);
   if (!parsed.success) return zodErrorResponse(parsed.error);
 
-  const clientId = process.env.PAYPAL_CLIENT_ID?.trim();
-  const clientSecret = process.env.PAYPAL_CLIENT_SECRET?.trim();
-  if (!clientId || !clientSecret) {
-    return NextResponse.json({ ok: false, configured: false, error: "paypal_not_configured" }, { status: 503 });
+  const baseUrl = (process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000").replace(/\/$/, "");
+  const locale = parsed.data.locale ?? "en";
+  const currency = (parsed.data.currency ?? "USD").toUpperCase() as PayPalCurrency;
+
+  try {
+    const url = await createPayPalCheckoutOrder({
+      plan: parsed.data.plan,
+      currency,
+      locale,
+      returnUrl: `${baseUrl}/api/checkout/paypal/return?locale=${encodeURIComponent(locale)}`,
+      cancelUrl: `${baseUrl}/${locale}/pricing?checkout=cancel`,
+    });
+    return NextResponse.json({ ok: true, url });
+  } catch {
+    return NextResponse.json({ ok: false, error: "paypal_checkout_failed" }, { status: 502 });
   }
-
-  const plan = parsed.data.plan;
-  const currency = (parsed.data.currency ?? "USD").toUpperCase();
-  const usd = PLAN_USD_MONTHLY[plan];
-  const amount =
-    currency === "USD" ? usd : currency === "BRL" ? convertUsdTo(usd, "BRL") : convertUsdTo(usd, "EUR");
-
-  return NextResponse.json({
-    ok: true,
-    stub: true,
-    plan,
-    currency,
-    value: Number(amount.toFixed(2)),
-    approvalUrl: null,
-    message:
-      "PayPal Orders API wiring pending — use this endpoint body shape from PricingPageClient; approvalUrl will be returned once integrated.",
-  });
 }

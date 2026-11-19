@@ -4,7 +4,15 @@ import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useEffect, useMemo, useState } from "react";
 
-export function CheckoutSuccessClient({ locale, sessionId }: { locale: string; sessionId: string }) {
+export function CheckoutSuccessClient({
+  locale,
+  sessionId,
+  provider = "stripe",
+}: {
+  locale: string;
+  sessionId: string;
+  provider?: "stripe" | "paypal";
+}) {
   const t = useTranslations("CheckoutSuccess");
   const [seconds, setSeconds] = useState(5);
 
@@ -38,12 +46,14 @@ export function CheckoutSuccessClient({ locale, sessionId }: { locale: string; s
         <p className="mt-4 text-sm leading-relaxed text-neutral-400 md:text-base">{t("subtitle")}</p>
         <p className="mt-6 text-xs text-amber-200/85">{t("partnership")}</p>
         <div className="mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:justify-center">
-          <a
-            href={invoiceHref}
-            className="inline-flex items-center justify-center rounded-2xl border border-violet-400/35 bg-violet-500/15 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-violet-100 transition hover:bg-violet-500/25"
-          >
-            {t("downloadInvoice")}
-          </a>
+          {provider === "stripe" ? (
+            <a
+              href={invoiceHref}
+              className="inline-flex items-center justify-center rounded-2xl border border-violet-400/35 bg-violet-500/15 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-violet-100 transition hover:bg-violet-500/25"
+            >
+              {t("downloadInvoice")}
+            </a>
+          ) : null}
           <Link
             href="/dashboard"
             className="inline-flex items-center justify-center rounded-2xl border border-cyan-400/35 bg-cyan-500/15 px-6 py-3.5 text-xs font-semibold uppercase tracking-wider text-cyan-100 transition hover:bg-cyan-500/25"

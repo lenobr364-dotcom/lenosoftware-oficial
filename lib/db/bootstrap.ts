@@ -1,21 +1,27 @@
 /**
- * Otimizações SQLite para baixa latência (WAL + pragmas seguros).
+ * WAL/pragmas só existem no SQLite. PostgreSQL (produção) ignora este passo.
  */
 
 import { prisma } from "@/lib/prisma";
 
 let bootstrapped = false;
 
+function isSqliteUrl(): boolean {
+  const url = process.env.DATABASE_URL ?? "";
+  return url.startsWith("file:") || url.includes("sqlite");
+}
+
 export async function ensureDatabasePerformancePragmas(): Promise<void> {
   if (bootstrapped) return;
+  bootstrapped = true;
+  if (!isSqliteUrl()) return;
   try {
     await prisma.$executeRawUnsafe("PRAGMA journal_mode = WAL;");
     await prisma.$executeRawUnsafe("PRAGMA synchronous = NORMAL;");
     await prisma.$executeRawUnsafe("PRAGMA cache_size = -64000;");
     await prisma.$executeRawUnsafe("PRAGMA temp_store = MEMORY;");
-    bootstrapped = true;
   } catch {
-    /* provider não-SQLite ou ambiente restrito */
+    /* arquivo SQLite indisponível neste processo */
   }
 }
 
