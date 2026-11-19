@@ -88,7 +88,7 @@ export async function ExecutiveRecentActivity({
                     <p className="mt-1 text-[0.7rem] text-neutral-500">{t("activityFormulasUpdated", { time: df.format(row.createdAt) })}</p>
                   </div>
                   <Link
-                    href="/dashboard#vault-formulations"
+                    href="/dashboard#cofre"
                     className="shrink-0 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-neutral-300 transition hover:border-cyan-400/30 hover:text-cyan-100"
                   >
                     {t("activityOpenVault")}

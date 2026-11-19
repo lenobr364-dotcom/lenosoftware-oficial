@@ -22,8 +22,8 @@ export const NEXUS_HQ = {
   cep: "78600-412",
   country: "Brasil",
   bankingPartner: "Sicredi - Distrito Barra do Garças",
-  /** Defina NEXUS_BIJU_CNPJ no ambiente para o CNPJ oficial. */
-  cnpj: process.env.NEXUS_BIJU_CNPJ?.trim() || "PENDENTE_ENV_NEXUS_BIJU_CNPJ",
+  /** Sobrescreva com NEXUS_BIJU_CNPJ se o documento oficial divergir deste registro. */
+  cnpj: process.env.NEXUS_BIJU_CNPJ?.trim() || "36.962.878/0001-55",
 } as const;
 
 /** Endereço completo selado (geo-identidade). */

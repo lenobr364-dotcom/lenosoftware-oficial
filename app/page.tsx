@@ -584,11 +584,11 @@ export default function HomePage() {
               </div>
               <div className="flex items-center gap-3 text-sm text-white/75">
                 <Phone className="h-4 w-4 text-amber-200" />
-                <span>+55 (11) 99999-0000</span>
+                <span>CNPJ 36.962.878/0001-55</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-white/75">
                 <MapPin className="h-4 w-4 text-amber-200" />
-                <span>São Paulo · New York · Frankfurt</span>
+                <span>Barra do Garças, MT · CEP 78600-412</span>
               </div>
             </div>
           </motion.div>
