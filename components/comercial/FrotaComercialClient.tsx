@@ -6,6 +6,11 @@ import {
   EXPECTED_LENO_CNPJ,
   getExclusivityTerms,
 } from "@/lib/anti-disintermediation/exclusivity-terms";
+import {
+  COMERCIAL_PLANS,
+  MARKETPLACE_COMMISSION,
+  type CommissionKind,
+} from "@/lib/comercial/plans";
 import type { ComercialProposal, PublicEquipment } from "@/lib/comercial/types";
 
 import { AntiDisintermediationBanner } from "./AntiDisintermediationBanner";
@@ -46,7 +51,9 @@ export function FrotaComercialClient({ initialEquipment, initialProposals }: Pro
   const [messages, setMessages] = useState<MessageRow[]>([]);
   const [status, setStatus] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
-  const [pixValor, setPixValor] = useState("1500");
+  const [pixValor, setPixValor] = useState("497");
+  const [lithology, setLithology] = useState("basalto");
+  const [commissionKind, setCommissionKind] = useState<CommissionKind>("subscriber");
 
   const selected = equipment.find((e) => e.id === selectedId) ?? equipment[0];
   const activeProposal = proposals.find((p) => p.id === activeProposalId) ?? proposals[0];
@@ -211,21 +218,64 @@ export function FrotaComercialClient({ initialEquipment, initialProposals }: Pro
     }
   }
 
+  function exportProposalPdf() {
+    if (!activeProposal) return;
+    const qs = new URLSearchParams({
+      lithology,
+      commissionKind,
+      mobilizationBrl: "2500",
+      demobilizationBrl: "1800",
+    });
+    window.open(
+      `/api/comercial/proposals/${encodeURIComponent(activeProposal.id)}/pdf?${qs.toString()}`,
+      "_blank",
+      "noopener,noreferrer",
+    );
+    setStatus("PDF da proposta comercial aberto (cálculos detalhados; contatos só se liberados).");
+  }
+
   return (
     <div className="space-y-8 text-white">
       <header className="space-y-4">
         <p className="text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-amber-200/75">
-          Frota · fluxo comercial existente
+          BritaGrid Brasil · frota comercial · Leno.software
         </p>
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
           Equipamentos, propostas e Pix
         </h1>
         <p className="max-w-2xl text-sm leading-relaxed text-zinc-400">
-          Intermediação obrigatória Leno.software ({terms.operatorLine}). Contatos só após aceite
-          de exclusividade e pagamento formal.
+          Intermediação obrigatória ({terms.operatorLine}). Cobrança Pix Santander PJ · CNPJ{" "}
+          {EXPECTED_LENO_CNPJ}. Contatos só após aceite e pagamento formal.
         </p>
         <AntiDisintermediationBanner />
       </header>
+
+      <section className="grid gap-4 md:grid-cols-2">
+        {COMERCIAL_PLANS.map((plan) => (
+          <article
+            key={plan.id}
+            className="rounded-2xl border border-amber-500/25 bg-zinc-950/70 p-5"
+          >
+            <p className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-amber-200/70">
+              Assinatura mensal · Pix Santander PJ
+            </p>
+            <h2 className="mt-2 text-lg font-semibold text-white">{plan.name}</h2>
+            <p className="mt-2 font-mono text-2xl text-amber-100">
+              R$ {plan.priceMonthlyBrl.toFixed(2).replace(".", ",")}/mês
+            </p>
+            <ul className="mt-3 space-y-1.5 text-sm text-zinc-400">
+              {plan.features.map((f) => (
+                <li key={f}>· {f}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </section>
+      <p className="text-sm text-zinc-400">
+        Comissão marketplace vinculada ao termo de exclusividade:{" "}
+        <strong className="text-amber-100">{MARKETPLACE_COMMISSION.subscriberLabel}</strong> ·{" "}
+        <strong className="text-amber-100">{MARKETPLACE_COMMISSION.adHocLabel}</strong>.
+      </p>
 
       <ComercialCalculators />
 
@@ -329,12 +379,44 @@ export function FrotaComercialClient({ initialEquipment, initialProposals }: Pro
             </button>
           </div>
 
+          <div className="rounded-2xl border border-white/10 bg-zinc-950/70 p-5 space-y-3">
+            <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-400">
+              Proposta comercial PDF
+            </h2>
+            <div className="grid grid-cols-2 gap-3">
+              <label className="text-xs text-zinc-400">
+                Litologia
+                <select className={`${field} mt-1`} value={lithology} onChange={(e) => setLithology(e.target.value)}>
+                  <option value="arenito">Arenito</option>
+                  <option value="calcário">Calcário</option>
+                  <option value="basalto">Basalto</option>
+                  <option value="granito">Granito</option>
+                  <option value="quartzito">Quartzito</option>
+                </select>
+              </label>
+              <label className="text-xs text-zinc-400">
+                Comissão
+                <select
+                  className={`${field} mt-1`}
+                  value={commissionKind}
+                  onChange={(e) => setCommissionKind(e.target.value as CommissionKind)}
+                >
+                  <option value="subscriber">Assinante 2,5%</option>
+                  <option value="adhoc">Avulsa 4,0%</option>
+                </select>
+              </label>
+            </div>
+            <button type="button" className={btn} disabled={!activeProposal} onClick={exportProposalPdf}>
+              Exportar proposta PDF
+            </button>
+          </div>
+
           <form onSubmit={onPix} className="rounded-2xl border border-white/10 bg-zinc-950/70 p-5 space-y-3">
             <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-400">
-              Checkout Pix (Leno.software)
+              Checkout Pix Santander PJ (Leno.software)
             </h2>
             <label className="block text-xs text-zinc-400">
-              Valor (BRL)
+              Valor (BRL) — ex.: 497 Operador ou 1490 Enterprise
               <input className={`${field} mt-1`} value={pixValor} onChange={(e) => setPixValor(e.target.value)} />
             </label>
             <button type="submit" className={btn} disabled={busy || !activeProposal}>

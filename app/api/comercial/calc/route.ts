@@ -4,6 +4,7 @@ import { z } from "zod";
 import { jsonApiError } from "@/lib/api-error-response";
 import {
   calculateCostPerTon,
+  calculateDetailedProposalCost,
   calculateMachineHourCost,
 } from "@/lib/anti-disintermediation/calculators";
 
@@ -20,6 +21,18 @@ const bodySchema = z.discriminatedUnion("mode", [
     rentalCostBrl: z.number(),
     machineHours: z.number(),
     extrasBrl: z.number().optional(),
+  }),
+  z.object({
+    mode: z.literal("detailed_proposal"),
+    dryMachineHourBrl: z.number(),
+    machineHours: z.number(),
+    tons: z.number(),
+    lithology: z.enum(["arenito", "calcário", "basalto", "granito", "quartzito"]),
+    wearBasePerHourBrl: z.number().optional(),
+    dieselLitersPerHour: z.number().optional(),
+    dieselPricePerLiterBrl: z.number().optional(),
+    mobilizationBrl: z.number().optional(),
+    demobilizationBrl: z.number().optional(),
   }),
 ]);
 
@@ -40,6 +53,13 @@ export async function POST(request: Request) {
       return NextResponse.json({
         ok: true,
         result: calculateCostPerTon(parsed.data),
+      });
+    }
+
+    if (parsed.data.mode === "detailed_proposal") {
+      return NextResponse.json({
+        ok: true,
+        result: calculateDetailedProposalCost(parsed.data),
       });
     }
 

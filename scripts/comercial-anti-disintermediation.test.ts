@@ -7,6 +7,7 @@ import assert from "node:assert/strict";
 
 import {
   calculateCostPerTon,
+  calculateDetailedProposalCost,
   calculateMachineHourCost,
 } from "../lib/anti-disintermediation/calculators";
 import {
@@ -18,12 +19,21 @@ import {
   sanitizeUserInput,
 } from "../lib/anti-disintermediation/contact-sanitize";
 import {
+  COMERCIAL_PLANS,
+  MARKETPLACE_COMMISSION,
+  calculateCommissionBrl,
+  getPixBillingConfig,
+} from "../lib/comercial/plans";
+import { buildCommercialProposalPdf } from "../lib/comercial/proposal-pdf";
+import {
   acceptProposal,
   createProposal,
   formalizeAndReleaseContacts,
+  getEquipmentRaw,
   getPublicEquipment,
   listPublicEquipment,
   postMessage,
+  toPublicEquipment,
 } from "../lib/comercial/store";
 
 function section(name: string) {
@@ -163,6 +173,58 @@ section("calculadoras custo/t e hora-máquina intactas");
   });
   assert.equal(hour.costPerMachineHourBrl, 1000);
   assert.equal(calculateCostPerTon({ totalCostBrl: 10, tons: 0 }).costPerTonBrl, null);
+}
+
+section("planos Pix Santander PJ e comissão marketplace");
+{
+  assert.equal(COMERCIAL_PLANS.length, 2);
+  assert.equal(COMERCIAL_PLANS[0]!.priceMonthlyBrl, 497);
+  assert.equal(COMERCIAL_PLANS[1]!.priceMonthlyBrl, 1490);
+  assert.equal(MARKETPLACE_COMMISSION.subscriberRate, 0.025);
+  assert.equal(MARKETPLACE_COMMISSION.adHocRate, 0.04);
+  assert.equal(calculateCommissionBrl(10000, "subscriber"), 250);
+  assert.equal(calculateCommissionBrl(10000, "adhoc"), 400);
+  const billing = getPixBillingConfig();
+  assert.equal(billing.cnpj, "36.962.878/0001-55");
+  assert.equal(billing.channel, "Santander PJ · Pix");
+}
+
+section("cálculo detalhado e PDF sem contato pré-aceite");
+{
+  const created = createProposal({
+    equipmentId: listPublicEquipment()[0]!.id,
+    locatarioId: "loc-pdf",
+    locatarioDisplayName: "Obra PDF",
+    notes: "Sem contato externo",
+    requestedHours: 10,
+    estimatedTons: 200,
+  });
+  assert.equal(created.ok, true);
+  if (!created.ok) throw new Error("create failed");
+
+  const costs = calculateDetailedProposalCost({
+    dryMachineHourBrl: 480,
+    machineHours: 10,
+    tons: 200,
+    lithology: "granito",
+    mobilizationBrl: 2500,
+    demobilizationBrl: 1800,
+  });
+  assert.ok(costs.wearFactor > 1);
+  assert.ok(costs.totalBrl > costs.dryMachineTotalBrl);
+  assert.ok(costs.costPerTonBrl != null);
+
+  const eq = getEquipmentRaw(created.proposal.equipmentId)!;
+  const pdf = buildCommercialProposalPdf({
+    proposal: created.proposal,
+    equipment: toPublicEquipment(eq),
+    costs,
+    commissionKind: "subscriber",
+    includeContacts: false,
+  });
+  assert.ok(pdf.byteLength > 500);
+  const asText = Buffer.from(pdf).toString("latin1");
+  assert.ok(!asText.includes("99999-1122") || created.proposal.contactReleased);
 }
 
 console.log("\nAll comercial anti-disintermediation tests passed.\n");

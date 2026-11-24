@@ -35,8 +35,13 @@ export {
 export {
   calculateCostPerTon,
   calculateMachineHourCost,
+  calculateDetailedProposalCost,
+  LITHOLOGY_WEAR_FACTORS,
   type CostPerTonInput,
   type CostPerTonResult,
   type MachineHourInput,
   type MachineHourResult,
+  type LithologyId,
+  type DetailedProposalCostInput,
+  type DetailedProposalCostResult,
 } from "./calculators";

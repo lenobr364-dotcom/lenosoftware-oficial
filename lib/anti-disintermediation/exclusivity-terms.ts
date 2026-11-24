@@ -4,7 +4,7 @@ import { NEXUS_HQ, NEXUS_LEGAL } from "@/lib/nexus-legal-identity";
 export const LENO_EXCLUSIVITY_VERSION = "leno-exclusivity-2026.1";
 
 export const LENO_OPERATOR = {
-  brand: "Leno.software",
+  brand: "BritaGrid Brasil",
   holding: "Leno.software",
   legalName: NEXUS_LEGAL.company,
   cnpj: NEXUS_HQ.cnpj,
@@ -45,7 +45,7 @@ export function getExclusivityTerms(): {
       {
         id: "commission",
         title: "2. Comissão e remuneração",
-        body: `Ao aceitar uma proposta ou concluir pagamento (incluindo Pix), as partes reconhecem a comissão de intermediação devida à ${holding} (CNPJ ${cnpj}), conforme tabela comercial vigente no momento do aceite.`,
+        body: `Ao aceitar uma proposta ou concluir pagamento (incluindo Pix Santander PJ), as partes reconhecem a comissão de intermediação devida à ${holding} (CNPJ ${cnpj}): 2,5% sobre locações de assinantes dos planos Operador/Locador (R$ 497/mês) ou Frota Enterprise (R$ 1.490/mês), e 4,0% sobre locações avulsas. A comissão está vinculada a este termo de exclusividade/anti-bypass.`,
       },
       {
         id: "contact-ban",
