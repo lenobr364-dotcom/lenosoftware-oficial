@@ -5,6 +5,8 @@ import toast from "react-hot-toast";
 import { useLocale, useTranslations } from "next-intl";
 
 import { GlassSkeletonLine } from "@/app/components/skeletons/glass-skeleton";
+import { AntiDisintermediationBanner } from "@/components/comercial/AntiDisintermediationBanner";
+import { EXPECTED_LENO_CNPJ } from "@/lib/anti-disintermediation/exclusivity-terms";
 import { defaultCurrencyForUiLocale } from "@/lib/currency-code";
 
 import { getCorporateEmailReject } from "@/lib/is-corporate-email";
@@ -37,6 +39,8 @@ export function BijuLicenseRequestForm() {
   const [company, setCompany] = useState("");
   const [country, setCountry] = useState("");
   const [email, setEmail] = useState("");
+  const [notes, setNotes] = useState("");
+  const [acceptExclusivity, setAcceptExclusivity] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [fieldError, setFieldError] = useState<FieldError>(null);
 
@@ -80,6 +84,11 @@ export function BijuLicenseRequestForm() {
       return;
     }
 
+    if (!acceptExclusivity) {
+      toast.error("Aceite os termos de exclusividade/comissão Leno.software para continuar.");
+      return;
+    }
+
     setFieldError(null);
     setStatus("loading");
     try {
@@ -90,6 +99,9 @@ export function BijuLicenseRequestForm() {
           company: c,
           country: co,
           corporateEmail: em,
+          notes: notes.trim() || undefined,
+          acceptExclusivity: true,
+          acknowledgeCnpj: EXPECTED_LENO_CNPJ,
           uiLocale: locale,
           currencyCode: defaultCurrencyForUiLocale(locale),
         }),
@@ -243,6 +255,32 @@ export function BijuLicenseRequestForm() {
             />
           </div>
         </div>
+
+        <div className="mt-6">
+          <AntiDisintermediationBanner compact />
+        </div>
+        <label className="mt-5 block text-xs font-medium uppercase tracking-[0.12em] text-neutral-400" htmlFor="biju-license-notes">
+          Observações
+        </label>
+        <textarea
+          id="biju-license-notes"
+          className={`${inputClass} min-h-[88px]`}
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
+          placeholder="Sem telefone, WhatsApp, e-mail ou links externos"
+        />
+        <label className="mt-5 flex cursor-pointer items-start gap-3 text-sm leading-relaxed text-neutral-300">
+          <input
+            type="checkbox"
+            className="mt-1"
+            checked={acceptExclusivity}
+            onChange={(e) => setAcceptExclusivity(e.target.checked)}
+          />
+          <span>
+            Aceito exclusividade e comissão Leno.software (CNPJ {EXPECTED_LENO_CNPJ}). Contatos comerciais
+            só após formalização/pagamento.
+          </span>
+        </label>
 
         <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
           <button type="submit" className={submitGlow} disabled={status === "loading"} aria-busy={status === "loading"}>

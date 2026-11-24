@@ -58,6 +58,7 @@ from agents_factory import (
 )
 from telemetry import montar_router as montar_telemetria, registrar_auditoria
 from routers import financeiro
+from anti_disintermediation import sanitize_user_input
 from chemvault import (
     CATALOGO_INICIAL,
     Base,
@@ -450,6 +451,17 @@ def criar_ordem_servico(
     )
     if equip is None:
         raise HTTPException(status_code=404, detail="Equipamento não encontrado")
+    sanitized = sanitize_user_input(payload.descricao, "mask")
+    if not sanitized.sanitized.strip() and sanitized.blocked:
+        raise HTTPException(
+            status_code=422,
+            detail="Descrição bloqueada: remova telefones, WhatsApp, e-mails, @usuários e links externos.",
+        )
+    payload = OrdemIn(
+        equipamento_id=payload.equipamento_id,
+        tipo=payload.tipo,
+        descricao=sanitized.sanitized,
+    )
     try:
         ordem = abrir_ordem(db, equip, payload)
     except ValueError as exc:

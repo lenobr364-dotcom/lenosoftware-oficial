@@ -1,4 +1,9 @@
 import { jsonApiError } from "@/lib/api-error-response";
+import { sanitizeUserInput } from "@/lib/anti-disintermediation/contact-sanitize";
+import {
+  EXPECTED_LENO_CNPJ,
+  isExpectedLenoCnpj,
+} from "@/lib/anti-disintermediation/exclusivity-terms";
 import { defaultCurrencyForUiLocale, parseCurrencyCode, toPrismaCurrencyCode } from "@/lib/currency-code";
 import { routing } from "@/i18n/routing";
 import { getCorporateEmailReject } from "@/lib/is-corporate-email";
@@ -37,6 +42,34 @@ export async function POST(request: Request) {
   const currencyCode = toPrismaCurrencyCode(
     parseCurrencyCode(body.currencyCode) ?? defaultCurrencyForUiLocale(uiLocale),
   );
+
+  if (body.acceptExclusivity === false) {
+    return jsonApiError(400, {
+      error: "exclusivity_required",
+      message: "Aceite os termos de exclusividade e comissão da Leno.software.",
+      scope: "api.request-license",
+      requestId,
+    });
+  }
+  if (body.acknowledgeCnpj != null && body.acknowledgeCnpj.trim() !== "" && !isExpectedLenoCnpj(body.acknowledgeCnpj)) {
+    return jsonApiError(400, {
+      error: "cnpj_mismatch",
+      message: `Confirme o CNPJ da Leno.software (${EXPECTED_LENO_CNPJ}).`,
+      scope: "api.request-license",
+      requestId,
+    });
+  }
+  if (body.notes) {
+    const notesResult = sanitizeUserInput(body.notes, "mask");
+    if (!notesResult.sanitized.trim() && notesResult.blocked) {
+      return jsonApiError(422, {
+        error: "contact_blocked",
+        message: "Observações com contatos externos foram bloqueadas.",
+        scope: "api.request-license",
+        requestId,
+      });
+    }
+  }
 
   const emailReject = getCorporateEmailReject(corporateEmail);
   if (emailReject === "invalid_email") {

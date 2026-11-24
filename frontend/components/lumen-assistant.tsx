@@ -51,10 +51,33 @@ export default function LumenAssistant() {
     },
   ]);
 
+  function maskContacts(texto: string): string {
+    return texto
+      .replace(/(?:whats?\s*app|zap|wpp|wa\.me)[\s:/]*(?:\+?\d[\d\s().-]{7,}\d)?/gi, "[contato oculto pela plataforma]")
+      .replace(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g, "[contato oculto pela plataforma]")
+      .replace(/(?:https?:\/\/|www\.)[^\s<>"']+/gi, "[link externo bloqueado]")
+      .replace(/(?:\+?\d{1,3}[\s.-]?)?(?:\(?\d{2,3}\)?[\s.-]?)?\d{4,5}[\s.-]?\d{4}\b/g, "[contato oculto pela plataforma]")
+      .replace(/(^|[\s(,;:])@([a-zA-Z0-9._]{2,30})\b/g, "$1[perfil social oculto]");
+  }
+
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const texto = rascunho.trim();
+    const bruto = rascunho.trim();
+    const texto = maskContacts(bruto);
     if (!texto || enviando) {
+      return;
+    }
+    if (!texto.replace(/\[(contato oculto pela plataforma|link externo bloqueado|perfil social oculto)\]/g, "").trim() && bruto !== texto) {
+      setMensagens((atual) => [
+        ...atual,
+        {
+          id: Date.now(),
+          papel: "lumen",
+          texto:
+            "Mensagem bloqueada: remova telefones, WhatsApp, e-mails, @usuários e links. Negociação só no fluxo Leno.software.",
+        },
+      ]);
+      setRascunho("");
       return;
     }
     const idExecutivo = Date.now();

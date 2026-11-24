@@ -45,6 +45,11 @@ export const requestLicenseBodySchema = z
     company: z.string().min(1).max(500),
     country: z.string().min(1).max(200),
     corporateEmail: z.string().email().max(320),
+    /** Observações livres — sanitizadas contra desintermediação. */
+    notes: z.string().max(4000).optional(),
+    /** Aceite obrigatório dos termos de exclusividade/comissão Leno.software. */
+    acceptExclusivity: z.boolean().optional(),
+    acknowledgeCnpj: z.string().max(32).optional(),
     currencyCode: z.nativeEnum(CurrencyCode).optional(),
     uiLocale: z.enum(UI_LOCALES).optional(),
   })

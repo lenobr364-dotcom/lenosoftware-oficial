@@ -610,6 +610,8 @@
     "homeQuickTitle": "Quick access",
     "homeQuickSubtitle": "Geolocation, analytics, contracts, API gateway, and NEXUS lab — one click from the executive home.",
     "homeQuickOpen": "Open",
+    "homeQuickFrota": "Fleet & commercial flow",
+    "homeQuickFrotaDesc": "Equipment proposals, mediated chat, exclusivity terms and Pix release.",
     "homeQuickLiveOps": "Live Operations Map",
     "homeQuickLiveOpsDesc": "SIRGAS/UTM ingest and licensing points on the operational grid.",
     "homeQuickAnalytics": "Analytics & Metrics",

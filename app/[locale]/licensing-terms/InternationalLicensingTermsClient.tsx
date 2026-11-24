@@ -2,7 +2,9 @@
 
 import { recordInternationalLicensingAcceptance } from "./actions";
 import { INITIAL_ACCEPT_INTL_TERMS_STATE, type AcceptIntlTermsState } from "./accept-state";
+import { AntiDisintermediationBanner } from "@/components/comercial/AntiDisintermediationBanner";
 import { Link } from "@/i18n/navigation";
+import { getExclusivityTerms } from "@/lib/anti-disintermediation/exclusivity-terms";
 import type { IntlLegalLang } from "@/lib/international-licensing-terms";
 import { getInternationalTermsBlock, INTERNATIONAL_TERMS_VERSION } from "@/lib/international-licensing-terms";
 import { useTranslations } from "next-intl";
@@ -22,6 +24,7 @@ export function InternationalLicensingTermsClient({ initialLegalLang, alreadyAcc
   );
 
   const block = useMemo(() => getInternationalTermsBlock(viewLang), [viewLang]);
+  const exclusivity = useMemo(() => getExclusivityTerms(), []);
 
   const glassPanel =
     "rounded-[1.75rem] border border-white/[0.12] bg-gradient-to-br from-white/[0.09] via-white/[0.04] to-transparent shadow-[0_8px_32px_-8px_rgba(0,0,0,0.55),inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-2xl backdrop-saturate-150";
@@ -100,6 +103,23 @@ export function InternationalLicensingTermsClient({ initialLegalLang, alreadyAcc
               ))}
             </ol>
           </article>
+        </section>
+
+        <div className="mt-8">
+          <AntiDisintermediationBanner />
+        </div>
+
+        <section className={`${glassPanel} mt-8 px-5 py-6 sm:px-8 sm:py-8`}>
+          <h2 className="text-lg font-semibold text-white">{exclusivity.title}</h2>
+          <p className="mt-2 text-xs text-white/50">{exclusivity.operatorLine}</p>
+          <ol className="mt-6 space-y-4">
+            {exclusivity.sections.map((sec) => (
+              <li key={sec.id}>
+                <h3 className="text-sm font-semibold text-white/90">{sec.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/65">{sec.body}</p>
+              </li>
+            ))}
+          </ol>
         </section>
 
         <section className={`${glassPanel} mt-8 px-5 py-6 sm:px-8 sm:py-8`}>

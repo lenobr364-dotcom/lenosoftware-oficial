@@ -605,6 +605,8 @@
     "homeQuickTitle": "त्वरित पहुँच",
     "homeQuickSubtitle": "जियोलोकेशन, एनालिटिक्स, अनुबंध, API गेटवे और NEXUS लैब — एक क्लिक से।",
     "homeQuickOpen": "खोलें",
+    "homeQuickFrota": "फ्लीट और वाणिज्यिक प्रवाह",
+    "homeQuickFrotaDesc": "उपकरण प्रस्ताव, मध्यस्थ चैट, विशेषाधिकार और Pix रिलीज़।",
     "homeQuickLiveOps": "लाइव ऑपरेशंस मैप",
     "homeQuickLiveOpsDesc": "SIRGAS/UTM इंजेस्ट और लाइसेंसिंग पॉइंट।",
     "homeQuickAnalytics": "एनालिटिक्स और मेट्रिक्स",

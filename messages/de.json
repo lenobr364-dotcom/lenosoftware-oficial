@@ -605,6 +605,8 @@
     "homeQuickTitle": "Schnellzugriff",
     "homeQuickSubtitle": "Geolokalisierung, Analytics, Verträge, API-Gateway und NEXUS-Lab — ein Klick von der Executive-Home.",
     "homeQuickOpen": "Öffnen",
+    "homeQuickFrota": "Flotte & Handelsfluss",
+    "homeQuickFrotaDesc": "Gerätevorschläge, vermittelter Chat, Exklusivität und Pix-Freigabe.",
     "homeQuickLiveOps": "Live Operations Map",
     "homeQuickLiveOpsDesc": "SIRGAS/UTM-Import und Lizenzpunkte im operativen Raster.",
     "homeQuickAnalytics": "Analytics & Metriken",
