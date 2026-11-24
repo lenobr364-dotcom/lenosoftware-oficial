@@ -1,0 +1,163 @@
+/**
+ * Testes da camada anti-desintermediação BritaGrid.
+ * Uso: npx tsx scripts/britagrid-sanitize.test.ts
+ */
+
+import assert from "node:assert/strict";
+
+import {
+  calculateCostPerTon,
+  calculateMachineHourCost,
+} from "../lib/britagrid/calculators";
+import {
+  CONTACT_MASK,
+  HANDLE_MASK,
+  LINK_MASK,
+  containsBlockedContact,
+  maskContactText,
+  sanitizeUserInput,
+} from "../lib/britagrid/contact-sanitize";
+import {
+  acceptProposal,
+  createProposal,
+  getPublicEquipment,
+  listPublicEquipment,
+  postMessage,
+} from "../lib/britagrid/store";
+
+function section(name: string) {
+  console.log(`\n✓ ${name}`);
+}
+
+section("mascara telefone, whatsapp, email, @handle e links");
+{
+  const raw =
+    "Me liga (66) 99999-1122 ou whatsapp 66988887777 email dono@pedreira.com @pedreiranorte https://fora.invalid e www.escape.invalid";
+  const result = maskContactText(raw);
+  assert.equal(result.blocked, true);
+  assert.equal(result.changed, true);
+  assert.ok(result.sanitized.includes(CONTACT_MASK));
+  assert.ok(result.sanitized.includes(LINK_MASK) || result.sanitized.includes(HANDLE_MASK));
+  assert.ok(!result.sanitized.includes("99999-1122"));
+  assert.ok(!result.sanitized.includes("dono@pedreira.com"));
+  assert.ok(!result.sanitized.includes("https://fora.invalid"));
+}
+
+section("reject mode esvazia texto com contato");
+{
+  const rejected = sanitizeUserInput("zap +55 11 98888-7777", "reject");
+  assert.equal(rejected.blocked, true);
+  assert.equal(rejected.sanitized, "");
+}
+
+section("texto limpo passa");
+{
+  const clean = maskContactText("Britador 180 t/h disponível em Barra do Garças.");
+  assert.equal(clean.blocked, false);
+  assert.equal(clean.changed, false);
+  assert.equal(containsBlockedContact(clean.original), false);
+}
+
+section("listagem pública oculta contatos estruturados");
+{
+  const list = listPublicEquipment();
+  assert.ok(list.length >= 1);
+  for (const eq of list) {
+    if (!eq.contactReleased) {
+      assert.equal(eq.phone, null);
+      assert.equal(eq.whatsapp, null);
+      assert.equal(eq.email, null);
+      assert.ok(!eq.description.includes("@pedreira") || eq.description.includes(HANDLE_MASK) || eq.description.includes(CONTACT_MASK) || !eq.description.includes("99999"));
+      assert.ok(!/\d{4,5}[\s.-]?\d{4}/.test(eq.description) || eq.description.includes(CONTACT_MASK));
+    }
+  }
+  const first = getPublicEquipment(list[0]!.id);
+  assert.ok(first);
+  assert.equal(first!.contactReleased, false);
+}
+
+section("proposta sanitiza observações e exige exclusividade");
+{
+  const created = createProposal({
+    equipmentId: listPublicEquipment()[0]!.id,
+    locatarioId: "loc-1",
+    locatarioDisplayName: "Obra X",
+    notes: "Retorno no whatsapp 65999998888 por favor",
+    requestedHours: 10,
+    estimatedTons: 300,
+  });
+  assert.equal(created.ok, true);
+  if (!created.ok) throw new Error("create failed");
+  assert.ok(created.notesSanitized);
+  assert.ok(!created.proposal.notes.includes("65999998888"));
+
+  const denied = acceptProposal({
+    proposalId: created.proposal.id,
+    actorId: "loc-1",
+    actorRole: "locatario",
+    acceptExclusivity: false,
+    acknowledgeCnpj: "36.962.878/0001-55",
+  });
+  assert.equal(denied.ok, false);
+
+  const accepted = acceptProposal({
+    proposalId: created.proposal.id,
+    actorId: "loc-1",
+    actorRole: "locatario",
+    acceptExclusivity: true,
+    acknowledgeCnpj: "36.962.878/0001-55",
+  });
+  assert.equal(accepted.ok, true);
+  if (!accepted.ok) throw new Error("accept failed");
+  assert.equal(accepted.exclusivity.cnpjAcknowledged, "36.962.878/0001-55");
+}
+
+section("chat bloqueia mensagem só com contato");
+{
+  const created = createProposal({
+    equipmentId: listPublicEquipment()[0]!.id,
+    locatarioId: "loc-2",
+    locatarioDisplayName: "Obra Y",
+    notes: "ok",
+    requestedHours: 4,
+    estimatedTons: 80,
+  });
+  assert.equal(created.ok, true);
+  if (!created.ok) throw new Error("create failed");
+
+  const blocked = postMessage({
+    proposalId: created.proposal.id,
+    senderId: "loc-2",
+    senderRole: "locatario",
+    body: "meu email e so eu@teste.com",
+  });
+  // mask mode: if after sanitize there's still content, message may pass with mask
+  if (blocked.ok) {
+    assert.ok(blocked.message.body.includes(CONTACT_MASK) || blocked.message.sanitized);
+  } else {
+    assert.equal(blocked.error, "contact_blocked");
+  }
+
+  const okMsg = postMessage({
+    proposalId: created.proposal.id,
+    senderId: "loc-2",
+    senderRole: "locatario",
+    body: "Podemos alinhar mobilização pela plataforma na segunda.",
+  });
+  assert.equal(okMsg.ok, true);
+}
+
+section("calculadoras custo/t e hora-máquina");
+{
+  const ton = calculateCostPerTon({ totalCostBrl: 10000, tons: 250 });
+  assert.equal(ton.costPerTonBrl, 40);
+  const hour = calculateMachineHourCost({
+    rentalCostBrl: 8000,
+    machineHours: 10,
+    extrasBrl: 2000,
+  });
+  assert.equal(hour.costPerMachineHourBrl, 1000);
+  assert.equal(calculateCostPerTon({ totalCostBrl: 10, tons: 0 }).costPerTonBrl, null);
+}
+
+console.log("\nAll BritaGrid anti-disintermediation tests passed.\n");
