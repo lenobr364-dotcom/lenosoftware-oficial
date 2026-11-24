@@ -24,17 +24,7 @@ import {
   calculateCommissionBrl,
   getPixBillingConfig,
 } from "../lib/comercial/plans";
-import { buildCommercialProposalPdf } from "../lib/comercial/proposal-pdf";
-import {
-  acceptProposal,
-  createProposal,
-  formalizeAndReleaseContacts,
-  getEquipmentRaw,
-  getPublicEquipment,
-  listPublicEquipment,
-  postMessage,
-  toPublicEquipment,
-} from "../lib/comercial/store";
+import { createProposal, getPublicEquipment, listPublicEquipment } from "../lib/comercial/store";
 
 function section(name: string) {
   console.log(`\n✓ ${name}`);
@@ -63,103 +53,28 @@ section("reject mode esvazia texto com contato");
 
 section("texto limpo passa");
 {
-  const clean = maskContactText("Escavadora EXC-01 disponível em Barra do Garças.");
+  const clean = maskContactText("Lote de Solupan disponível para licenciamento em Barra do Garças.");
   assert.equal(clean.blocked, false);
   assert.equal(clean.changed, false);
   assert.equal(containsBlockedContact(clean.original), false);
 }
 
-section("listagem pública da frota oculta contatos estruturados");
+section("catálogo público não lista manutenção pesada nem britagem");
 {
   const list = listPublicEquipment();
-  assert.ok(list.length >= 1);
-  for (const eq of list) {
-    if (!eq.contactReleased) {
-      assert.equal(eq.phone, null);
-      assert.equal(eq.whatsapp, null);
-      assert.equal(eq.email, null);
-    }
-  }
-  const first = getPublicEquipment(list[0]!.id);
-  assert.ok(first);
-  assert.equal(first!.contactReleased, false);
-  assert.ok(first!.codigo);
-}
-
-section("proposta sanitiza observações e exige exclusividade");
-{
-  const created = createProposal({
-    equipmentId: listPublicEquipment()[0]!.id,
+  assert.equal(list.length, 0);
+  assert.equal(getPublicEquipment("eq-exc-01"), null);
+  const missing = createProposal({
+    equipmentId: "eq-exc-01",
     locatarioId: "loc-1",
     locatarioDisplayName: "Obra X",
     notes: "Retorno no whatsapp 65999998888 por favor",
     requestedHours: 10,
     estimatedTons: 300,
   });
-  assert.equal(created.ok, true);
-  if (!created.ok) throw new Error("create failed");
-  assert.ok(created.notesSanitized);
-  assert.ok(!created.proposal.notes.includes("65999998888"));
-
-  const denied = acceptProposal({
-    proposalId: created.proposal.id,
-    actorId: "loc-1",
-    actorRole: "locatario",
-    acceptExclusivity: false,
-    acknowledgeCnpj: "36.962.878/0001-55",
-  });
-  assert.equal(denied.ok, false);
-
-  const accepted = acceptProposal({
-    proposalId: created.proposal.id,
-    actorId: "loc-1",
-    actorRole: "locatario",
-    acceptExclusivity: true,
-    acknowledgeCnpj: "36.962.878/0001-55",
-  });
-  assert.equal(accepted.ok, true);
-  if (!accepted.ok) throw new Error("accept failed");
-  assert.equal(accepted.exclusivity.cnpjAcknowledged, "36.962.878/0001-55");
-
-  const released = formalizeAndReleaseContacts(created.proposal.id);
-  assert.equal(released.ok, true);
-  if (!released.ok) throw new Error("release failed");
-  assert.equal(released.proposal.contactReleased, true);
-  assert.equal(released.equipment.contactReleased, true);
-}
-
-section("chat bloqueia mensagem só com contato");
-{
-  const created = createProposal({
-    equipmentId: listPublicEquipment()[0]!.id,
-    locatarioId: "loc-2",
-    locatarioDisplayName: "Obra Y",
-    notes: "ok",
-    requestedHours: 4,
-    estimatedTons: 80,
-  });
-  assert.equal(created.ok, true);
-  if (!created.ok) throw new Error("create failed");
-
-  const blocked = postMessage({
-    proposalId: created.proposal.id,
-    senderId: "loc-2",
-    senderRole: "locatario",
-    body: "meu email e so eu@teste.com",
-  });
-  if (blocked.ok) {
-    assert.ok(blocked.message.body.includes(CONTACT_MASK) || blocked.message.sanitized);
-  } else {
-    assert.equal(blocked.error, "contact_blocked");
-  }
-
-  const okMsg = postMessage({
-    proposalId: created.proposal.id,
-    senderId: "loc-2",
-    senderRole: "locatario",
-    body: "Podemos alinhar mobilização pela plataforma na segunda.",
-  });
-  assert.equal(okMsg.ok, true);
+  assert.equal(missing.ok, false);
+  if (missing.ok) throw new Error("fleet equipment must stay out of ChemVault");
+  assert.equal(missing.error, "equipment_not_found");
 }
 
 section("calculadoras custo/t e hora-máquina intactas");
@@ -189,19 +104,8 @@ section("planos Pix Santander PJ e comissão marketplace");
   assert.equal(billing.channel, "Santander PJ · Pix");
 }
 
-section("cálculo detalhado e PDF sem contato pré-aceite");
+section("cálculo detalhado de custo permanece sem catálogo de britagem");
 {
-  const created = createProposal({
-    equipmentId: listPublicEquipment()[0]!.id,
-    locatarioId: "loc-pdf",
-    locatarioDisplayName: "Obra PDF",
-    notes: "Sem contato externo",
-    requestedHours: 10,
-    estimatedTons: 200,
-  });
-  assert.equal(created.ok, true);
-  if (!created.ok) throw new Error("create failed");
-
   const costs = calculateDetailedProposalCost({
     dryMachineHourBrl: 480,
     machineHours: 10,
@@ -213,18 +117,6 @@ section("cálculo detalhado e PDF sem contato pré-aceite");
   assert.ok(costs.wearFactor > 1);
   assert.ok(costs.totalBrl > costs.dryMachineTotalBrl);
   assert.ok(costs.costPerTonBrl != null);
-
-  const eq = getEquipmentRaw(created.proposal.equipmentId)!;
-  const pdf = buildCommercialProposalPdf({
-    proposal: created.proposal,
-    equipment: toPublicEquipment(eq),
-    costs,
-    commissionKind: "subscriber",
-    includeContacts: false,
-  });
-  assert.ok(pdf.byteLength > 500);
-  const asText = Buffer.from(pdf).toString("latin1");
-  assert.ok(!asText.includes("99999-1122") || created.proposal.contactReleased);
 }
 
 console.log("\nAll comercial anti-disintermediation tests passed.\n");

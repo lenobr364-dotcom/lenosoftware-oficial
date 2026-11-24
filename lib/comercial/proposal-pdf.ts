@@ -24,7 +24,7 @@ function money(n: number): string {
 }
 
 /**
- * Proposta comercial PDF — BritaGrid Brasil / Leno.software.
+ * Proposta comercial PDF — Leno.Software.
  * Assinatura discreta com CNPJ; sem contato direto antes do aceite/liberação.
  */
 export function buildCommercialProposalPdf(input: ProposalPdfInput): Uint8Array {

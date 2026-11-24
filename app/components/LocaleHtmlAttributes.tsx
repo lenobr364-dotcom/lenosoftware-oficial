@@ -7,6 +7,7 @@ const localeToHtmlLang: Record<string, string> = {
   en: "en-US",
   de: "de-DE",
   pt: "pt-BR",
+  es: "es-ES",
   hi: "hi-IN",
   ar: "ar-AE",
 };

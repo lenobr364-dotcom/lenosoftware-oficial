@@ -12,8 +12,9 @@ import { usePathname, useRouter } from "@/i18n/navigation";
  * técnico) para manter a estética de terminal — não vão para i18n.
  */
 const localeOptions = [
-  { code: "pt", label: "PT-BR", region: "LATAM CORE" },
-  { code: "en", label: "EN-US", region: "GLOBAL CORE" },
+  { code: "pt", label: "PT", region: "Brasil" },
+  { code: "en", label: "EN", region: "English" },
+  { code: "es", label: "ES", region: "Español" },
   { code: "de", label: "DE-EU", region: "EURO CORE" },
   { code: "ar", label: "AR-ME", region: "MID-EAST CORE" },
   { code: "hi", label: "HI-AS", region: "ASIA CORE" },

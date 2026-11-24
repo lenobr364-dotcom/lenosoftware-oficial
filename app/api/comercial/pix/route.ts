@@ -16,7 +16,7 @@ import {
 export const runtime = "nodejs";
 
 /**
- * Pix Santander PJ do fluxo comercial BritaGrid Brasil / Leno.software.
+ * Pix Santander PJ do fluxo comercial Leno.Software.
  * Exige proposta com exclusividade aceita; ao confirmar, libera contatos.
  */
 const pixSchema = z.object({

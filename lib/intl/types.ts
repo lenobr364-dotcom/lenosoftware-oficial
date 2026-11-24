@@ -1,6 +1,6 @@
 import type { CurrencyCode } from "@prisma/client";
 
-export type SupportedLocale = "en" | "de" | "pt" | "hi" | "ar";
+export type SupportedLocale = "en" | "de" | "pt" | "es" | "hi" | "ar";
 
 export type IntlCurrencyCode = CurrencyCode | "INR";
 

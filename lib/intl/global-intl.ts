@@ -19,6 +19,7 @@ const LOCALE_TIMEZONE: Record<SupportedLocale, string> = {
   pt: HQ_TIMEZONE,
   en: "America/New_York",
   de: "Europe/Berlin",
+  es: "Europe/Madrid",
   hi: "Asia/Kolkata",
   ar: "Asia/Dubai",
 };
@@ -27,6 +28,7 @@ const REGION_BY_LOCALE: Record<SupportedLocale, string> = {
   pt: "latam",
   en: "americas",
   de: "europe",
+  es: "europe",
   hi: "asia",
   ar: "mena",
 };

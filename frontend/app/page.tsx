@@ -6,19 +6,17 @@ import { GlassCard, MetricValue, StatusBadge } from "@/components/glass";
 import LumenAssistant from "@/components/lumen-assistant";
 import Economia from "./economia";
 import Laboratorio from "./laboratorio";
-import Manutencao from "./manutencao";
 import PainelLenoSoftware from "./painel-leno-software";
 import Telemetria from "./telemetria";
 import { API_URL, RootPayload, getRoot } from "@/lib/api";
 
-type Tab = "console" | "laboratorio" | "fabrica" | "economia" | "manutencao" | "telemetria";
+type Tab = "console" | "laboratorio" | "fabrica" | "economia" | "telemetria";
 
 const MODULES: { id: Tab; label: string }[] = [
   { id: "console", label: "Console" },
   { id: "laboratorio", label: "Laboratório ChemVault Global" },
   { id: "fabrica", label: "Fábrica de Agentes" },
   { id: "economia", label: "Economia LNC" },
-  { id: "manutencao", label: "Manutenção de frotas" },
   { id: "telemetria", label: "Telemetria e Auth" },
 ];
 
@@ -36,7 +34,6 @@ function ConsoleBento({
         ["Fábrica de Agentes", payload.modules.fabrica_de_agentes.status],
         ["ChemVault Global", payload.modules.chemvault_global.status],
         ["Economia LNC", payload.modules.economia?.status ?? "reserved"],
-        ["Manutenção de Frotas", payload.modules.manutencao?.status ?? "reserved"],
         ["Telemetria", payload.modules.telemetria?.status ?? "reserved"],
       ]
     : [];
@@ -101,8 +98,6 @@ export default function Home() {
       <PainelLenoSoftware />
     ) : tab === "economia" ? (
       <Economia />
-    ) : tab === "manutencao" ? (
-      <Manutencao />
     ) : tab === "telemetria" ? (
       <Telemetria />
     ) : (

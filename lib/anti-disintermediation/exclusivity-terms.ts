@@ -4,7 +4,7 @@ import { NEXUS_HQ, NEXUS_LEGAL } from "@/lib/nexus-legal-identity";
 export const LENO_EXCLUSIVITY_VERSION = "leno-exclusivity-2026.1";
 
 export const LENO_OPERATOR = {
-  brand: "BritaGrid Brasil",
+  brand: "Leno.Software",
   holding: "Leno.software",
   legalName: NEXUS_LEGAL.company,
   cnpj: NEXUS_HQ.cnpj,

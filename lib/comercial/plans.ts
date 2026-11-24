@@ -1,11 +1,11 @@
 import { EXPECTED_LENO_CNPJ, LENO_OPERATOR } from "@/lib/anti-disintermediation/exclusivity-terms";
 
 /**
- * Planos comerciais BritaGrid Brasil / Leno.software — cobrança Pix Santander PJ.
+ * Planos comerciais Leno.Software — cobrança Pix Santander PJ.
  * Valores oficiais em BRL; CNPJ recebedor: 36.962.878/0001-55.
  */
 
-export const BRITAGRID_COMMERCIAL_BRAND = "BritaGrid Brasil";
+export const BRITAGRID_COMMERCIAL_BRAND = "Leno.Software";
 
 export type ComercialPlanId = "operador_locador" | "frota_enterprise";
 
@@ -24,7 +24,7 @@ export type ComercialPlan = {
 export const COMERCIAL_PLANS: readonly ComercialPlan[] = [
   {
     id: "operador_locador",
-    name: "Plano Operador / Locador",
+    name: "Plano Operação",
     priceMonthlyBrl: 497,
     maxMobileSets: 5,
     unlimitedCalculators: true,
@@ -32,15 +32,15 @@ export const COMERCIAL_PLANS: readonly ComercialPlan[] = [
     multiSite: false,
     customLithologyWear: false,
     features: [
-      "Calculadora custo/tonelada e hora-máquina ilimitada",
-      "Gerador de proposta comercial PDF",
-      "Até 5 conjuntos móveis",
-      "Fluxo intermediado com anti-desintermediação",
+      "Fluxo comercial intermediado",
+      "Proposta em PDF",
+      "Até 5 operações ativas",
+      "Anti-desintermediação de contatos",
     ],
   },
   {
     id: "frota_enterprise",
-    name: "Plano Frota Enterprise",
+    name: "Plano Enterprise",
     priceMonthlyBrl: 1490,
     maxMobileSets: null,
     unlimitedCalculators: true,
@@ -48,11 +48,11 @@ export const COMERCIAL_PLANS: readonly ComercialPlan[] = [
     multiSite: true,
     customLithologyWear: true,
     features: [
-      "Conjuntos móveis ilimitados",
-      "Gestão multi-obra",
-      "Parâmetros customizados de desgaste por litologia",
-      "Calculadoras ilimitadas + PDF de proposta",
-      "Prioridade no fluxo Pix Santander PJ",
+      "Operações ilimitadas",
+      "Gestão multiunidade",
+      "Parâmetros comerciais próprios",
+      "PDF de proposta",
+      "Prioridade no Pix Santander PJ",
     ],
   },
 ] as const;

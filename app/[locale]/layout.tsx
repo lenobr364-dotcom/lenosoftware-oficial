@@ -27,6 +27,12 @@ const localeSeo: Record<string, { title: string; description: string; ogLocale: 
       "ChemVault Global — formulações industriais, infraestrutura internacional de licenciamento e cofre executivo para parceiros no Brasil e mercados globais.",
     ogLocale: "pt_BR",
   },
+  es: {
+    title: "ChemVault Global | Licenciamiento químico industrial",
+    description:
+      "ChemVault Global — formulaciones industriales bajo custodia Leno.Software, con ficha técnica pública y proporciones reservadas hasta la licencia.",
+    ogLocale: "es_ES",
+  },
   hi: {
     title: "ChemVault Global | औद्योगिक रसायन लाइसेंसिंग",
     description:
@@ -94,7 +100,7 @@ export default async function LocaleLayout({
       <LocaleHtmlAttributes />
       <BijuToaster />
       <div
-        className="flex min-h-full flex-1 flex-col bg-neutral-950 font-mono text-neutral-100 antialiased selection:bg-emerald-500 selection:text-black"
+        className="cv-executive flex min-h-full flex-1 flex-col font-sans antialiased"
         dir={isRtlLocale(locale) ? "rtl" : "ltr"}
       >
         <div className="flex flex-1 flex-col">{children}</div>

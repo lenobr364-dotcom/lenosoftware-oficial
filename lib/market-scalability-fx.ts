@@ -58,6 +58,7 @@ export function convertBrlToDisplay(amountBrl: number, locale: string): number {
 
 export function localeTagForFormat(locale: string): string {
   if (locale === "pt") return "pt-BR";
+  if (locale === "es") return "es-ES";
   if (locale === "de") return "de-DE";
   if (locale === "hi") return "hi-IN";
   if (locale === "ar") return "ar-AE";

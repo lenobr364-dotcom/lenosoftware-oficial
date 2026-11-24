@@ -1,5 +1,5 @@
 import { Link } from "@/i18n/navigation";
-import { BarChart3, Beaker, Cpu, FileCheck, FileText, FlaskConical, Lock, Map, Plug, ScrollText, Sparkles, Truck, Zap, type LucideIcon } from "lucide-react";
+import { BarChart3, Beaker, Cpu, FileCheck, FileText, FlaskConical, Lock, Map, Plug, ScrollText, Sparkles, Zap, type LucideIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 type ModuleDef = {
@@ -7,7 +7,6 @@ type ModuleDef = {
   icon: LucideIcon;
   titleKey:
     | "homeQuickLiveOps"
-    | "homeQuickFrota"
     | "homeQuickAnalytics"
     | "homeQuickContracts"
     | "homeQuickApi"
@@ -21,7 +20,6 @@ type ModuleDef = {
     | "homeQuickNexus";
   descKey:
     | "homeQuickLiveOpsDesc"
-    | "homeQuickFrotaDesc"
     | "homeQuickAnalyticsDesc"
     | "homeQuickContractsDesc"
     | "homeQuickApiDesc"
@@ -43,13 +41,6 @@ const MODULES: ModuleDef[] = [
     titleKey: "homeQuickChemicalVault",
     descKey: "homeQuickChemicalVaultDesc",
     accent: "from-amber-500/25 via-yellow-500/5 to-transparent border-amber-400/30 hover:border-amber-400/45",
-  },
-  {
-    href: "/dashboard/frota",
-    icon: Truck,
-    titleKey: "homeQuickFrota",
-    descKey: "homeQuickFrotaDesc",
-    accent: "from-amber-500/22 via-orange-500/5 to-transparent border-amber-400/28 hover:border-amber-400/42",
   },
   {
     href: "/dashboard/live-operations-map",

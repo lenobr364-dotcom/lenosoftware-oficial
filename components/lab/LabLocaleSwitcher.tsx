@@ -8,6 +8,7 @@ const LOCALE_LABELS: Record<string, string> = {
   en: "EN",
   pt: "PT",
   de: "DE",
+  es: "ES",
   hi: "HI",
   ar: "AR",
 };
