@@ -158,7 +158,11 @@ export function LeadsManagementTable({ rows, locale }: { rows: LeadRowSerializab
                     {row.company}
                   </td>
                   <td className="whitespace-nowrap px-4 py-4 text-sm text-neutral-400 sm:py-5">{row.country}</td>
-                  <td className="max-w-[220px] px-4 py-4 text-sm leading-snug text-amber-100/85 sm:py-5">{row.corporateEmail}</td>
+                  <td className="max-w-[220px] px-4 py-4 text-sm leading-snug text-amber-100/85 sm:py-5">
+                    {normalized === "Aprovado"
+                      ? row.corporateEmail
+                      : "[contato oculto pela plataforma]"}
+                  </td>
                   <td className="whitespace-nowrap px-4 py-4 text-sm tabular-nums text-neutral-400 sm:py-5">
                     {dateFmt.format(new Date(row.createdAt))}
                   </td>

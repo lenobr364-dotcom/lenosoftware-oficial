@@ -1,6 +1,7 @@
 "use client";
 
 import { ChemVaultPageBackdrop } from "@/app/components/ChemVaultPageBackdrop";
+import { AntiDisintermediationBanner } from "@/components/comercial/AntiDisintermediationBanner";
 import { Link } from "@/i18n/navigation";
 import { glassPanel, glassPanelDense } from "@/lib/ui-glass";
 import { Loader2 } from "lucide-react";
@@ -71,6 +72,8 @@ export function SupportTicketForm() {
           <h1 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">{t("title")}</h1>
           <p className="text-sm leading-relaxed text-neutral-200/90">{t("lead")}</p>
         </header>
+
+        <AntiDisintermediationBanner compact />
 
         <section className={`p-8 ${glassPanelDense}`}>
           <form className="flex flex-col gap-5" onSubmit={onSubmit}>

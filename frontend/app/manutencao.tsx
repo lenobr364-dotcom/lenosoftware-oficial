@@ -86,6 +86,17 @@ export default function Manutencao() {
           Horímetros, ciclos e alertas dos agentes mecânicos. Preventivas abrem automaticamente
           abaixo de 50 h de folga.
         </p>
+        <aside
+          role="note"
+          className="mt-2 rounded-xl border border-amber-500/25 bg-amber-500/[0.07] px-4 py-3 text-sm text-amber-50/90"
+        >
+          <p className="font-semibold text-amber-100">Proteção anti-desintermediação — Leno.software</p>
+          <p className="mt-1 text-amber-50/80">
+            Telefone, WhatsApp, e-mail, @usuário e links externos são bloqueados em OS/observações.
+            Contatos comerciais só após aceite de exclusividade e Pix formal (CNPJ 36.962.878/0001-55).
+            Fluxo comercial da frota: dashboard ChemVault → Frota.
+          </p>
+        </aside>
       </header>
 
       {error ? <p className="text-sm text-red-600">{error}</p> : null}

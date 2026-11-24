@@ -605,6 +605,8 @@
     "homeQuickTitle": "وصول سريع",
     "homeQuickSubtitle": "الموقع والتحليلات والعقود وبوابة API ومختبر NEXUS — نقرة واحدة من الصفحة الرئيسية.",
     "homeQuickOpen": "فتح",
+    "homeQuickFrota": "الأسطول والتدفق التجاري",
+    "homeQuickFrotaDesc": "مقترحات المعدات والدردشة الوسيطة والحصرية وتحرير Pix.",
     "homeQuickLiveOps": "خريطة العمليات الحية",
     "homeQuickLiveOpsDesc": "استيراد SIRGAS/UTM ونقاط الترخيص على الشبكة التشغيلية.",
     "homeQuickAnalytics": "التحليلات والمقاييس",

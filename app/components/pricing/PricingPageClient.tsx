@@ -1,6 +1,8 @@
 "use client";
 
+import { AntiDisintermediationBanner } from "@/components/comercial/AntiDisintermediationBanner";
 import { Link } from "@/i18n/navigation";
+import { EXPECTED_LENO_CNPJ } from "@/lib/anti-disintermediation/exclusivity-terms";
 import { localeTagForFormat } from "@/lib/market-scalability-fx";
 import { pricingCheckoutErrorMessage } from "@/lib/pricing/checkout-error-messages";
 import type { PlanTierId } from "@/lib/pricing/plans";
@@ -89,11 +91,23 @@ export function PricingPageClient({
 }) {
   const t = useTranslations("Pricing");
   const [pending, setPending] = useState<null | { plan: PlanTierId; channel: "stripe" | "paypal" }>(null);
+  const [acceptExclusivity, setAcceptExclusivity] = useState(false);
   const checkoutLockRef = useRef(false);
   const checkoutBusy = pending !== null;
 
+  const requireExclusivity = useCallback(() => {
+    if (!acceptExclusivity) {
+      toast.error(
+        `Aceite os termos de exclusividade/comissão Leno.software (CNPJ ${EXPECTED_LENO_CNPJ}) antes do checkout.`,
+      );
+      return false;
+    }
+    return true;
+  }, [acceptExclusivity]);
+
   const checkoutStripe = useCallback(
     async (plan: PlanTierId) => {
+      if (!requireExclusivity()) return;
       if (checkoutLockRef.current) return;
       checkoutLockRef.current = true;
       setPending({ plan, channel: "stripe" });
@@ -117,11 +131,12 @@ export function PricingPageClient({
         setPending(null);
       }
     },
-    [highlightCurrency, locale, t],
+    [highlightCurrency, locale, requireExclusivity, t],
   );
 
   const checkoutPayPal = useCallback(
     async (plan: PlanTierId) => {
+      if (!requireExclusivity()) return;
       if (!paypalEnabled || checkoutLockRef.current) return;
       checkoutLockRef.current = true;
       setPending({ plan, channel: "paypal" });
@@ -144,7 +159,7 @@ export function PricingPageClient({
         setPending(null);
       }
     },
-    [highlightCurrency, locale, paypalEnabled, t],
+    [highlightCurrency, locale, paypalEnabled, requireExclusivity, t],
   );
 
   const amountFor = (p: PlanPriceRow, cur: PricingCurrency) => {
@@ -214,6 +229,22 @@ export function PricingPageClient({
             Voltar
           </Link>
         </header>
+
+        <div className="mt-10 space-y-4">
+          <AntiDisintermediationBanner />
+          <label className="flex cursor-pointer items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-gray-300">
+            <input
+              type="checkbox"
+              className="mt-1"
+              checked={acceptExclusivity}
+              onChange={(e) => setAcceptExclusivity(e.target.checked)}
+            />
+            <span>
+              Aceito exclusividade e comissão Leno.software (CNPJ {EXPECTED_LENO_CNPJ}). Negociação por fora
+              sujeita a multa e bloqueio; contatos liberados só após pagamento formal.
+            </span>
+          </label>
+        </div>
 
         <section className="mt-12 grid gap-6 lg:grid-cols-3">
           {cards.map((c) => {
