@@ -10,7 +10,6 @@ const KEY_ID = process.env.CHEMVAULT_FORMULA_ENCRYPTION_KEY?.trim()
 
 function sizeHintFor(id: string): string {
   const map: Record<string, string> = {
-    "arla-32": "~42 KB",
     solupan: "~38 KB",
     intercap: "~51 KB",
   };

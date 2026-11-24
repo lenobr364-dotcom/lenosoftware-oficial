@@ -17,11 +17,6 @@ import { Suspense } from "react";
 type ElementBadge = { sym: string; z: number };
 
 const CUSTODY_ELEMENTS: Record<string, ElementBadge[]> = {
-  "arla-32": [
-    { sym: "C", z: 6 },
-    { sym: "H", z: 1 },
-    { sym: "O", z: 8 },
-  ],
   solupan: [
     { sym: "Na", z: 11 },
     { sym: "O", z: 8 },
@@ -117,7 +112,6 @@ function CustodyShieldLevel() {
 
 function categoryForFormula(id: string) {
   const map: Record<string, string> = {
-    "arla-32": "Tensoativos & Soluções Aquosas",
     solupan: "Desengordurantes Alcalinos",
     intercap: "Encapsulamento & Polímeros Funcionais",
   };

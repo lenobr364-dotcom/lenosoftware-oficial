@@ -15,7 +15,7 @@ export type IntlTermsBlock = {
 const PT: IntlTermsBlock = {
   title: "Contrato-cadre de licenciamento internacional",
   ipLine:
-    "Leno César é o titular da propriedade intelectual e do know-how técnico das formulações de alto valor agregado licenciadas através do ChemVault Global (incluindo famílias Solupan e ARLA 32), salvo acordo escrito em contrário.",
+    "Leno César é o titular da propriedade intelectual e do know-how técnico das formulações de alto valor agregado licenciadas através do ChemVault Global (incluindo famílias Solupan e Intercap), salvo acordo escrito em contrário.",
   sections: [
     {
       heading: "1. Objeto",
@@ -27,7 +27,7 @@ const PT: IntlTermsBlock = {
     },
     {
       heading: "3. Conformidade e ambiente",
-      body: "O uso de formulações com perfil ambiental (ex.: ARLA 32 / SCR) deve observar normas locais de transporte, armazenagem e descarte, bem como fichas de segurança vigentes em cada jurisdição.",
+      body: "O uso das formulações licenciadas deve observar normas locais de transporte, armazenagem e descarte, bem como fichas de segurança vigentes em cada jurisdição.",
     },
     {
       heading: "4. Hardware e telemetria",
@@ -43,7 +43,7 @@ const PT: IntlTermsBlock = {
 const EN: IntlTermsBlock = {
   title: "International licensing framework agreement",
   ipLine:
-    "Leno César holds the intellectual property and technical know-how for the high-value formulations licensed through ChemVault Global (including Solupan and ARLA 32 families), unless expressly agreed otherwise in writing.",
+    "Leno César holds the intellectual property and technical know-how for the high-value formulations licensed through ChemVault Global (including Solupan and Intercap families), unless expressly agreed otherwise in writing.",
   sections: [
     {
       heading: "1. Purpose",
@@ -55,7 +55,7 @@ const EN: IntlTermsBlock = {
     },
     {
       heading: "3. Compliance & environment",
-      body: "Use of formulations with environmental profiles (e.g., ARLA 32 / SCR) must follow local rules for transport, storage, and disposal, as well as jurisdiction-specific safety data sheets.",
+      body: "Use of the licensed formulations must follow local rules for transport, storage, and disposal, as well as jurisdiction-specific safety data sheets.",
     },
     {
       heading: "4. Hardware & telemetry",
@@ -71,7 +71,7 @@ const EN: IntlTermsBlock = {
 const ES: IntlTermsBlock = {
   title: "Marco contractual de licencia internacional",
   ipLine:
-    "Leno César es titular de la propiedad intelectual y del know-how técnico de las formulaciones de alto valor licenciadas a través de ChemVault Global (incluidas las familias Solupan y ARLA 32), salvo pacto escrito distinto.",
+    "Leno César es titular de la propiedad intelectual y del know-how técnico de las formulaciones de alto valor licenciadas a través de ChemVault Global (incluidas las familias Solupan e Intercap), salvo pacto escrito distinto.",
   sections: [
     {
       heading: "1. Objeto",
@@ -83,7 +83,7 @@ const ES: IntlTermsBlock = {
     },
     {
       heading: "3. Cumplimiento y medio ambiente",
-      body: "El uso de formulaciones con perfil ambiental (p. ej., ARLA 32 / SCR) debe observar la normativa local de transporte, almacenamiento y eliminación, así como las fichas de seguridad vigentes en cada jurisdicción.",
+      body: "El uso de las formulaciones licenciadas debe observar la normativa local de transporte, almacenamiento y eliminación, así como las fichas de seguridad vigentes en cada jurisdicción.",
     },
     {
       heading: "4. Hardware y telemetría",

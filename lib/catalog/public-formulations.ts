@@ -1,5 +1,5 @@
 /**
- * Fichas públicas das 16 formulações.
+ * Fichas públicas das formulações industriais do escopo ChemVault.
  * Nomes, segmento, diluição de uso já publicada e ativos principais.
  * Quantidades, ordem de preparo e proporções de fabricação ficam no cofre.
  */
@@ -62,16 +62,6 @@ export const PUBLIC_FORMULATIONS: readonly PublicFormulation[] = [
     usage: "1 para 20 de água.",
     waterPerLiter: 20,
     yieldMode: "diluted",
-  },
-  {
-    id: "arla-32",
-    name: "ARLA 32 (Solução aquosa de ureia 32,5%)",
-    segment: "automotive",
-    actives: ["Ureia automotiva", "Água desmineralizada"],
-    ph: null,
-    usage: "Produto pronto. Não diluir fora da especificação SCR.",
-    waterPerLiter: null,
-    yieldMode: "as-supplied",
   },
   {
     id: "nutrientes-carbonatos",

@@ -25,22 +25,6 @@ export type FormulaRecord = {
 
 export const FORMULAS: FormulaRecord[] = [
   {
-    id: "arla-32",
-    name: "ARLA 32",
-    code: "CV-ARL-032",
-    license: "active",
-    lastUpdated: "2026-03-18T09:15:00.000Z",
-    costPerLiter: 2.85,
-    suggestedSalePrice: 4.65,
-    inventoryLiters: 12_400,
-    composition:
-      "Alcool graxo etoxilado (C12–C15, 7 EO) 60–70% m/m, água desmineralizada q.s.p. Índice de hidróxido e nuvem de tenso ativo conforme COA do lote. Sem fosfatos; biodegradabilidade OCDE 301. Ausência intencional de NTA/EDTA duradouros.",
-    mixingInstructions:
-      "Pré-diluir em água morna (35–45 °C) sob agitação de hélice (60–90 rpm) até homogeneidade transparente. Para blends com álcalis, adicionar ARLA 32 antes do ajuste final de pH. Evitar espuma excessiva: controlar temperatura e ordem de adição de eletrólitos.",
-    safetyPrecautions:
-      "Evitar inalação de névoa quente. EPI: luvas nitrílicas, óculos. Irritante ocular; lavar 15 min com água em caso de contacto. Armazenar entre 5–40 °C, recipiente fechado. Ver SDS específica do fornecedor para C&L e limites OEL locais.",
-  },
-  {
     id: "solupan",
     name: "Solupan",
     code: "CV-SOL-001",

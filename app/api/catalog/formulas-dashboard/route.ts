@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 import { requireCeoAndCoreLicense } from "@/lib/api-dashboard-write-guard";
+import { isArla32CatalogName } from "@/lib/catalog/scope";
 import { decryptFormulaRow } from "@/lib/formula-field-crypto";
 import { prisma } from "@/lib/prisma";
 import { recordFormulaImpressionsBatch } from "@/lib/telemetry-db";
@@ -28,7 +29,7 @@ export async function GET(request: NextRequest) {
     });
     const hasMore = rows.length > limit;
     const slice = hasMore ? rows.slice(0, limit) : rows;
-    const formulas = slice.map(decryptFormulaRow);
+    const formulas = slice.map(decryptFormulaRow).filter((row) => !isArla32CatalogName(row.nome));
     const nextCursor = hasMore && formulas.length > 0 ? formulas[formulas.length - 1]!.id : null;
 
     if (formulas.length > 0) {

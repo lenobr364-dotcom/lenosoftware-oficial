@@ -8,7 +8,7 @@ import { prisma } from "@/lib/prisma";
 
 export { INTERNATIONAL_TERMS_VERSION };
 
-/** Fórmulas de alto valor cujo detalhe exige aceite registado (Solupan, ARLA 32). */
+/** Fórmulas de alto valor cujo detalhe exige aceite registado (Solupan e equivalentes legados). */
 export function isRestrictedInternationalFormulaTitle(title: string): boolean {
   const n = title.toLowerCase();
   return n.includes("solupan") || n.includes("arla 32") || n.includes("arla32");

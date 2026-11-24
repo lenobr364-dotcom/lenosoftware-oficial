@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { Leaf, Sparkles, Sprout } from "lucide-react";
+import { Sparkles, Sprout } from "lucide-react";
 
 const spotlightShell = [
   "group relative isolate overflow-hidden rounded-[2rem] p-7 sm:p-8",
@@ -20,7 +20,6 @@ const iconWrap = [
 
 const cards = [
   { titleKey: "spotlightSolupanTitle" as const, bodyKey: "spotlightSolupanBody" as const, Icon: Sparkles },
-  { titleKey: "spotlightArlaTitle" as const, bodyKey: "spotlightArlaBody" as const, Icon: Leaf },
   { titleKey: "spotlightNutrientsTitle" as const, bodyKey: "spotlightNutrientsBody" as const, Icon: Sprout },
 ];
 
@@ -37,7 +36,7 @@ export async function BijuProductSpotlights() {
         <p className="mx-auto mt-3 max-w-2xl text-pretty text-sm leading-relaxed text-neutral-500 md:text-base">{t("spotlightLead")}</p>
       </div>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-3 md:gap-7">
+      <div className="mt-12 grid gap-6 md:grid-cols-2 md:gap-7">
         {cards.map(({ titleKey, bodyKey, Icon }) => (
           <article key={titleKey} className={spotlightShell}>
             <div

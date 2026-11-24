@@ -1,4 +1,5 @@
 import { applyInternationalLicensingMask, hasValidInternationalTermsAcceptance } from "@/lib/licensing-guard";
+import { isArla32CatalogName } from "@/lib/catalog/scope";
 import { decryptFormulaRow } from "@/lib/formula-field-crypto";
 import { parseFormulaInstrucoesBlocks } from "@/lib/formula-instrucoes-blocks";
 import { parseProductLine } from "@/lib/product-line";
@@ -26,17 +27,19 @@ export async function GET() {
         instrucoes: true,
       },
     });
-    const mapped = rows.map((row) => {
-      const r = decryptFormulaRow(row);
-      const b = parseFormulaInstrucoesBlocks(r.instrucoes);
-      return {
-        id: r.id,
-        title: r.nome,
-        productLine: parseProductLine(r.categoria, r.nome),
-        rawMaterials: b.RAW ?? "",
-        preparationMethod: b.PREP ?? "",
-      };
-    });
+    const mapped = rows
+      .map((row) => {
+        const r = decryptFormulaRow(row);
+        const b = parseFormulaInstrucoesBlocks(r.instrucoes);
+        return {
+          id: r.id,
+          title: r.nome,
+          productLine: parseProductLine(r.categoria, r.nome),
+          rawMaterials: b.RAW ?? "",
+          preparationMethod: b.PREP ?? "",
+        };
+      })
+      .filter((row) => !isArla32CatalogName(row.title));
     const hasIntl = await hasValidInternationalTermsAcceptance();
     const masked = applyInternationalLicensingMask(mapped, hasIntl);
     return NextResponse.json({ formulas: masked });

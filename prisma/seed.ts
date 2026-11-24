@@ -77,20 +77,6 @@ const formulasData: SeedRow[] = [
     licensingTags: "HIGH_YIELD_INDUSTRIAL,ECO_BOCAL",
   },
   {
-    title: "ARLA 32 (Solução aquosa de ureia 32,5%)",
-    category: "Linha Automotiva",
-    materials:
-      "Água desmineralizada, ureia automotiva grau A (conformidade ISO 22241 / DIN 70070), estabilizantes aprovados para SCR.",
-    preparation:
-      "Dissolução controlada de ureia com monitorização de condutividade e temperatura; filtração e análise de alcalinidade residual antes do envase.",
-    dilution: "Produto pronto — não diluir fora das especificações do fabricante do sistema SCR.",
-    technicalDossier:
-      "Foco em conformidade ambiental internacional para motores diesel com SCR: rastreabilidade de lote, pureza de ureia e limites de metais e biureto. Adequado a dossiers de exportação UE, Mercosul e mercados MENA.",
-    hardwareIntegrationProfile:
-      '{"ecoBocal":{"compatible":true,"notes":"Integração com sensores de nível e temperatura em tanques de armazenagem; alertas de cristalização."},"telemetry":{"iso22241":true}}',
-    licensingTags: "ARLA32_ENV,INTERNATIONAL_COMPLIANCE",
-  },
-  {
     title: "Módulo Nutrientes & Carbonatos (baixa periculosidade)",
     category: "Limpeza Geral",
     materials:

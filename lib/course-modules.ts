@@ -8,14 +8,12 @@ export type CourseModuleDef = {
   titleKey:
     | "courseModuleSafetyTitle"
     | "courseModuleSurfactantTitle"
-    | "courseModuleArlaTitle"
     | "courseModuleLicensingTitle"
     | "courseModuleEcoBocalTitle"
     | "courseModuleOmegaTitle";
   summaryKey:
     | "courseModuleSafetySummary"
     | "courseModuleSurfactantSummary"
-    | "courseModuleArlaSummary"
     | "courseModuleLicensingSummary"
     | "courseModuleEcoBocalSummary"
     | "courseModuleOmegaSummary";
@@ -34,12 +32,6 @@ export const CHEMVAULT_COURSE_MODULES: CourseModuleDef[] = [
     titleKey: "courseModuleSurfactantTitle",
     summaryKey: "courseModuleSurfactantSummary",
     status: "ready",
-  },
-  {
-    id: "scr-arla-logistics",
-    titleKey: "courseModuleArlaTitle",
-    summaryKey: "courseModuleArlaSummary",
-    status: "draft",
   },
   {
     id: "licensing-desk",

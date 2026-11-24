@@ -55,13 +55,6 @@ export function deriveIngredientsFromComposition(composition: string): Ingredien
 }
 
 const FORMULA_PHYSICS: Record<string, Omit<DerivedFormulaParams, "ingredients">> = {
-  "arla-32": {
-    density: 1.02,
-    currentTempCelsius: 25,
-    flashPointCelsius: 95,
-    targetPhMin: 6.5,
-    targetPhMax: 8.5,
-  },
   solupan: {
     density: 1.06,
     currentTempCelsius: 25,

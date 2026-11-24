@@ -1,6 +1,7 @@
 "use client";
 
 import { FormulaDetailViewModal } from "@/components/FormulaDetailViewModal";
+import { isArla32CatalogName } from "@/lib/catalog/scope";
 import type { Formula } from "@prisma/client";
 import { Link } from "@/i18n/navigation";
 import { glassButton, glassInput, glassPanelDense } from "@/lib/ui-glass";
@@ -18,11 +19,6 @@ function blindagemNivel(id: string): number {
   let h = 0;
   for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) >>> 0;
   return 62 + (h % 34);
-}
-
-/** Fórmula em destaque: ARLA 32 (nome vindo da base pode variar em maiúsculas/espaços). */
-function isArla32Premium(nome: string) {
-  return /\barla\s*32\b/i.test(nome.trim());
 }
 
 export default function FormulaGrid({ lazy = false, initialFormulas = [] }: Props) {
@@ -87,11 +83,13 @@ export default function FormulaGrid({ lazy = false, initialFormulas = [] }: Prop
     return () => ob.disconnect();
   }, [lazy, hasMore, loading, loadingMore, cursor, fetchPage]);
 
+  const catalogItems = useMemo(() => items.filter((f) => !isArla32CatalogName(f.nome)), [items]);
+
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
-    if (!q) return items;
-    return items.filter((f) => f.nome.toLowerCase().includes(q) || f.categoria.toLowerCase().includes(q));
-  }, [items, search]);
+    if (!q) return catalogItems;
+    return catalogItems.filter((f) => f.nome.toLowerCase().includes(q) || f.categoria.toLowerCase().includes(q));
+  }, [catalogItems, search]);
 
   return (
     <div id="cv-tour-formula-catalog" className="scroll-mt-28">
@@ -123,37 +121,17 @@ export default function FormulaGrid({ lazy = false, initialFormulas = [] }: Prop
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {filtered.map((formula, idx) => {
           const nivel = blindagemNivel(formula.id);
-          const premiumArla = isArla32Premium(formula.nome);
           return (
             <div
               key={formula.id}
               style={{ animationDelay: `${Math.min(idx, 14) * 120}ms` }}
               className={[
-                premiumArla
-                  ? "cv-formula-blindagem group relative overflow-hidden px-8 pb-8 pt-24 transition-all duration-500 hover:bg-white/[0.08]"
-                  : "cv-formula-blindagem group relative overflow-hidden p-8 transition-all duration-500 hover:bg-white/[0.08]",
+                "cv-formula-blindagem group relative overflow-hidden p-8 transition-all duration-500 hover:bg-white/[0.08]",
                 glassPanelDense,
-                premiumArla
-                  ? "border-[#D4AF37]/55 shadow-[0_0_52px_-8px_rgba(212,175,55,0.55),inset_0_0_0_1px_rgba(212,175,55,0.18)] ring-2 ring-[#D4AF37]/40 ring-offset-2 ring-offset-black"
-                  : "",
               ].join(" ")}
             >
-              {premiumArla ? (
-                <div
-                  className="pointer-events-none absolute left-4 top-4 z-[2] max-w-[11.5rem] rounded-md border border-[#D4AF37]/70 bg-[linear-gradient(135deg,rgba(212,175,55,0.22)_0%,rgba(212,175,55,0.08)_48%,rgba(20,18,12,0.82)_100%)] px-2.5 py-1.5 text-center shadow-[0_8px_24px_-4px_rgba(212,175,55,0.45),inset_0_1px_0_rgba(255,248,220,0.35)] backdrop-blur-sm [-webkit-backdrop-filter:blur(10px)] [transform:rotate(-7deg)]"
-                  aria-hidden
-                >
-                  <p className="text-[9px] font-black uppercase leading-tight tracking-[0.12em] text-[#fcefb7]">{t("arlaPremiumSeal")}</p>
-                </div>
-              ) : null}
-
               <div
-                className={[
-                  "pointer-events-none absolute inset-0 rounded-3xl transition-opacity duration-500",
-                  premiumArla
-                    ? "opacity-100 shadow-[inset_0_0_40px_-8px_rgba(212,175,55,0.12)]"
-                    : "opacity-0 shadow-[inset_0_0_0_1px_rgba(212,175,55,0)] group-hover:opacity-100 group-hover:shadow-[inset_0_0_28px_rgba(212,175,55,0.06),inset_0_0_0_1px_rgba(212,175,55,0.22)]",
-                ].join(" ")}
+                className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 shadow-[inset_0_0_0_1px_rgba(212,175,55,0)] transition-opacity duration-500 group-hover:opacity-100 group-hover:shadow-[inset_0_0_28px_rgba(212,175,55,0.06),inset_0_0_0_1px_rgba(212,175,55,0.22)]"
                 aria-hidden
               />
 
@@ -190,11 +168,6 @@ export default function FormulaGrid({ lazy = false, initialFormulas = [] }: Prop
 
               <div className="relative mb-8 text-sm leading-relaxed text-gray-500">
                 {formula.descricao ? <p>{formula.descricao}</p> : <p>{t("descFallback")}</p>}
-                {premiumArla ? (
-                  <p className="mt-3 border-l-2 border-[#D4AF37]/55 pl-3 text-[13px] font-medium italic leading-snug text-[#D4AF37]/90">
-                    {t("arlaPremiumFootnote")}
-                  </p>
-                ) : null}
               </div>
 
               <div className="relative flex flex-col gap-3">

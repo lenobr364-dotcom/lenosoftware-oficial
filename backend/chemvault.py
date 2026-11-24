@@ -97,29 +97,6 @@ def utcnow() -> datetime:
 
 CATALOGO_INICIAL: list[FormulaIn] = [
     FormulaIn(
-        codigo="CV-ARLA-32",
-        nome="ARLA 32 (solução aquosa de ureia 32,5%)",
-        categoria="Linha Automotiva",
-        cas_numbers="57-13-6, 7732-18-5",
-        proporcao_diluicao="Pronto para uso — ISO 22241 / DIN 70070; não diluir fora da especificação SCR.",
-        custo_producao=Decimal("3.8500"),
-        ativo_principal="Ureia automotiva grau A",
-        componentes=[
-            ComponenteIn(
-                nome="Ureia",
-                cas_number="57-13-6",
-                proporcao_percentual=Decimal("32.5000"),
-                custo_producao=Decimal("2.4000"),
-            ),
-            ComponenteIn(
-                nome="Água desmineralizada",
-                cas_number="7732-18-5",
-                proporcao_percentual=Decimal("67.5000"),
-                custo_producao=Decimal("0.0500"),
-            ),
-        ],
-    ),
-    FormulaIn(
         codigo="CV-SOLUPAN",
         nome="Solupan Alcalino Forte",
         categoria="Linha Automotiva",

@@ -27,8 +27,8 @@
     "spotlightLead": "Kuratierte ChemVault-Linien mit hoher Marge, internationaler Compliance und Telemetrie-Hooks für Eco-Bocal.",
     "spotlightSolupanTitle": "Solupan & Intercap",
     "spotlightSolupanBody": "Hochrendite-Tensidchemie und kontrollierte Säureprogramme für Oberflächen — strukturiert für Executive-Licensing und Werkswirtschaftlichkeit.",
-    "spotlightArlaTitle": "ARLA 32 (Harnstoff 32,5 %)",
-    "spotlightArlaBody": "Umweltgrade wässrige Harnstofflösung im Einklang mit SCR / ISO 22241 — für grenzüberschreitende Dossiers und rückverfolgbare Kühlketten.",
+    "spotlightArlaTitle": "",
+    "spotlightArlaBody": "",
     "spotlightNutrientsTitle": "Modul Nährstoffe & Carbonate",
     "spotlightNutrientsBody": "Carbonat- und Nährstoffpakete mit niedrigem Gefahrenprofil im Reststoff — ideal für landwirtschaftliche Verwertung und Kreislauf-Industrieberichte.",
     "spotlightEcoBocalHint": "Hardware-Brücke: Eco-Bocal-Dosierung & Chargen-Telemetrie",
@@ -161,7 +161,7 @@
   "InternationalLicense": {
     "eyebrow": "ChemVault Global · internationales Desk",
     "title": "Internationaler Lizenzrahmen",
-    "subtitle": "Lesen Sie den Vertrag auf Portugiesisch, Englisch oder Spanisch. Die Annahme erzeugt eine eindeutige Transaktions-ID und entsperrt eingeschränkte Formulierungsdetails (einschließlich Solupan und ARLA 32) für diese Browser-Sitzung.",
+    "subtitle": "Lesen Sie den Vertrag auf Portugiesisch, Englisch oder Spanisch. Die Annahme erzeugt eine eindeutige Transaktions-ID und entsperrt eingeschränkte Formulierungsdetails (einschließlich Solupan) für diese Browser-Sitzung.",
     "ipBadge": "Leno César — Inhaber von IP & Know-how",
     "versionLabel": "Dokumentversion",
     "contractLanguage": "Sprache des Rechtstexts",
@@ -266,7 +266,7 @@
       "profitCardTitle": "Lizenz-Pipeline",
       "profitCardBody": "Eingehende Lizenzanfragen im Datastore — mit Zertifikatsausgabe und Umsatzszenarien verknüpfen.",
       "formulasCardTitle": "Lizenzierte Formeln",
-      "formulasCardBody": "Industrielle Datensätze mit internationalen Dossiers (Solupan, ARLA 32, Intercap).",
+      "formulasCardBody": "Industrielle Datensätze mit internationalen Dossiers (Solupan, Intercap).",
       "gcpCardTitle": "Google Cloud",
       "gcpDisconnected": "Bereitschaft",
       "gcpConnected": "Verknüpft",
@@ -480,7 +480,7 @@
     "courseModuleSafetySummary": "Gefahrenkommunikation, PSA-Baseline und SDS-Mapping zu Werksentscheidungen.",
     "courseModuleSurfactantTitle": "Tensid-Ökonomie (Solupan / Intercap)",
     "courseModuleSurfactantSummary": "Stückkosten, Margentreiber und Hochrendite-Linien im Vault-Katalog.",
-    "courseModuleArlaTitle": "SCR & ARLA 32 Lieferkette",
+    "courseModuleArlaTitle": "SCR & Lieferkette",
     "courseModuleArlaSummary": "ISO 22241, Umweltpositionierung und grenzüberschreitende Dossier-Sprache.",
     "courseModuleLicensingTitle": "Lizenz-Schalter Workflow",
     "courseModuleLicensingSummary": "Vom Lead zum Zertifikat — Rollen, Checks und internationale Bedingungen.",
@@ -805,7 +805,7 @@
   "Landing": {
     "gate": {
       "eyebrow": "Eingeschränkter Zugang · Sicherer Tresor",
-      "heroLead": "ChemVault Global (leno.software) — internationales Licensing für Solupan-, ARLA-32- und Intercap-Klassen-Chemie. Der Zugang ist serverseitig geschützt: Nur Inhaber des Partnerschafts-Tresorschlüssels entsperren den Live-Formel-Datenspeicher.",
+      "heroLead": "ChemVault Global (leno.software) — internationales Licensing für Solupan- und Intercap-Klassen-Chemie. Der Zugang ist serverseitig geschützt: Nur Inhaber des Partnerschafts-Tresorschlüssels entsperren den Live-Formel-Datenspeicher.",
       "cryptoTitle": "Verschlüsselungsschlüssel · Encryption key",
       "cryptoLead": "Geben Sie den geheimen Schlüssel ein, um Hochsicherheits-Formelprotokolle freizuschalten.",
       "labelAccessKey": "Zugangsschlüssel",
@@ -883,7 +883,7 @@
     "assetNames": {
       "solupan": "Solupan® Hochleistungssystem",
       "intercap": "Intercap™ Industriequalität",
-      "arla32": "ARLA 32",
+      "arla32": "",
       "detergentPremium": "Premium-Industriereiniger",
       "softenerPro": "Professioneller Weichspüler"
     },
@@ -1700,13 +1700,13 @@
   },
   "HomeLanding": {
     "metaTitle": "ChemVault Global — Industrielle Lizenzierung",
-    "metaDescription": "Sechzehn industrielle Formulierungen in Verwahrung von Leno.Software. Das öffentliche Blatt zeigt Anwendung, Wirkstoffe und GHS-Status. Herstellungsverhältnisse bleiben bis zur Lizenz versiegelt.",
+    "metaDescription": "Fünfzehn industrielle Formulierungen in Verwahrung von Leno.Software. Das öffentliche Blatt zeigt Anwendung, Wirkstoffe und GHS-Status. Herstellungsverhältnisse bleiben bis zur Lizenz versiegelt.",
     "headerTagline": "Industrielle Chemielizenzierung",
     "headerOnlineBadge": "Tresor aktiv",
     "heroEyebrow": "B2B-Lizenzierung",
     "heroTitlePrefix": "Industrielle Formulierungen",
     "heroTitleHighlight": "unter Verwahrung",
-    "heroDescription": "Sechzehn Formulierungen nach Segment. Das öffentliche Blatt zeigt Gebrauchverdünnung, Hauptwirkstoffe und den GHS/SDS-Status. Herstellungsverhältnisse bleiben bis zur Lizenz versiegelt.",
+    "heroDescription": "Fünfzehn Formulierungen nach Segment. Das öffentliche Blatt zeigt Gebrauchverdünnung, Hauptwirkstoffe und den GHS/SDS-Status. Herstellungsverhältnisse bleiben bis zur Lizenz versiegelt.",
     "ctaEnter": "Tresor öffnen",
     "ctaCatalog": "Katalog ansehen",
     "footerCopyright": "© {year} Leno.Software",
@@ -1714,7 +1714,7 @@
   },
   "Catalog": {
     "eyebrow": "Technischer Katalog",
-    "title": "Sechzehn industrielle Formulierungen",
+    "title": "Fünfzehn industrielle Formulierungen",
     "intro": "Nach Segment geordnet. Dieses öffentliche Blatt dient der kommerziellen Prüfung. Mengen, Herstellungsreihenfolge und Verhältnisse werden nur mit der Lizenz freigegeben.",
     "segments": {
       "automotive": "Automobil",
